@@ -2,4 +2,9 @@
 
   @include fontValue(normal, bold, 24px, 28px);
   color: $text-for-headers;
+  margin: 0px;
+  position: absolute;
+  bottom: 28px;
+  left: calc( 50% - 243px);
+
 }
