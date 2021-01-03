@@ -1,8 +1,0 @@
-@import url("../../vendor/normalize.css");
-@import url("../../vendor/font/roboto.css");
-@import url("../../blocks/page/page.css");
-@import url("../../blocks/main/main.css");
-
-body{
-  margin: 0px;
-}

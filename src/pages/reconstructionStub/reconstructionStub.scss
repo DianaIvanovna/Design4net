@@ -1,2 +1,10 @@
 @import "../../vendor/variables.scss";
+@import "../../blocks/page/page.scss";
+@import "../../blocks/main/main.scss";
 @import "../../blocks/reconstructionStub/reconstructionStub.scss";
+@import "../../vendor/normalize.css";
+@import "../../vendor/font/roboto.css";
+
+body{
+  margin: 0px;
+}
