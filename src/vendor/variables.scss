@@ -1,0 +1,16 @@
+$primary-color: #39604B;;
+$secondary-color: #0D9A34;
+$attention: #B43939;
+$attention-second: #D8FD00;
+$text-color: #444444;
+$text-for-headers:#FFFFFF;
+$text-color-second:#C4C4C4;
+
+@mixin  fontValue ($style, $weight, $size, $height) {
+  font-family: Roboto;
+  font-style: $style;
+  font-weight: $weight;
+  font-size:  $size;
+  line-height: $height;
+}
+

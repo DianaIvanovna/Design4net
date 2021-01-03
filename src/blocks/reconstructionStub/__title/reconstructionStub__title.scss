@@ -1,0 +1,9 @@
+.reconstructionStub__title{
+  @include fontValue(normal, 200, 36px, 42px);
+  letter-spacing: 0.2em;
+  color: $attention-second;
+  border-radius: 15px;
+  width: 300px;
+  margin: 0px;
+
+}
