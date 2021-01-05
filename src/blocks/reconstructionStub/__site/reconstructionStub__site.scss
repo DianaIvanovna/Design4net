@@ -4,4 +4,13 @@
   color: $text-for-headers;
   margin: 0px;
   margin-left: 28px;
+
+  @media screen and (max-width: 1024px){
+    @include fontValue(normal, bold, 48px, 121.69%);
+  }
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, bold, 28px, 121.69%);
+  }
+
+
 }

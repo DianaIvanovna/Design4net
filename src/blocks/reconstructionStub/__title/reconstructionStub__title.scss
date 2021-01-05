@@ -6,4 +6,17 @@
   width: 300px;
   margin: 0px;
 
+
+  @media screen and (max-width: 1024px){
+    @include fontValue(normal, 200, 28px, 42px);
+    width: 250px;
+  }
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, 200, 24px, 42px);
+    width: 170px;
+  }
+
+
+
 }
+

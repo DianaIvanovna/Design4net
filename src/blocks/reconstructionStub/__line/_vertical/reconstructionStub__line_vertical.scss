@@ -4,4 +4,7 @@
   background: linear-gradient(180deg, #DAFE00 0%, rgba(13, 154, 52, 0) 100%);
   border-radius: 15px;
   transform: rotate(-90deg);
+  @media screen and (max-width: 600px){
+    height: 150px;
+  }
 }

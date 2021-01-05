@@ -4,4 +4,12 @@
   color: #BDE60B;
   margin: 0px;
   margin-left: 28px;
+
+  @media screen and (max-width: 1024px){
+    @include fontValue(normal, normal, 28px, 162.69%);
+  }
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, normal, 16px, 162.69%);
+  }
+
 }

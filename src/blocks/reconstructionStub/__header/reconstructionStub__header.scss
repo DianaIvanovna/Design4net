@@ -1,5 +1,9 @@
 .reconstructionStub__header{
-  margin-top: 84px;
-  margin-left: 317px;
+  margin-top: 80px;
+  align-self: flex-start;
+
+  @media screen and (max-height: 900px){
+    margin-top: 40px;
+  }
 
 }

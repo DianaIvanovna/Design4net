@@ -1,0 +1,12 @@
+.reconstructionStub__links{
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  justify-content: flex-end;
+  li{
+    margin-right: 12px;
+  }
+  li:last-of-type{
+    margin-right: 0px;
+  }
+}
