@@ -7,11 +7,12 @@
 @import "./__frame/main-title__frame.scss";
 @import "./__button/main-title__button.scss";
 @import "./__davis/main-title__davis.scss";
+@import "./__links/main-title__links.scss";
 
 .main-title{
   margin: 102px auto 0px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   @media screen and (max-width: 600px){
     margin: 82px auto 0px;
   }

@@ -1,0 +1,29 @@
+.creating-websites__siteExample{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 55px 15px 0px;
+  @media screen and (max-width: 600px){
+    img{
+      width: 100%;
+    }
+    margin: 20px 10px 0px;
+  }
+}
+.creating-websites__siteExample_big{
+  background: $text-for-headers;
+  border-radius: 15px;
+  @media screen and (max-width: 600px){
+    img{
+      width: 100%;
+    }
+  }
+
+  .creating-websites__name{
+    @include fontValue(normal, 900, 18px, 21px);
+    color: #444444;
+    margin: 5px 0px;
+
+  }
+}

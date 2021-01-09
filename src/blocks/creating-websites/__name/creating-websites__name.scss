@@ -1,0 +1,13 @@
+.creating-websites__name{
+  @include fontValue(normal, 900, 24px, 28px);
+  color: #444444;
+  margin: 0px;
+  margin-top: 15px;
+  text-align: center;
+  @media screen and (max-width: 1024px){
+    @include fontValue(normal, 900, 22px, 26px);
+  }
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, 900, 18px, 22px);
+  }
+}

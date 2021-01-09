@@ -1,0 +1,11 @@
+.creating-websites__title{
+  @include fontValue(normal, bold, 36px, 42px);
+  color: $text-for-headers;
+  margin: 0px;
+  @media screen and (max-width: 1024px){
+    @include fontValue(normal, bold, 26px, 28px);
+  }
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, bold, 18px, 24px);
+  }
+}
