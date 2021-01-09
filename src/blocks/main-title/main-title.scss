@@ -1,0 +1,20 @@
+@import "./__content/main-title__content.scss";
+@import "./__description/main-title__description.scss";
+@import "./__line/main-title__line.scss";
+@import "./__site/main-title__site.scss";
+@import "./__text/main-title__text.scss";
+@import "./__title/main-title__title.scss";
+@import "./__frame/main-title__frame.scss";
+@import "./__button/main-title__button.scss";
+@import "./__davis/main-title__davis.scss";
+
+.main-title{
+  margin: 102px auto 0px;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 600px){
+    margin: 82px auto 0px;
+  }
+}
+
+

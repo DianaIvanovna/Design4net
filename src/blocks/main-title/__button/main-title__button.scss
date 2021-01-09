@@ -1,0 +1,20 @@
+.main-title__button{
+  border-radius: 15px;
+  padding: 17px 56px;
+  border: 1px solid #DAFE00;
+
+  @include fontValue(normal, bold, 18px, 21px);
+  background: none;
+  margin-left: 32px;
+  margin-top: 20px;
+
+
+  color: $text-for-headers;
+  &:hover{
+    cursor: pointer;
+  }
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, bold, 14px, 16px);
+    padding: 15px 35px;
+  }
+}
