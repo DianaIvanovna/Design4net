@@ -64,7 +64,15 @@
       box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
     }
   }
-
+  @media screen and (min-width: 1024px) and (min-height: 600px){
+    .elipse-4{
+      width: 450px;
+      height:450px;
+      border:   #0D9A34 solid 22px;
+      right: -244px;
+      bottom: -210px;
+    }
+  }
   @media screen and (max-width: 1024px){
 
     .elipse-1{

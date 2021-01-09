@@ -1,0 +1,39 @@
+@import "./_active/header__link_active.scss";
+
+.header__link{
+
+  @include fontValue(normal, normal, 12px, 14px);
+  color: $text-for-headers;
+  color: #FFFFFF;
+  margin: 0px;
+  text-decoration: none;
+
+  height: 100%;
+  display: flex;
+  align-items: center ;
+  padding: 0px 10px;
+  text-align: center;
+
+  position: relative;
+  &:hover{
+    cursor: pointer;
+  }
+
+}
+.header__link_dropdown{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: max-content;
+  span{
+    height: 42px;
+    display: flex;
+    align-items: center;
+  }
+  &:hover{
+    .header__dropdown{
+      display: block;
+    }
+  }
+}
+

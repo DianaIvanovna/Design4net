@@ -1,6 +1,6 @@
-h1{
-  color:green;
-  h2{
-    color:black;
-  }
-}
+@import "./vendor/normalize.css";
+@import "./vendor/font/roboto.css";
+@import "./vendor/variables.scss";
+
+@import "./blocks/header/header.scss";
+@import "./blocks/background/background.scss";
