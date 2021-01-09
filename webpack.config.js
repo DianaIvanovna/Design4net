@@ -11,6 +11,7 @@ module.exports = {
   entry: {
     main: './src/index.js',
     reconstructionStub: './src/pages/reconstructionStub/reconstructionStub.js',
+    developmentStud: './src/pages/developmentStud/developmentStud.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -91,6 +92,11 @@ module.exports = {
       inject: false,
       template: './src/pages/reconstructionStub/reconstructionStub.html',
       filename: 'reconstructionStub.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/pages/developmentStud/developmentStud.html',
+      filename: 'developmentStud.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

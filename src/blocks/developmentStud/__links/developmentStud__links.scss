@@ -1,0 +1,21 @@
+.developmentStud__links{
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  justify-content: flex-end;
+  li{
+    margin-right: 12px;
+    width: 26px;
+    height: 26px;
+  }
+  li:last-of-type{
+    margin-right: 0px;
+  }
+  @media screen and (max-width: 700px){
+    li{
+      background:linear-gradient(180deg, #A9DCC0 0%, #3E8F63 0.01%, #2B503C 99.98%, #486455 99.99%);;
+      border-radius: 50%;
+    }
+  }
+
+}

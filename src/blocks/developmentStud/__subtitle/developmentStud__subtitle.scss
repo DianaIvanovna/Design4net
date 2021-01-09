@@ -1,0 +1,8 @@
+.developmentStud__subtitle{
+  @include fontValue(normal, normal, 14px, 16px);
+  color: $text-for-headers;
+  margin: 0px;
+  @media screen and (max-width: 700px){
+    color: $background-color;
+  }
+}

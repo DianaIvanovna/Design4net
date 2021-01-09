@@ -1,0 +1,17 @@
+.developmentStud__condition{
+  @include fontValue(normal, bold, 24px, 98%);
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  margin: 0px;
+
+  @media screen and (max-width: 800px){
+    @include fontValue(normal, bold, 18px, 98%);
+  }
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, bold, 14px, 98%);
+  }
+  @media screen and (max-width: 450px){
+    @include fontValue(normal, bold, 11px, 98%);
+  }
+}
