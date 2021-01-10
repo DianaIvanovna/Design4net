@@ -5,13 +5,21 @@
   color: #FFFFFF;
   margin: 0px;
 
-  @media screen and (max-width: 800px){
+  @media screen and (min-width: 1440px) {
+    @include fontValue(normal, bold, 24px, 98%);
+  }
+
+  @media screen and (max-width: 1440px){
+    max-width: 80%;
+    margin: 0px auto;
+    font-size:  calc(18px + 6 * ((100vw - 320px) / 680));
+  }
+  @media screen  and (min-width: 800px) and (max-height: 900px) {
     @include fontValue(normal, bold, 18px, 98%);
   }
   @media screen and (max-width: 600px){
-    @include fontValue(normal, bold, 14px, 98%);
+    font-size: calc(11px + 6 * ((100vw - 320px) / 200));
   }
-  @media screen and (max-width: 450px){
-    @include fontValue(normal, bold, 11px, 98%);
-  }
+
+
 }

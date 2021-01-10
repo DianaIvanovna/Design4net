@@ -9,15 +9,15 @@
 
 
 
-  @media screen and (max-width: 800px){
-    @include fontValue(normal, bold, 28px, 98%);
+
+  @media screen and (min-width: 1440px) {
+    @include fontValue(normal, bold, 36px, 98%);
+  }
+  @media screen and (max-width: 1440px){
+    font-size: calc(26px + 6 * ((100vw - 320px) / 680));
   }
   @media screen and (max-width: 600px){
-    @include fontValue(normal, bold, 22px, 98%);
-    margin-bottom: 10px;
-  }
-  @media screen and (max-width: 450px){
-    @include fontValue(normal, bold, 18px, 98%);
+    font-size: calc(18px + 6 * ((100vw - 320px) / 680));
     margin-bottom: 10px;
   }
 

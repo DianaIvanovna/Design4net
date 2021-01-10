@@ -10,6 +10,9 @@
   letter-spacing: 0.025em;
   border: none;
   margin-top: 20px;
+  &:hover{
+    cursor: pointer;
+  }
 
 
   @media screen and (max-width: 1024px){
