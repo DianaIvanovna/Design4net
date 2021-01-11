@@ -1,0 +1,28 @@
+@import "./__contant/main-square__contant.scss";
+@import "./__item/main-square__item.scss";
+@import "./__line/main-square__line.scss";
+@import "./__square/main-square__square.scss";
+@import "./__title/main-square__title.scss";
+.main-square{
+  position: absolute;
+
+  box-sizing: border-box;
+  width:  464px;
+  height:  464px;
+  border: #FFFFFF solid 6px;
+  border-radius: 50%;
+
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 23px;
+    width:  406px;
+    height:  406px;
+    border: #077C27 solid 20px;
+
+    border-radius: 50%;
+  }
+
+}

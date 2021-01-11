@@ -1,0 +1,28 @@
+.website-promotion__item-text{
+  @include fontValue(normal, 900, 14px, 16px);
+  color: #444444;
+  text-align: center;
+  width: 108px;
+  margin: 0px;
+  margin-top: 9px;
+  @media screen and (max-width: 768px) {
+    @include fontValue(normal, 900, 16px, 18px);
+
+  }
+  @media screen and (max-width: 550px) {
+    @include fontValue(normal, 900, 32px, 36px);
+    position: absolute;
+    left: -10%;
+    top: 100%;
+    width: 300px;
+  }
+}
+.website-promotion__item-text_up{
+  @media screen and (max-width: 550px) {
+    @include fontValue(normal, 900, 32px, 36px);
+    position: absolute;
+    left: -35%;
+    top: -60px;
+    width: 400px;
+  }
+}

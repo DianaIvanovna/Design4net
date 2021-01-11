@@ -1,0 +1,57 @@
+.website-promotion__item{
+  width: 95%;
+  min-width: 1000px;
+  height: 235px;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+  position: absolute;
+
+  .website-promotion__square{
+    .website-promotion__item-content{
+      transform: rotate(-90deg); // везде - 90 градусов, так надо, чтобы маленькие шарики норм стояли
+    }
+  }
+
+  &:nth-child(1) {
+    transform: rotate(60deg);
+    .website-promotion__square{
+      .website-promotion__item-content{
+
+        transform: rotate(-150deg);
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    transform: rotate(120deg);
+    .website-promotion__square{
+      .website-promotion__item-content{
+        transform: rotate(-210deg);
+      }
+    }
+  }
+  &:nth-child(3) {
+    transform: rotate(180deg);
+    .website-promotion__square{
+      .website-promotion__item-content{
+        transform: rotate(-270deg);
+      }
+    }
+  }
+  &:nth-child(4) {
+    transform: rotate(240deg);
+    .website-promotion__square{
+      .website-promotion__item-content{
+        transform: rotate(-330deg);
+      }
+    }
+  }
+  &:nth-child(5) {
+    transform: rotate(300deg);
+    .website-promotion__square{
+      .website-promotion__item-content{
+        transform: rotate(-30deg);
+      }
+    }
+  }
+}
