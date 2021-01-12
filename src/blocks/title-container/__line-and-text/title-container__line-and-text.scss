@@ -3,6 +3,9 @@
   align-items: center;
   position: relative;
   justify-content: center;
+  .title-container__title{
+    margin-left: 0px;
+  }
   .title-container__line {
     display: flex;
     align-items: center;

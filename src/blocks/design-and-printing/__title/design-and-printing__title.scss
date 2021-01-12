@@ -1,0 +1,16 @@
+.design-and-printing__title{
+  @include fontValue(normal,900, 24px,28px );
+  text-align: center;
+  width: 100%;
+  color: $text-for-headers;
+  margin: 0px;
+  padding: 10px 20px 5px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 35%;
+  left: 0px;
+  @media screen and (max-width: 600px){
+    top: 25%;
+    @include fontValue(normal,900, 22px,24px );
+  }
+}
