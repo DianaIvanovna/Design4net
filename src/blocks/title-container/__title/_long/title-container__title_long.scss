@@ -1,5 +1,4 @@
-.stages-work__title{
-
+.title-container__title.title-container__title_long{
   @include fontValue(normal, 900, 48px, 56px);
   color: $text-for-headers;
   text-align: center;
@@ -15,18 +14,22 @@
     color: $text-for-headers;
   }
   @media screen and (max-width: 1024px){
-    @include fontValue(normal, 900, 42px, 48px);
+    @include fontValue(normal, 900, 36px, 42px);
     span{
-      @include fontValue(normal, 200, 34px, 38px);
+      @include fontValue(normal, 200, 32px, 36px);
+    }
+  }
+  @media screen and (max-width: 768px){
+    @include fontValue(normal, 900, 32px, 38px);
+    span{
+      @include fontValue(normal, 200, 28px, 32px);
     }
   }
 
   @media screen and (max-width: 600px){
-    @include fontValue(normal, 900, 32px, 36px);
+    @include fontValue(normal, 900, 24px, 28px);
     span{
-      @include fontValue(normal, 200, 24px, 28px);
+      @include fontValue(normal, 200, 18px, 22px);
     }
   }
-
-
 }

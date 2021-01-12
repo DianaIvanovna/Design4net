@@ -1,0 +1,11 @@
+.technical-support__title{
+  @include fontValue(normal, bold,24px,126.69%);
+  letter-spacing: 0.02em;
+  color: $text-for-headers;
+  margin: 0px;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, bold,18px,126.69%);
+  }
+}

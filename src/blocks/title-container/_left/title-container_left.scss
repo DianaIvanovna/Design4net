@@ -1,0 +1,24 @@
+.title-container_left{
+  margin: 42px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .title-container__line-and-text{
+    position: relative;
+    top: -20px;
+    @media screen and (max-width: 1024px){
+      top: -15px;
+    }
+
+    @media screen and (max-width: 600px){
+      top: -10px;
+    }
+    .title-container__line {
+      background: #0D9A34;
+      margin: 0px;
+      margin-right: 7px ;
+    }
+  }
+
+
+}

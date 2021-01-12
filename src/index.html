@@ -122,17 +122,19 @@
                 <h3 class="creating-websites__name">Онлайн сервис</h3>
               </div>
             </div>
-            <form name="orderСonsultation" class="creating-websites__form">
 
-              <input type="text" name="name" class="creating-websites__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+            <form name="creatingWebsitesСonsultation" class="form-consultation">
+
+              <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
               <span class="error error__name"></span>
 
-              <input type="text" name="phone" class="creating-websites__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+              <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
               <span class="error error__phone"></span>
 
-              <button class="creating-websites__button">заказать консультацию</button>
+              <button class="form-consultation__button">заказать консультацию</button>
 
             </form>
+
 
           </div>
 
@@ -141,10 +143,10 @@
 
       <!-- СЕКЦИЯ С ЭТАПАМИ РАЗРАБОТКИ -->
         <section class="stages-work">
-          <div class="stages-work__title-container">
-            <div class="stages-work__line"></div>
-            <h2 class="stages-work__title">ЭТАПЫ <span>работы</span></h2>
-            <div class="stages-work__line"></div>
+          <div class="title-container">
+            <div class="title-container__line"></div>
+            <h2 class="title-container__title">ЭТАПЫ <span>работы</span></h2>
+            <div class="title-container__line"></div>
           </div>
           <div class="stages-work__container">
             <div class="stages-work__img-container">
@@ -312,13 +314,14 @@
 
     <div class="page_base">
       <div class="content">
+        <!-- НАШИ КЛИЕНТЫ  -->
         <section class="our-client">
 
-          <div class="our-client__title-container">
-            <h2 class="our-client__title">НАШИ</h2>
-            <div class="our-client__subtitle">
-              <div class="our-client__line"></div>
-              <p>Клиенты </p>
+          <div class="title-container title-container_left">
+            <h2 class="title-container__title">НАШИ</h2>
+            <div class="title-container__line-and-text">
+              <div class="title-container__line"></div>
+              <p class="title-container__subtitle">Клиенты</p>
             </div>
           </div>
 
@@ -383,14 +386,75 @@
           </div>
 
         </section>
+        <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
+        <!-- АДМИНИСТРИРОВАНИЕ и техническая поддержка -->
+        <section class="technical-support">
+
+          <div class="title-container">
+            <div class="title-container__line"></div>
+            <h2 class="title-container__title title-container__title_long">АДМИНИСТРИРОВАНИЕ <span>и техническая поддержка</span></h2>
+            <div class="title-container__line"></div>
+          </div>
+
+          <div class="technical-support__content">
+            <div class="technical-support__container">
+
+              <div class="technical-support__item">
+                <img src="<%=require('./images/technical-support/gear.png').default%>" alt="иконка шестеренки" class="technical-support__img">
+                <h4 class="technical-support__item-name">Технические доработки</h4>
+                <div class="technical-support__line"></div>
+                <p class="technical-support__title">Proin gravida dolor</p>
+                <div class="technical-support__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</div>
+              </div>
+              <div class="technical-support__item">
+                <img src="<%=require('./images/technical-support/gear.png').default%>" alt="Контент поддержка" class="technical-support__img">
+                <h4 class="technical-support__item-name">Контент поддержка</h4>
+                <div class="technical-support__line"></div>
+                <p class="technical-support__title">Proin gravida dolor</p>
+                <div class="technical-support__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</div>
+              </div>
+              <div class="technical-support__item">
+                <img src="<%=require('./images/technical-support/support.png').default%>" alt="иконка модернизация сайта"  class="technical-support__img">
+                <h4 class="technical-support__item-name">Модернизация сайта</h4>
+                <div class="technical-support__line"></div>
+                <p class="technical-support__title">Proin gravida dolor</p>
+                <div class="technical-support__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <form name="creatingWebsitesСonsultation" class="form-consultation form-consultation_dark">
+            <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+            <span class="error error__name"></span>
+            <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+            <span class="error error__phone"></span>
+            <button class="form-consultation__button">заказать консультацию</button>
+          </form>
+        </section>
+        <!-- конец АДМИНИСТРИРОВАНИЕ и техническая поддержка -->
+
+        <section class="design-and-printing">
+
+          <div class="title-container title-container_right">
+            <div class="title-container__line-and-text">
+              <h2 class="title-container__title">ДИЗАЙН</h2>
+              <div class="title-container__line"></div>
+            </div>
+            <p class="title-container__subtitle">и полиграфия</p>
+          </div>
+
+          <div class="design-and-printing__content">
+
+          </div>
+
+
+        </section>
+
+
+
       </div>
     </div>
-
-
-
-
-
-
 
 
 

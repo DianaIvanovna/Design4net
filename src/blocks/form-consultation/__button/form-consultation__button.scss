@@ -1,4 +1,4 @@
-.creating-websites__button{
+.form-consultation__button{
   background: linear-gradient(180deg, #B43939 31.25%, #812020 100%);
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -25,5 +25,4 @@
   @media screen and (max-width: 600px){
     @include fontValue(normal, bold, 14px, 16px);
   }
-
 }

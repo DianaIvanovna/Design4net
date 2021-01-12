@@ -1,0 +1,10 @@
+.technical-support__item{
+  width: 100%;
+  max-width: 290px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 600px){
+    margin-right: 0px;
+  }
+}

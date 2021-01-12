@@ -1,0 +1,13 @@
+@import "./__title/title-container__title.scss";
+@import "./__line/title-container__line.scss";
+@import "./__subtitle/title-container__subtitle.scss";
+@import "./__line-and-text/title-container__line-and-text.scss";
+@import "./_right/title-container_right.scss";
+@import "./_left/title-container_left.scss";
+.title-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+
+}

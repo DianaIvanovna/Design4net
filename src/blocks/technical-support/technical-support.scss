@@ -1,0 +1,14 @@
+@import "./__container/technical-support__container.scss";
+@import "./__img/technical-support__img.scss";
+@import "./__item-name/technical-support__item-name.scss";
+@import "./__item/technical-support__item.scss";
+@import "./__line/technical-support__line.scss";
+@import "./__text/technical-support__text.scss";
+@import "./__title/technical-support__title.scss";
+.technical-support{
+  width: 100%;
+  padding-top: 50px;
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 0px 0px 15px 15px;
+}
+
