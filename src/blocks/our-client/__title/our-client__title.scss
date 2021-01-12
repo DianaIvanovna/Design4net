@@ -1,0 +1,13 @@
+.our-client__title {
+  @include fontValue(normal, 900, 48px, 56px);
+  color: $text-for-headers;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+  @media screen and (max-width: 1024px){
+    @include fontValue(normal, 900, 42px, 48px);
+  }
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, 900, 32px, 36px);
+  }
+}

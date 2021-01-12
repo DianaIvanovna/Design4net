@@ -1,0 +1,31 @@
+.our-client__button{
+  background: none;
+  border: none;
+  width: 20px;
+  height: 37px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: calc(50% - 18px);
+
+}
+.our-client__button_left{
+  left: 15px;
+}
+.our-client__button_right{
+  right: 15px;
+}
+@media screen and (max-width:1024px){
+  // .our-client__button{
+  //   width: 20px;
+  //   height: 37px;
+  //   top: calc(50% - 18px);
+
+  // }
+  .our-client__button_left{
+    left: 5px;
+  }
+  .our-client__button_right{
+    right: 5px;
+  }
+}
