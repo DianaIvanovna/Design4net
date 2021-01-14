@@ -39,7 +39,6 @@ import "./main.scss";
   let scaleBigPhoto = 1.5;
 
   const windowWidth = document.documentElement.clientWidth;
-  console.log(carousel.offsetWidth);
   if (windowWidth < 768 && windowWidth >=720 ){
     marginClient = 15;
   } else if (windowWidth < 720 && windowWidth >=500){

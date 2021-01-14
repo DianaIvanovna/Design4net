@@ -1,0 +1,11 @@
+.advantages__name{
+  @include fontValue(normal, 900, 24px, 28px);
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-for-headers;
+  margin: 0px;
+  padding: 0px 5px;
+  @media screen and (max-width: 1200px) {
+    @include fontValue(normal, 900, 18px, 22px);
+  }
+}
