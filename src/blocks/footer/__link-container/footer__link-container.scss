@@ -1,0 +1,12 @@
+
+.footer__link-container{
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  &:last-of-type{
+    padding-right: 0px;
+  }
+  position: relative;
+}
+@import "./_dropdown/footer__link-container_dropdown.scss";
+@import "./_logo/footer__link-container_logo.scss";

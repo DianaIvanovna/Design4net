@@ -1,0 +1,11 @@
+.footer__logo{
+  padding: 20px 22px;
+  background: #D9D9D9;
+  margin-bottom: 20px;
+  width: max-content;
+  span{
+    display: block;
+    @include fontValue(normal, bold, 28px, 33px);
+    color: #FFFFFF;
+  }
+}

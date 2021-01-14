@@ -1,0 +1,14 @@
+
+@import "./_dropdown/footer__link_dropdown.scss";
+@import "./_secondary/footer__link_secondary.scss";
+.footer__link{
+  @include fontValue(normal, bold, 18px, 21px);
+  color: #474747;
+  text-decoration: none;
+
+  margin: 0px;
+  margin-bottom: 25px;
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, bold, 16px, 18px);
+  }
+}

@@ -1,0 +1,12 @@
+.footer__link_secondary{
+  @include fontValue(normal, normal, 12px, 14px);
+  color: #747474;
+  text-decoration: none;
+  a{
+    @include fontValue(normal, normal, 12px, 14px);
+    color: #747474;
+    text-decoration: none;
+  }
+  margin: 0px;
+  margin-bottom: 25px;
+}
