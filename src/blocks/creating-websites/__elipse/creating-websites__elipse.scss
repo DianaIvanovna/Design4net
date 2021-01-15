@@ -1,0 +1,14 @@
+.creating-websites__elipse{
+  width: 244px;
+  height: 244px;
+  background-color:  $elipse-color;
+  left: -8%;
+  bottom: -80px;
+  border-radius: 50%;
+  @media screen and (max-width:600px){
+    width: 150px;
+    height: 150px;
+    left: -15%;
+    bottom: -60px;
+  }
+}

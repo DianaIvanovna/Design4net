@@ -1,0 +1,13 @@
+.goUp{
+  display: none;
+  position: fixed;
+  bottom: 12px;
+  right: calc( 50% - 25px );
+  z-index: 8;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.goUp_show{
+  display: block;
+}

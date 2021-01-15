@@ -1,5 +1,6 @@
 $background-color: #39604B;
 $secondary-color: #0D9A34;
+$elipse-color: #0D9A34 ;
 $attention: #B43939;
 $attention-second: #D8FD00;
 $text-color: #444444;
@@ -20,4 +21,13 @@ $text-color-second:#C4C4C4;
   font-size:  $size;
   line-height: $height;
 }
+
+button:focus {
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+}
+input {outline:none;}
+
 

@@ -1,4 +1,5 @@
 @import "./_active/header__link_active.scss";
+@import "./_dropdown/header__link_dropdown.scss";
 
 .header__link{
 
@@ -23,20 +24,7 @@
   }
 
 }
-.header__link_dropdown{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: max-content;
-  span{
-    height: 42px;
-    display: flex;
-    align-items: center;
-  }
-  &:hover{
-    .header__dropdown{
-      display: block;
-    }
-  }
-}
+
+
+
 

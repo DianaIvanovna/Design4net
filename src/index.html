@@ -10,14 +10,29 @@
 </head>
 <body>
     <div class="page_home" >
+      <!-- круги на фоне-->
+      <div class="elipse elipse-1"></div>
+      <div class="elipse elipse-2"></div>
+      <div class="elipse elipse-3"></div>
+      <div class="elipse elipse-4"></div>
+      <div class="elipse elipse-5"></div>
+      <!--круги на фоне -->
+
 
       <!-- HEADER -->
       <div class="background__mobile"></div>
       <header class="header">
         <nav class="header__links">
-          <a href="" class="header__link">Разработка сайтов</a>
-          <div class="header__link header__link_dropdown ">
-            <span class="">Продвижение</span>
+          <div class="header__dropdown-container ">
+            <a href="#" class="header__link header__link_dropdown">Разработка сайтов</a>
+            <ul class="header__dropdown">
+              <li><a href="#">Лендинг</a></li>
+              <li><a href="#">Корпоративный сайт</a></li>
+              <li><a href="#">Интернет магазин</a></li>
+            </ul>
+          </div>
+          <div class="header__dropdown-container ">
+            <a href="#" class="header__link header__link_dropdown">Продвижение</a>
             <ul class="header__dropdown">
               <li><a href="#">Контекстная реклама</a></li>
               <li><a href="#">Продвижение в социальных сетях (SMM)</a></li>
@@ -84,6 +99,7 @@
 
       <!-- СЕКЦИЯ СОЗДАНИЕ САЙТОВ -->
         <section class="creating-websites">
+          <div class="elipse creating-websites__elipse"></div>
           <div class="creating-websites__title-container">
             <div class="elipses_for-creating-websites">
               <div class="elipse"></div>
@@ -150,6 +166,8 @@
           </div>
           <div class="stages-work__container">
             <div class="stages-work__img-container">
+              <div class="elipse stages-work__elipse_2"></div>
+              <div class="elipse stages-work__elipse_3"></div>
               <img src="<%=require('./images/pictures/stages-work-pictures-1.png').default%>" alt="картинка этапов разработки" class="stages-work__img stages-work__img_1">
               <div class="stages-work__img_2-4">
                 <img src="<%=require('./images/pictures/stages-work-pictures-2.png').default%>" alt="картинка этапов разработки" class="stages-work__img stages-work__img_2">
@@ -160,6 +178,7 @@
             </div>
 
             <div class="stages-work__right" >
+              <div class="elipse stages-work__elipse"></div>
               <div class="stages-work__icons">
                 <img src="<%=require('./images/icon/stages-work_progect.png').default%>" alt="иконка этапа работы" class="">
                 <img src="<%=require('./images/icon/arrow.svg').default%>" alt="иконка стрелки">
@@ -310,11 +329,12 @@
         <!-- КОНЕЦ ПРОДВИЖЕНИЕ САЙТОВ -->
       </div>
     </div>
-
     <div class="page_base">
       <div class="content">
         <!-- НАШИ КЛИЕНТЫ  -->
         <section class="our-client">
+          <div class="elipse our-client__elipse-1"></div>
+          <div class="elipse our-client__elipse-2"></div>
 
           <div class="title-container title-container_left">
             <h2 class="title-container__title">НАШИ</h2>
@@ -388,6 +408,7 @@
         <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
         <!-- АДМИНИСТРИРОВАНИЕ и техническая поддержка -->
         <section class="technical-support">
+          <div class="elipse technical-support__elipse"></div>
 
           <div class="title-container">
             <div class="title-container__line"></div>
@@ -484,6 +505,9 @@
 
         <!-- Преимущества-->
         <section class="advantages">
+
+          <div class="elipse technical-support__elipse_1"></div>
+          <div class="elipse technical-support__elipse_2"></div>
 
           <div class="title-container title-container_red">
             <div class="title-container__line"></div>
@@ -611,11 +635,9 @@
       </footer>
 
     </div>
-        <!-- <%=require('./images/creating-websites/Business-card-site.png').default%> -->
-
-
-
-
+    <div class="goUp">
+      <img src="<%=require('./images/icon/goUp.svg').default%>" alt="стрелка поднятия вверх">
+    </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

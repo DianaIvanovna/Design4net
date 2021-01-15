@@ -79,3 +79,26 @@ import "./main.scss";
   })
 })();
 
+(function () {
+
+  const goUp = document.querySelector('.goUp');
+  window.addEventListener('scroll',()=>{
+    let scrolled = window.pageYOffset;
+    if (scrolled > 500) {
+      goUp.classList.add('goUp_show');
+    }else {
+      goUp.classList.remove('goUp_show');
+    }
+  })
+  goUp.addEventListener('click', (event)=>{
+    event.preventDefault();
+    window.scroll({
+      left:0,
+      top: 0,
+      behavior: 'smooth'
+    });
+  })
+
+
+})();
+

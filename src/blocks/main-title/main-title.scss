@@ -10,9 +10,10 @@
 @import "./__links/main-title__links.scss";
 
 .main-title{
-  margin: 102px auto 0px;
+  margin: 122px auto 0px;
   display: flex;
   flex-direction: column;
+  position: relative;
   @media screen and (max-width: 600px){
     margin: 82px auto 0px;
   }
