@@ -1,3 +1,4 @@
+@import './_big/promotion-stage__container_big.scss';
 .promotion-stage__container{
   width: 100%;
   display: flex;
@@ -10,5 +11,8 @@
   box-sizing: border-box;
   @media screen and (max-width:1024px){
     padding: 20px;
+  }
+  @media screen and (max-width:600px){
+    padding: 10px;
   }
 }

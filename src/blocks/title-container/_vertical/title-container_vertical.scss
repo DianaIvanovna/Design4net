@@ -1,0 +1,15 @@
+.title-container_vertical{
+  margin: 42px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .title-container__line{
+    height: 80%;
+    width: 2.02px;
+    left:0px;
+    top: 10px;
+    position: absolute;
+  }
+  position: relative;
+}
+

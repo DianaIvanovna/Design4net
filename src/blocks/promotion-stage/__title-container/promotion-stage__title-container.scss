@@ -1,8 +1,10 @@
-@import "./_active/promotion-stage__title_active.scss";
+@import "./_smm/promotion-stage__title-container_smm.scss";
 .promotion-stage__title-container{
   width: 100%;
   display: flex;
+  justify-content: flex-end;
   @media screen  and (max-width:768px){
     flex-direction: column;
   }
 }
+

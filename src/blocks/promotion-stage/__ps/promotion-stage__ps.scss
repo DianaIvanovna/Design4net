@@ -1,0 +1,7 @@
+.promotion-stage__ps{
+  @include fontValue(normal, normal, 14px, 18px);
+  letter-spacing: 0.02em;
+  color: $text-color;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}

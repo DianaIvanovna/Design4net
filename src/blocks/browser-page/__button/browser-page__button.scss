@@ -1,0 +1,19 @@
+.browser-page__button{
+  padding: 15px 40px;
+  background: linear-gradient(180deg, #B43939 0%, #812020 100%);
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+  @include fontValue(normal, bold, 18px, 21px);
+  color: #FFFFFF;
+
+  border-radius: 15px;
+  margin-top: 40px;
+  @media screen and (max-width:600px){
+    @include fontValue(normal, bold, 16px, 18px);
+    padding: 15px 20px;
+  }
+
+}
