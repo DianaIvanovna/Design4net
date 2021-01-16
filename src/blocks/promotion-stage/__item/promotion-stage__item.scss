@@ -5,6 +5,13 @@
   color: $text-color;
   margin-bottom: 10px;
 
+  width: 100%;
+  max-width: 444px;
+
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 20px;
+
   @media screen and (max-width:1024px){
     @include fontValue(normal, normal, 16px,126.69%);
   }
@@ -15,7 +22,11 @@
 
   &::before{
     content: "";
-    display: inline-block;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+
     flex-basis: auto;
     width: 13px;
     height: 13px;

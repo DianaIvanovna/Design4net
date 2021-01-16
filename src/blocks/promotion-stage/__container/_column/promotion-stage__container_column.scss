@@ -1,0 +1,22 @@
+.promotion-stage__container.promotion-stage__container_column{
+  display: none;
+}
+.promotion-stage__container.promotion-stage__container_column_active{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-image: url("../../images/promotion-page/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (max-width:600px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .promotion-stage__list.promotion-stage__list_column{
+    width: 100%;
+
+  }
+}

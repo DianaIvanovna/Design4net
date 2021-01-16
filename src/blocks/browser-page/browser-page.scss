@@ -4,10 +4,15 @@
 @import "./__title-container/browser-page__title-container.scss";
 @import "./__title/browser-page__title.scss";
 @import "./__button/browser-page__button.scss";
+@import "./__line/browser-page__line.scss";
 
 .browser-page{
   margin-top: 20px;
   width: 100%;
   position: relative;
+  margin-bottom: 90px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 45px;
+  }
 }
 

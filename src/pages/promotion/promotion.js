@@ -3,7 +3,7 @@ import "./promotion.scss";
 
 (function () {
   // чтобы функция работала нормально, нужно чтобы этапы работы стояли в html по порядку. подумай как исправить
-  const contextAdvertising = document.querySelector(".context-advertising");
+  const contextAdvertising = document.querySelector(".promotion__context-advertising");
   const stageTitles = contextAdvertising.querySelectorAll(".promotion-stage__title");
   const stageInfo = contextAdvertising.querySelectorAll(".promotion-stage__info");
 
@@ -16,6 +16,26 @@ import "./promotion.scss";
       stageInfo.forEach((item,index)=>{
         if (index == indexStage) item.classList.add("promotion-stage__info_active");
         else item.classList.remove("promotion-stage__info_active")
+      })
+    } )
+  })
+})();
+(function () {
+  const searchPromotion = document.querySelector(".promotion__search-promotion");
+  const stageTitles = searchPromotion.querySelectorAll(".promotion-stage__title");
+  const stageInfo = searchPromotion.querySelectorAll(".promotion-stage__container");
+  console.log(stageTitles);
+
+  stageTitles.forEach((title, indexStage)=>{
+    title.addEventListener('click',(event)=>{
+      stageTitles.forEach((item,index)=>{
+        console.log("!");
+        if (index == indexStage) item.classList.toggle("promotion-stage__title_search-promotion-active");
+        else item.classList.remove("promotion-stage__title_search-promotion-active")
+      })
+      stageInfo.forEach((item,index)=>{
+        if (index == indexStage) item.classList.toggle("promotion-stage__container_column_active");
+        else item.classList.remove("promotion-stage__container_column_active")
       })
     } )
   })
