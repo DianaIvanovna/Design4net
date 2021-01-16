@@ -1,0 +1,16 @@
+.promotion__description{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+  width: 50%;
+  box-sizing: border-box;
+  @media screen and (max-width:1024px){
+    width: 100% ;
+  }
+  @media screen and (max-width:600px){
+    padding-left: 0px;
+  }
+}
+

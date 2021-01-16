@@ -1,0 +1,8 @@
+.promotion__header{
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width:1024px){
+    flex-direction: column;
+
+  }
+}

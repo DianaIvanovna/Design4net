@@ -1,0 +1,8 @@
+@import "./_active/promotion-stage__title_active.scss";
+.promotion-stage__title-container{
+  width: 100%;
+  display: flex;
+  @media screen  and (max-width:768px){
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,10 @@
+.promotion__line{
+  position: absolute;
+  height: 80%;
+  min-height: 216px;
+  top: 44px;
+  left: 0px;
+  @media screen and (max-width:600px){
+    left: -40px;
+  }
+}

@@ -1,0 +1,17 @@
+.form-consultation.form-consultation_small{
+  padding: 31px 0px 0px;
+  border-top: 1px solid #CBCBCB;
+  .form-consultation__input{
+    max-width: 261px;
+    border-radius: 5px;
+  }
+  .form-consultation__button{
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    @media screen and (max-width: 600px){
+      @include fontValue(normal, bold, 14px, 16px);
+      padding:  10px 15px;
+    }
+  }
+
+}
