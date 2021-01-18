@@ -1,0 +1,48 @@
+.browser-stage__title.browser-stage__title_technicalSupport{
+  width: 100%;
+  padding: 0px;
+  position: relative;
+
+  .browser-stage__name{
+    font-weight: bold;
+  }
+  &:hover{
+    .browser-stage__name{
+      color: $attention;
+    }
+  }
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0px ;
+    bottom: 10px;
+    border: 10px solid transparent;
+    border-top: 10px solid $attention;
+  }
+}
+
+
+
+.browser-stage__title.browser-stage__title_technicalSupport-active{
+  padding-bottom: 5px;
+  .browser-stage__name{
+    font-weight: bold;
+    color: $attention;
+  }
+  border-bottom: 1px solid $attention;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0px ;
+    bottom: 15px;
+
+    border: 10px solid transparent;
+    border-left: 10px solid $attention;
+    @media screen and (max-width:1024px){
+    }
+  }
+
+}

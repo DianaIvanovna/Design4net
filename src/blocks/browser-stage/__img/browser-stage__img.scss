@@ -1,0 +1,10 @@
+.browser-stage__img{
+  border-radius: 5px;
+  align-self: flex-start;
+  width:  48%;
+  max-width: 410px;
+  @media screen and (max-width:1024px){
+    width: 100%;
+    align-self: auto;
+  }
+}

@@ -1,0 +1,20 @@
+.browser-page__button_bunner-2{
+  border: 2px solid #ADF300;
+  background:none;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 563px;
+  height: 55px;
+
+  @include fontValue(normal,bold,24px,28px);
+  @media screen and ( max-width: 1024px){
+    @include fontValue(normal,bold,22px,24px);
+  }
+  @media screen and ( max-width: 768px){
+    @include fontValue(normal,bold,18px,22px);
+  }
+  @media screen and ( max-width: 600px){
+    @include fontValue(normal,bold,14px,16px);
+  }
+  color: $text-for-headers;
+}

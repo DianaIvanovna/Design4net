@@ -1,0 +1,12 @@
+@import "./_column/browser-stage__list_column.scss";
+@import "./_technicalSupport/browser-stage__list_technicalSupport.scss";
+
+.browser-stage__list{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px 20px;
+  width: 100%;
+  @media screen and (max-width:1024px){
+    margin: 20px 0px 0px ;
+  }
+}

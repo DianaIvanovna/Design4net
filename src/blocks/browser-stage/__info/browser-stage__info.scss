@@ -1,0 +1,11 @@
+.browser-stage__info{
+  display: none;
+  justify-content: space-between;
+
+  @media screen and (max-width:1024px){
+    flex-direction: column;
+  }
+}
+.browser-stage__info_active{
+  display: flex;
+}

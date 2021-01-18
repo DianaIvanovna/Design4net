@@ -3,6 +3,7 @@
 @import "./_dark/form-consultation_dark.scss";
 @import "./_small/form-consultation_small.scss";
 .form-consultation{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;

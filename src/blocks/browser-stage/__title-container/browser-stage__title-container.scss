@@ -1,0 +1,10 @@
+@import "./_smm/browser-stage__title-container_smm.scss";
+.browser-stage__title-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  @media screen  and (max-width:768px){
+    flex-direction: column;
+  }
+}
+
