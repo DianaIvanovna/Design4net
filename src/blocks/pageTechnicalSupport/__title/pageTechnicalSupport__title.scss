@@ -1,0 +1,18 @@
+.pageTechnicalSupport__title{
+  @include fontValue(normal, bold, 18px, 126%);
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: $text-color;
+
+  margin: 0px;
+  margin-top: 10px;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 75px;
+    height: 1px;
+    background: $attention;
+    margin: 24px auto 14px;
+  }
+}

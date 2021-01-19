@@ -1,3 +1,14 @@
+@import "./__item/pageTechnicalSupport__item.scss";
+@import "./__list-item/pageTechnicalSupport__list-item.scss";
+@import "./__list/pageTechnicalSupport__list.scss";
+@import "./__text/pageTechnicalSupport__text.scss";
+@import "./__title/pageTechnicalSupport__title.scss";
+@import "./_end/pageTechnicalSupport_end.scss";
+
 .pageTechnicalSupport{
+  width: 100%;
   margin-top: 42px;
+  .browser-page{
+    margin-bottom: 0px;
+  }
 }

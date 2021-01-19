@@ -1,0 +1,11 @@
+.pageTechnicalSupport__text{
+  width: 100%;
+
+  @include fontValue(normal,normal,14px,126.69%);
+  letter-spacing: 0.02em;
+  color: $text-color;
+
+  margin: 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #CDCDCD;
+}

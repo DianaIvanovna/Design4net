@@ -1,4 +1,5 @@
 @import "./_long/browser-page__title_long.scss";
+@import "./_support/browser-page__title_support.scss";
 .browser-page__title{
   @include fontValue(normal, bold, 36px, 42px);
   color: $text-for-headers;
