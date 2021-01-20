@@ -1,5 +1,14 @@
 import "./promotion.css";
 import "./promotion.scss";
+import Header from '../../js/components/Header';
+import OurClient from '../../js/components/OurClient';
+
+(function () {
+  const header = new Header();
+  const ourClient = new OurClient("small");
+})();
+
+
 
 (function () {
   // чтобы функция работала нормально, нужно чтобы этапы работы стояли в html по порядку. подумай как исправить
@@ -35,52 +44,5 @@ import "./promotion.scss";
         else item.classList.remove("browser-stage__container_column_active")
       })
     } )
-  })
-})();
-
-
-(function () { // ФУНКЦИЯ ДЛЯ КУРУСЕЛИ НАШИ КЛИЕНТЫ
-
-  const clientContainer = document.querySelector('.our-client__container');
-  const carousel = clientContainer.querySelector('.our-client__carousel');
-  const clientsContainer = clientContainer.querySelector('.our-client__clients');
-  const buttonLeft = clientContainer.querySelector('.our-client__button_left');
-  const buttonRight = clientContainer.querySelector('.our-client__button_right');
-  const clients = carousel.querySelectorAll('img');
-
-
-  /* конфигурация */
-  let count = 5; // видимое количество изображений
-  let marginClient = 30;
-  let position = 0; // положение ленты прокрутки
-
-  const windowWidth = document.documentElement.clientWidth;
-  if (windowWidth < 768 && windowWidth >=720 ){
-    marginClient = 15;
-  } else if (windowWidth < 720 && windowWidth >=500){
-    count = 4;
-    marginClient = 15;
-  } else if (windowWidth < 500) {
-    count = 3;
-    marginClient = 5;
-  }
-  let width = (carousel.offsetWidth - marginClient*count) / (count); // ширина обычных картинок
-
-
-  clients.forEach((client)=>{
-    client.style.width = `${width}px`;
-  })
-
-  buttonLeft.addEventListener('click', ()=>{ // сдвиг влево
-    if ((position + width + marginClient <= 0)){
-      position = position + width + marginClient;
-      clientsContainer.style.transform = `translateX(${position}px)`;
-    }
-  })
-  buttonRight.addEventListener('click', ()=>{     // сдвиг вправо
-    if (!(-width * (clients.length - count) >= position - width)){
-      position =position - width - marginClient;
-      clientsContainer.style.transform = `translateX(${position}px)`;
-    }
   })
 })();

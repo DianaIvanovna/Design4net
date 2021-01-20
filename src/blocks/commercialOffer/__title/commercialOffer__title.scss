@@ -1,0 +1,17 @@
+.commercialOffer__title{
+  @include fontValue(normal, bold, 36px, 126.69%);
+
+  letter-spacing: 0.02em;
+  color: $text-color;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #C4C4C4;
+
+  @media screen and (max-width:1024px){
+    @include fontValue(normal, bold, 28px, 126.69%);
+  }
+  @media screen and (max-width:600px){
+    @include fontValue(normal, bold, 24px, 126.69%);
+  }
+}

@@ -1,0 +1,7 @@
+.commercialOffer__input-hint{
+  @include fontValue(normal, bold, 10px, 126.69%);
+  letter-spacing: 0.02em;
+  color: #A8A8A8;
+  margin: 5px 0px 10px 20px;
+  width: max-content;
+}
