@@ -2,15 +2,19 @@ import "./promotion.css";
 import "./promotion.scss";
 import Header from '../../js/components/Header';
 import OurClient from '../../js/components/OurClient';
+import GoUpButton from '../../js/components/GoUpButton';
 
 (function () {
   const header = new Header();
   const ourClient = new OurClient("small");
+  const goUpButton = new GoUpButton();
 })();
 
 
 
+
 (function () {
+   // замена блоков в контексной рекламе
   // чтобы функция работала нормально, нужно чтобы этапы работы стояли в html по порядку. подумай как исправить
   const contextAdvertising = document.querySelector(".promotion__context-advertising");
   const stageTitles = contextAdvertising.querySelectorAll(".browser-stage__title");
@@ -30,6 +34,7 @@ import OurClient from '../../js/components/OurClient';
   })
 })();
 (function () {
+  // выпадающие список поисковое продвижение сайтов
   const searchPromotion = document.querySelector(".promotion__search-promotion");
   const stageTitles = searchPromotion.querySelectorAll(".browser-stage__title");
   const stageInfo = searchPromotion.querySelectorAll(".browser-stage__container");
