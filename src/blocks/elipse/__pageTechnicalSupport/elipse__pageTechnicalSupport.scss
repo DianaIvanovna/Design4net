@@ -1,0 +1,143 @@
+.elipse__pageTechnicalSupport-1{
+  width: 88px;
+  height: 88px;
+  left: -200px;
+  top: 0px;
+
+  background: $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width:1280px){
+    left: -50px;
+  }
+}
+.elipse__pageTechnicalSupport-2{
+  width: 190px;
+  height: 190px;
+  left: -85px;
+  top: 288px;
+
+  border: 10px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.elipse__pageTechnicalSupport-3{
+  width: 494px;
+  height: 494px;
+  right: 252px;
+  top: -370px;
+
+  border: 25px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width:1280px){
+    right: 52px;
+  }
+  @media screen and (max-width:768px){
+    right: -230px;
+  }
+}
+.elipse__pageTechnicalSupport-4{
+  width: 633px;
+  height: 633px;
+  right: -315px;
+  bottom: 100px;
+
+  border: 25px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.elipse__pageTechnicalSupport-5{
+  width: 354px;
+  height: 354px;
+  left: -207px;
+  bottom: -133px;
+
+  background: $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width:768px){
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -75px;
+  }
+}
+
+.elipse__pageTechnicalSupport-6{
+  width: 332px;
+  height: 332px;
+  left: -170px;
+  bottom: 815px;
+
+  border: 15px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:29.5px;
+    left:29.5px;
+    background: $elipse-color;
+
+    width: 243px;
+    height: 243px;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.elipse__pageTechnicalSupport-7{
+  width: 332px;
+  height: 332px;
+  right: -104px;
+  bottom: 455px;
+
+  border: 15px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:29.5px;
+    left:29.5px;
+    border: 8px solid $elipse-color;
+
+    width: 243px;
+    height: 243px;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.elipse__pageTechnicalSupport-8{
+  width: 201px;
+  height: 201px;
+  left: 35px;
+  bottom: -16px;
+
+  background:$elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width:768px){
+    left: -35px;
+  }
+}
+
+
+.elipse__pageTechnicalSupport-9{
+  width: 633px;
+  height: 633px;
+  right: -300px;
+  bottom: -150px;
+
+  border: 25px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width:768px){
+    bottom: -80px;
+    right: -200px;
+  }
+  @media screen and (max-width:600px){
+    bottom: 100px;
+    right: -200px;
+  }
+}
