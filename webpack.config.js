@@ -14,7 +14,8 @@ module.exports = {
     developmentStud: './src/pages/developmentStud/developmentStud.js',
     promotion: "./src/pages/promotion/promotion.js",
     technicalSupport: "./src/pages/technicalSupport/technicalSupport.js",
-    commercialOffer: "./src/pages/commercialOffer/commercialOffer.js"
+    commercialOffer: "./src/pages/commercialOffer/commercialOffer.js",
+    websiteDevelopment: "./src/pages/websiteDevelopment/websiteDevelopment.js",
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -115,6 +116,11 @@ module.exports = {
       inject: false,
       template: './src/pages/commercialOffer/commercialOffer.html',
       filename: 'commercialOffer.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/pages/websiteDevelopment/websiteDevelopment.html',
+      filename: 'websiteDevelopment.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

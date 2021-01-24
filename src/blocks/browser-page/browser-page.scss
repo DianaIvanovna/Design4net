@@ -13,6 +13,12 @@
 @import "./__container-support/browser-page__container-support.scss";
 @import "./__background-img/browser-page__background-img.scss";
 
+@import "./__icon-container/browser-page__icon-container.scss";
+@import "./__icon-title/browser-page__icon-title.scss";
+@import "./__icon-name/browser-page__icon-name.scss";
+@import "./__icon/browser-page__icon.scss";
+@import "./_small/browser-page_small.scss";
+
 .browser-page{
   margin-top: 20px;
   width: 100%;

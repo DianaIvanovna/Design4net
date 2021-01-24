@@ -1,0 +1,12 @@
+.browser-page__icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  @media screen and (max-width:900px){
+    width: calc(100% / 3);
+  }
+  @media screen and (max-width:400px){
+    width: calc(100% / 2);
+  }
+}

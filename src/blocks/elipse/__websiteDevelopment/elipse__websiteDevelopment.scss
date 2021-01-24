@@ -1,0 +1,229 @@
+.elipse__websiteDevelopment-1{
+  width: 494px;
+  height: 494px;
+  top: -200px;
+  left: -300px;
+
+  border: 23px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+.elipse__websiteDevelopment-2{
+  width: 88px;
+  height: 88px;
+  right: -30px;
+  top: 30px;
+
+  background: $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  &::before{
+    content:"";
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: $elipse-color;
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    top:-15px;
+    right: -90px;
+
+  }
+  @media screen and (max-width:768px){
+    right: -40px;
+  }
+}
+
+.elipse__websiteDevelopment-3{
+  width: 190px;
+  height: 190px;
+  border:  $elipse-color solid 10px;
+  left: -100px;
+  bottom: 66px;
+  border-radius: 50%;
+
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:22px;
+    left:22px;
+    border:  $elipse-color solid 5px;
+
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.elipse__websiteDevelopment-4{
+  width: 633px;
+  height: 633px;
+  bottom: -200px;
+  right: -550px;
+
+  border: 30px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+.elipse__websiteDevelopment-5{
+  width: 201px;
+  height: 201px;
+  top: 220px;
+  left: -80px;
+  background: $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+.elipse__websiteDevelopment-6{
+  width: 337px;
+  height: 337px;
+  border:  $elipse-color solid 15px;
+  right: -147px;
+  bottom: -90px;
+  border-radius: 50%;
+
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:42px;
+    left:42px;
+    border:  $elipse-color solid 10px;
+
+    width: 223px;
+    height: 223px;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+
+}
+.elipse__websiteDevelopment-7{
+  width: 633px;
+  height: 633px;
+  top: -200px;
+  left: -300px;
+
+  border: 30px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+.elipse__websiteDevelopment-8{
+  width: 301px;
+  height: 301px;
+  bottom: -120px;
+  right: -60px;
+  background: $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+.elipse__websiteDevelopment-9{
+  width: 88px;
+  height: 88px;
+  left: -40px;
+  top: 30px;
+
+  background: $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  &::before{
+    content:"";
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: $elipse-color;
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    bottom:-55px;
+    left: -40px;
+
+  }
+  @media screen and (max-width:768px){
+    right: -40px;
+  }
+}
+.elipse__websiteDevelopment-10{
+  width: 190px;
+  height: 190px;
+  border:  $elipse-color solid 10px;
+  right: -80px;
+  bottom: 300px;
+  border-radius: 50%;
+
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:22px;
+    left:22px;
+    border:  $elipse-color solid 5px;
+
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.elipse__websiteDevelopment-11{
+  width: 337px;
+  height: 337px;
+  border:  $elipse-color solid 15px;
+  left: -147px;
+  top: -90px;
+  border-radius: 50%;
+
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:42px;
+    left:42px;
+    border:  $elipse-color solid 10px;
+
+    width: 223px;
+    height: 223px;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+
+}
+
+.elipse__websiteDevelopment-12{
+  width: 633px;
+  height: 633px;
+  top: -220px;
+  left: -300px;
+
+  border: 30px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+.elipse__websiteDevelopment-13{
+  width: 301px;
+  height: 301px;
+  bottom: -120px;
+  right: -60px;
+  background: $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.elipse__websiteDevelopment-14{
+  width: 494px;
+  height: 494px;
+  bottom: -200px;
+  left: -200px;
+
+  border: 23px solid $elipse-color;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
+}

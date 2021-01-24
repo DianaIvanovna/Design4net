@@ -1,6 +1,6 @@
 export default class OurClient {
-  constructor(typeOurClient) {
-    this._clientContainer = document.querySelector('.our-client__container');
+  constructor(typeOurClient, container) {
+    this._clientContainer = container.querySelector('.our-client__container');
     this._carousel = this._clientContainer.querySelector('.our-client__carousel');
     this._clientsContainer = this._clientContainer.querySelector('.our-client__clients');
     this._buttonLeft = this._clientContainer.querySelector('.our-client__button_left');
@@ -21,6 +21,7 @@ export default class OurClient {
 
     this._setHandlers();
   }
+
 
   _setHandlers() {
     if (this._typeOurClient == "big"){
@@ -58,16 +59,25 @@ export default class OurClient {
     // настройки для адаптивности
     if (this._windowWidth < 768 && this._windowWidth >=720 ){
       this._marginClient = 15;
-    } else if (this._windowWidth < 720 && this._windowWidth >=500){
+    } else if (this._windowWidth < 720 && this._windowWidth >500){
       this._count = 3;
       this._numberBigClient = 1;
       this._marginClient = 15;
-    } else if (this._windowWidth < 500) {
+    } else if (this._windowWidth <= 500) {
       this._count = 2;
       this._numberBigClient = 1;
       this._scaleBigPhoto = 1;
       this._marginClient = 0;
     }
+
+    if (this._clients.length <= this._count){
+      this._count = this._clients.length;
+      this._numberBigClient = 1;
+      this._scaleBigPhoto = 1;
+      this._buttonLeft.classList.add('our-client__button_hidden');
+      this._buttonRight.classList.add('our-client__button_hidden');
+    }
+
   }
   _configurationSmall(){
     this._count = 5; // видимое количество изображений
@@ -96,7 +106,7 @@ export default class OurClient {
     }
   }
   _rightShiftBig(){
-    if (!(-this._width * (this._clients.length - this._count) >= this._position - this._width)){
+    if (!(-this._width * (this._clients.length + 1 - this._count) >= this._position - this._width)){
       this._clients[this._numberBigClient].style.width = `${this._width}px`; //
       this._position = this._position - this._width - this._marginClient;
       this._numberBigClient++;
@@ -112,7 +122,7 @@ export default class OurClient {
     }
   }
   _rightShiftSmall(){
-    if (!(-this._width * (this._clients.length + 2 - this._count) > this._position - this._width)){
+    if (!(-this._width * (this._clients.length + 1 - this._count) > this._position - this._width)){
       this._position = this._position - this._width - this._marginClient;
       this._clientsContainer.style.transform = `translateX(${this._position}px)`;
     }

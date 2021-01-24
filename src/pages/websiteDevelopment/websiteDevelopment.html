@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Диана Гарбуз">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.websiteDevelopment.css %>">
+  <title>Design4net</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <div class="background__mobile"></div>
+  <header class="header">
+    <nav class="header__links">
+      <div class="header__dropdown-container ">
+        <span class="header__link header__link_dropdown header__dropdown-container_active">Разработка сайтов</span>
+        <ul class="header__dropdown">
+          <li><a href="#">Лендинг</a></li>
+          <li><a href="#">Корпоративный сайт</a></li>
+          <li><a href="#">Интернет магазин</a></li>
+        </ul>
+      </div>
+      <div class="header__dropdown-container ">
+        <span class="header__link header__link_dropdown">Продвижение</span>
+        <ul class="header__dropdown">
+          <li><a href="#">Контекстная реклама</a></li>
+          <li><a href="#">Продвижение в социальных сетях (SMM)</a></li>
+          <li><a href="#">Поисковое продвижение сайтов (SEO)</a></li>
+        </ul>
+      </div>
+      <a href="" class="header__link">Техническая поддержка </a>
+      <a href="" class="header__link">Дизайн и полиграфия</a>
+      <a href="" class="header__link">Портфолио</a>
+      <a href="" class="header__link">Получить коммерческое предложение</a>
+    </nav>
+    <svg width="21" class="header__menu" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#DAFE00" d="M0 0h21v1H0zM0 5h21v1H0zM9.484 10H21v1H9.484z"/></svg>
+  </header>
+  <!-- КОНЕЦ  HEADER -->
+
+  <div class="page_base-2">
+    <div class="content">
+      <section class="websiteDevelopment">
+        <div class="websiteDevelopment__block block-BusinessCard">
+          <div class="elipse elipse__websiteDevelopment-1"></div>
+          <div class="elipse elipse__websiteDevelopment-2"></div>
+          <div class="elipse elipse__websiteDevelopment-3"></div>
+          <div class="elipse elipse__websiteDevelopment-4"></div>
+
+          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="browser-page browser-page_small ">
+            <div class="browser-page__title-container">
+              <div class="browser-page__points">
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+              </div>
+              <h2 class="browser-page__title">Сайт визитка</h2>
+            </div>
+            <div class="browser-page__content">
+              <p class="browser-page__content-text browser-page__content-text_not-line">
+                <span class="browser-page__content-title">Создание сайта визитки</span> — это выгодное решение для предпринимателей. Это небольшой, но аккуратный и красивый сайт, выполненный в соответствии с современными стандартами. Дизайн-макет разрабатывается исходя из ваших пожеланий «с нуля», что позволяет максимально индивидуализировать проект и фирменный стиль. Разработка сайтов визитки ведется в течении 15-25 рабочих дней.
+              </p>
+              <div class="websiteDevelopment__title-line"></div>
+
+              <h3 class="browser-page__icon-title">Что входит:</h3>
+              <div class="browser-page__icon-container">
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-design-layout.svg').default%>" alt="иконка дизайн макета">
+                  <p class="browser-page__icon-name">Разработка 1-го индивидуального дизайн макета</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-adaptive.svg').default%>" alt="иконка адаптивной верстки">
+                  <p class="browser-page__icon-name">Мобильная и адаптивная версия</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-filling-information.svg').default%>" alt="иконка текст для сайта">
+                  <p class="browser-page__icon-name">Заполнение до 5 страниц информацией</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-SEO-optimization.svg').default%>" alt="иконка СЕО">
+                  <p class="browser-page__icon-name">Начальная СЕО оптимизация</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-connecting-metrics.svg').default%>" alt="иконка Подключениеосновных метрик">
+                  <p class="browser-page__icon-name">Подключение основных метрик</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-hosting-gift.svg').default%>" alt="иконка Хостинг">
+                  <p class="browser-page__icon-name">Хостинг на 1 год в подарок</p>
+                </div>
+              </div>
+
+
+              <button class="browser-stage__button-price">стоимость от 30 000 р.</button>
+
+
+              <!-- НАШИ КЛИЕНТЫ  -->
+              <section class="our-client our-client_businessCardWebsite-small">
+                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <div class="our-client__container">
+                  <button class="our-client__button our-client__button_left">
+                    <img src="<%=require('../../images/icon/arrow-triangle-left.svg').default%>" alt="стрелка влево">
+                  </button>
+                  <div class="our-client__carousel">
+                    <ul class="our-client__clients">
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-6.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">МЦМ “Runovo”</p>
+                      </li>
+
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-4.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">MCEM.RU</p>
+                      </li>
+
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-5.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">DECOlat</p>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <button class="our-client__button our-client__button_right">
+                    <img src="<%=require('../../images/icon/arrow-triangle-right.svg').default%>" alt="стрелка вправо">
+                  </button>
+                </div>
+
+              </section>
+              <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
+              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+
+                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+                <span class="error error__name"></span>
+
+                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+                <span class="error error__phone"></span>
+
+                <button class="form-consultation__button">заказать консультацию</button>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="websiteDevelopment__block block-landing">
+          <div class="elipse elipse__websiteDevelopment-5"></div>
+          <div class="elipse elipse__websiteDevelopment-6"></div>
+          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="browser-page browser-page_small ">
+            <div class="browser-page__title-container">
+              <div class="browser-page__points">
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+              </div>
+              <h2 class="browser-page__title">Лэндинг</h2>
+            </div>
+            <div class="browser-page__content">
+              <p class="browser-page__content-text browser-page__content-text_not-line">
+                <span class="browser-page__content-title">Landing page</span>, или как еще его называют “Продающая страница” отлично подходит для различных рекламных компаний и промо акций. Главной особенностью данного сайта является наличие всего лишь одной страницы, на которой и будет размещена вся самая необходимая информация об компании, продукте или услуги. Разработка лендинга от 7 рабочих дней.
+              </p>
+              <div class="websiteDevelopment__title-line"></div>
+
+              <h3 class="browser-page__icon-title">Что входит:</h3>
+              <div class="browser-page__icon-container">
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-design-layout.svg').default%>" alt="иконка дизайн макета">
+                  <p class="browser-page__icon-name">Разработка 1-го индивидуального дизайн макета</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-adaptive.svg').default%>" alt="иконка адаптивной верстки">
+                  <p class="browser-page__icon-name">Мобильная и адаптивная версия</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-filling-information.svg').default%>" alt="иконка текст для сайта">
+                  <p class="browser-page__icon-name">Заполнение до 5 страниц информацией</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-SEO-optimization.svg').default%>" alt="иконка СЕО">
+                  <p class="browser-page__icon-name">Начальная СЕО оптимизация</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-connecting-metrics.svg').default%>" alt="иконка Подключениеосновных метрик">
+                  <p class="browser-page__icon-name">Подключение основных метрик</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-hosting-gift.svg').default%>" alt="иконка Хостинг">
+                  <p class="browser-page__icon-name">Хостинг на 1 год в подарок</p>
+                </div>
+              </div>
+
+              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+
+
+              <!-- НАШИ КЛИЕНТЫ  -->
+              <section class="our-client our-client_businessCardWebsite-big">
+                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <div class="our-client__container">
+                  <button class="our-client__button our-client__button_left">
+                    <img src="<%=require('../../images/icon/arrow-triangle-left.svg').default%>" alt="стрелка влево">
+                  </button>
+                  <div class="our-client__carousel">
+                    <ul class="our-client__clients">
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-2.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-3.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Mobileye</p>
+                      </li>
+
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-4.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">МЦМ “Runovo”</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-5.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">DECOlat</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-2.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-3.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Mobileye</p>
+                      </li>
+
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-4.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">МЦМ “Runovo”</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-5.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">DECOlat</p>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <button class="our-client__button our-client__button_right">
+                    <img src="<%=require('../../images/icon/arrow-triangle-right.svg').default%>" alt="стрелка вправо">
+                  </button>
+                </div>
+
+              </section>
+              <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
+              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+
+                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+                <span class="error error__name"></span>
+
+                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+                <span class="error error__phone"></span>
+
+                <button class="form-consultation__button">заказать консультацию</button>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="websiteDevelopment__block block-corporateWebsite">
+          <div class="elipse elipse__websiteDevelopment-7"></div>
+          <div class="elipse elipse__websiteDevelopment-8"></div>
+          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="browser-page browser-page_small ">
+            <div class="browser-page__title-container">
+              <div class="browser-page__points">
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+              </div>
+              <h2 class="browser-page__title">Корпоративный сайт</h2>
+            </div>
+            <div class="browser-page__content">
+              <p class="browser-page__content-text browser-page__content-text_not-line">
+                <span class="browser-page__content-title">Корпоративный сайт</span> — это расширенная версия тарифа «Сайт визитка». Все страницы сайта индивидуализируются под конкретные направления, благодаря чему сайт становится более проработанным, где особого внимания удостоен каждый элемент. Возможность интеграции личного кабинета для сотрудников и клиентов. Идеально подходит для всех типов предпринимателей и объединений, которые хотят быть на голову выше своих конкурентов. Разработка корпоративного сайта от 20 рабочих дней
+              </p>
+              <div class="websiteDevelopment__title-line"></div>
+
+              <h3 class="browser-page__icon-title">Что входит:</h3>
+              <div class="browser-page__icon-container">
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-unique-design-3.svg').default%>" alt="иконка дизайн сайта">
+                  <p class="browser-page__icon-name">Уникальный дизайн 3х страниц</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-cms.svg').default%>" alt="иконка cms">
+                  <p class="browser-page__icon-name">Удобная система управления (CMS)</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-multi-language.svg').default%>" alt="иконка Подключение мультиязычности">
+                  <p class="browser-page__icon-name">Подключение мультиязычности</p>
+                </div>
+              </div>
+
+              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+
+
+              <!-- НАШИ КЛИЕНТЫ  -->
+              <section class="our-client our-client_businessCardWebsite-big">
+                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <div class="our-client__container">
+                  <button class="our-client__button our-client__button_left">
+                    <img src="<%=require('../../images/icon/arrow-triangle-left.svg').default%>" alt="стрелка влево">
+                  </button>
+                  <div class="our-client__carousel">
+                    <ul class="our-client__clients">
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-2.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-3.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Mobileye</p>
+                      </li>
+
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-4.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">МЦМ “Runovo”</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-5.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">DECOlat</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-2.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-3.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Mobileye</p>
+                      </li>
+
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-4.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">МЦМ “Runovo”</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-5.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">DECOlat</p>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <button class="our-client__button our-client__button_right">
+                    <img src="<%=require('../../images/icon/arrow-triangle-right.svg').default%>" alt="стрелка вправо">
+                  </button>
+                </div>
+
+              </section>
+              <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
+              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+
+                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+                <span class="error error__name"></span>
+
+                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+                <span class="error error__phone"></span>
+
+                <button class="form-consultation__button">заказать консультацию</button>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="websiteDevelopment__block block-catalog">
+          <div class="elipse elipse__websiteDevelopment-9"></div>
+          <div class="elipse elipse__websiteDevelopment-10"></div>
+
+          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="browser-page browser-page_small ">
+            <div class="browser-page__title-container">
+              <div class="browser-page__points">
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+              </div>
+              <h2 class="browser-page__title">Сайт каталог</h2>
+            </div>
+            <div class="browser-page__content">
+              <p class="browser-page__content-text browser-page__content-text_not-line">
+                <span class="browser-page__content-title">Корпоративный сайт</span> — это расширенная версия тарифа «Сайт визитка». Все страницы сайта индивидуализируются под конкретные направления, благодаря чему сайт становится более проработанным, где особого внимания удостоен каждый элемент. Возможность интеграции личного кабинета для сотрудников и клиентов. Идеально подходит для всех типов предпринимателей и объединений, которые хотят быть на голову выше своих конкурентов. Разработка корпоративного сайта от 20 рабочих дней
+              </p>
+              <div class="websiteDevelopment__title-line"></div>
+
+              <h3 class="browser-page__icon-title">Что входит:</h3>
+              <div class="browser-page__icon-container">
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-filling-product-lines.svg').default%>" alt="иконка список товаров">
+                  <p class="browser-page__icon-name">Заполнение до 100 товарных позиций</p>
+                </div>
+              </div>
+
+              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+
+
+              <!-- НАШИ КЛИЕНТЫ  -->
+              <section class="our-client our-client_businessCardWebsite-small">
+                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <div class="our-client__container">
+                  <button class="our-client__button our-client__button_left">
+                    <img src="<%=require('../../images/icon/arrow-triangle-left.svg').default%>" alt="стрелка влево">
+                  </button>
+                  <div class="our-client__carousel">
+                    <ul class="our-client__clients">
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-2.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-3.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">Mobileye</p>
+                      </li>
+
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-4.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">МЦМ “Runovo”</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="our-client__button our-client__button_right">
+                    <img src="<%=require('../../images/icon/arrow-triangle-right.svg').default%>" alt="стрелка вправо">
+                  </button>
+                </div>
+
+              </section>
+              <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
+              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+
+                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+                <span class="error error__name"></span>
+
+                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+                <span class="error error__phone"></span>
+
+                <button class="form-consultation__button">заказать консультацию</button>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="websiteDevelopment__block block-onlineStore">
+          <div class="elipse elipse__websiteDevelopment-11"></div>
+          <div class="elipse elipse__websiteDevelopment-12"></div>
+          <div class="elipse elipse__websiteDevelopment-13"></div>
+          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="browser-page browser-page_small ">
+            <div class="browser-page__title-container">
+              <div class="browser-page__points">
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+              </div>
+              <h2 class="browser-page__title">Интернет-магазин</h2>
+            </div>
+            <div class="browser-page__content">
+              <p class="browser-page__content-text browser-page__content-text_not-line">
+                <span class="browser-page__content-title">Корпоративный сайт</span> — это расширенная версия тарифа «Сайт визитка». Все страницы сайта индивидуализируются под конкретные направления, благодаря чему сайт становится более проработанным, где особого внимания удостоен каждый элемент. Возможность интеграции личного кабинета для сотрудников и клиентов. Идеально подходит для всех типов предпринимателей и объединений, которые хотят быть на голову выше своих конкурентов. Разработка корпоративного сайта от 20 рабочих дней
+              </p>
+              <div class="websiteDevelopment__title-line"></div>
+
+              <h3 class="browser-page__icon-title">Что входит:</h3>
+              <div class="browser-page__icon-container">
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-product-filters.svg').default%>" alt="иконка фильтр">
+                  <p class="browser-page__icon-name">Удобные фильтры подбора товаров</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-script.svg').default%>" alt="иконка адаптивной верстки">
+                  <p class="browser-page__icon-name">Сценарий пользовательского взаимодействия</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-internet-pay.svg').default%>" alt="иконка оплата через интернет">
+                  <p class="browser-page__icon-name">Подключение оплаты через интернет</p>
+                </div>
+              </div>
+
+              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+
+
+              <!-- НАШИ КЛИЕНТЫ  -->
+              <section class="our-client our-client_businessCardWebsite-small">
+                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <div class="our-client__container">
+                  <button class="our-client__button our-client__button_left">
+                    <img src="<%=require('../../images/icon/arrow-triangle-left.svg').default%>" alt="стрелка влево">
+                  </button>
+                  <div class="our-client__carousel">
+                    <ul class="our-client__clients">
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="our-client__button our-client__button_right">
+                    <img src="<%=require('../../images/icon/arrow-triangle-right.svg').default%>" alt="стрелка вправо">
+                  </button>
+                </div>
+
+              </section>
+              <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
+              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+
+                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+                <span class="error error__name"></span>
+
+                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+                <span class="error error__phone"></span>
+
+                <button class="form-consultation__button">заказать консультацию</button>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="websiteDevelopment__block block-onlineService">
+          <div class="elipse elipse__websiteDevelopment-14"></div>
+          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="browser-page browser-page_small ">
+            <div class="browser-page__title-container">
+              <div class="browser-page__points">
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+                <div class="browser-page__point"></div>
+              </div>
+              <h2 class="browser-page__title">Онлайн-сервис</h2>
+            </div>
+            <div class="browser-page__content">
+              <p class="browser-page__content-text browser-page__content-text_not-line">
+                <span class="browser-page__content-title">Корпоративный сайт</span> — это расширенная версия тарифа «Сайт визитка». Все страницы сайта индивидуализируются под конкретные направления, благодаря чему сайт становится более проработанным, где особого внимания удостоен каждый элемент. Возможность интеграции личного кабинета для сотрудников и клиентов. Идеально подходит для всех типов предпринимателей и объединений, которые хотят быть на голову выше своих конкурентов. Разработка корпоративного сайта от 20 рабочих дней
+              </p>
+              <div class="websiteDevelopment__title-line"></div>
+
+              <h3 class="browser-page__icon-title">Что входит:</h3>
+              <div class="browser-page__icon-container">
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-project-and-design.svg').default%>" alt="иконка Проэктирование и дизайн">
+                  <p class="browser-page__icon-name">Проэктирование и дизайн</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-development.svg').default%>" alt="иконка Разработка">
+                  <p class="browser-page__icon-name">Разработка</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-stabilization.svg').default%>" alt="иконка Стабилизация">
+                  <p class="browser-page__icon-name">Стабилизация</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="<%=require('../../images/websiteDevelopment/icon-commissioning.svg').default%>" alt="иконка ракета">
+                  <p class="browser-page__icon-name">Ввод в эксплуатацию</p>
+                </div>
+              </div>
+
+              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+
+
+              <!-- НАШИ КЛИЕНТЫ  -->
+              <section class="our-client our-client_businessCardWebsite-small">
+                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <div class="our-client__container">
+                  <button class="our-client__button our-client__button_left">
+                    <img src="<%=require('../../images/icon/arrow-triangle-left.svg').default%>" alt="стрелка влево">
+                  </button>
+                  <div class="our-client__carousel">
+                    <ul class="our-client__clients">
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                      <li class="our-client__client">
+                        <img src="<%=require('../../images/our-client/client-1.png').default%>" alt="фото клиента">
+                        <p class="our-client__client-name">ADEAudit</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="our-client__button our-client__button_right">
+                    <img src="<%=require('../../images/icon/arrow-triangle-right.svg').default%>" alt="стрелка вправо">
+                  </button>
+                </div>
+
+              </section>
+              <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
+              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+
+                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+                <span class="error error__name"></span>
+
+                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+                <span class="error error__phone"></span>
+
+                <button class="form-consultation__button">заказать консультацию</button>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <nav class="footer__container">
+
+
+          <div class="footer__link-container footer__link-container_dropdown">
+            <a href="#" class="footer__link footer__link_dropdown">Разработка сайтов</a>
+            <ul class="footer__dropdown">
+              <li class="footer__link_secondary"><a href="#">Лендинг</a></li>
+              <li class="footer__link_secondary"><a href="#">Корпоративный сайт</a></li>
+              <li class="footer__link_secondary"><a href="#">Интернет магазин</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__link-container footer__link-container_dropdown">
+            <a href="#" class="footer__link footer__link_dropdown">Продвижение</a>
+            <ul class="footer__dropdown">
+              <li class="footer__link_secondary"><a href="#">Контекстная реклама</a></li>
+              <li class="footer__link_secondary"><a href="#">Продвижение в социальных сетях (SMM)</a></li>
+              <li class="footer__link_secondary"><a href="#">Поисковое продвижение сайтов (SEO)</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-container">
+            <a href="" class="footer__link">Техническая поддержка </a>
+            <a href="" class="footer__link">Дизайн и полиграфия</a>
+            <a href="" class="footer__link">Портфолио</a>
+            <a href="" class="footer__link">Получить коммерческое предложение</a>
+          </div>
+
+          <div class="footer__link-container footer__link-container_logo">
+            <div class="footer__logo">
+              <span>логотип</span>
+            </div>
+            <div>
+              <p class="footer__subtitle">Присоединяйтесь в соц. сетях:</p>
+              <ul class="footer__social-network">
+                <li>
+                  <a href="#" target="_blank">
+                    <img class="footer__icon" src="<%=require('../../images/icon/facebook.svg').default%>" alt="facebook">
+                  </a>
+                </li>
+
+                <li >
+                  <a href="#"  target="_blank">
+                    <img class="footer__icon" src="<%=require('../../images/icon/vk.svg').default%>" alt="vk" >
+                  </a>
+                </li>
+                <li>
+                  <a href="#"  target="_blank">
+                    <img class="footer__icon" src="<%=require('../../images/icon/instagram.svg').default%>" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img class="footer__icon" src="<%=require('../../images/icon/twitter.svg').default%>" alt="facebook">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+
+        <div class="footer__info">
+          <a href="#" class="footer__link_secondary">Политика конфиденциальности</a>
+          <a href="#" class="footer__link_secondary">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="footer__signature">
+        <p>Copyright © 2012-2020, Студия Design4Net.</p>
+      </div>
+
+
+    </footer>
+  </div>
+  <!-- СТРЕЛКА ПОДНЯТИЯ ВВЕРХ -->
+  <div class="goUp">
+    <img src="<%=require('../../images/icon/goUp.svg').default%>" alt="стрелка поднятия вверх">
+  </div>
+  <!-- СТРЕЛКА ПОДНЯТИЯ ВВЕРХ -->
+
+<script src="<%= htmlWebpackPlugin.files.chunks.websiteDevelopment.entry %>"></script>
+</body>
+</html>
+
+

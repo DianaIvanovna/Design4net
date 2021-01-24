@@ -1,6 +1,7 @@
 .our-client__clients{
   display: flex;
   align-items: center;
+  justify-content: space-between; //!!
 
   transform: translateX(0px);
   margin: 0px;

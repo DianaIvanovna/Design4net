@@ -1,0 +1,14 @@
+.websiteDevelopment__line{
+  position: absolute;
+  top: 50px;
+  left: 0%;
+  @media screen and (max-width:1200px){
+    left: -60px;
+  }
+  @media screen and (max-width:768px){
+    left: -40px;
+  }
+  @media screen and (max-width:500px){
+    left: -28px;
+  }
+}

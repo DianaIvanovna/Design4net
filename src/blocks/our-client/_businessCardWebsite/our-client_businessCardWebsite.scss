@@ -1,0 +1,22 @@
+.our-client.our-client_businessCardWebsite-small{
+  width: 100%;
+  // max-width: 831px;
+  @media screen and (max-width:768px){
+    width: calc(100% + 130px);
+  }
+  @media screen and (max-width:600px){
+    width: calc(100% + 70px);
+  }
+}
+.our-client.our-client_businessCardWebsite-big{
+  width: calc(130%);
+  @media screen and (max-width:1150px){
+    width: calc(100% + 180px);
+  }
+  @media screen and (max-width:768px){
+    width: calc(100% + 130px);
+  }
+  @media screen and (max-width:600px){
+    width: calc(100% + 70px);
+  }
+}

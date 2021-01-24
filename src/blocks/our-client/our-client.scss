@@ -1,5 +1,4 @@
 @import "./__container/our-client__container.scss";
-
 @import "./__button/our-client__button.scss";
 @import "./__carousel/our-client__carousel.scss";
 @import "./__client-name/our-client__client-name.scss";
@@ -7,6 +6,8 @@
 @import "./__clients/our-client__clients.scss";
 @import "./__elipse/our-client__elipse.scss";
 @import "./_small/our-client_small.scss";
+@import "./__title/our-client__title.scss";
+@import "./_businessCardWebsite/our-client_businessCardWebsite.scss";
 
 .our-client{
   width: calc(100% + 28px + 28px);

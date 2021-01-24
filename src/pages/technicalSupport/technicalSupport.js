@@ -6,8 +6,9 @@ import OurClient from '../../js/components/OurClient';
 import GoUpButton from '../../js/components/GoUpButton';
 
 (function () {
+  const ourClientContainer = document.querySelector('.our-client');
   const header = new Header();
-  const ourClient = new OurClient("small");
+  const ourClient = new OurClient("small", ourClientContainer);
   const goUpButton = new GoUpButton();
 })();
 
