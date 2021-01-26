@@ -3,7 +3,9 @@
   height: 18px;
   border-radius: 50%;
   background: #C4C4C4;
-  position: relative;
-  top: 50%;
-  left: -12px;
+
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 9px);
+
 }

@@ -3,6 +3,7 @@
   color: #444444;
   margin: 0px;
   margin-top: 15px;
+  margin-bottom: 10px;
   text-align: center;
   @media screen and (max-width: 1024px){
     @include fontValue(normal, 900, 22px, 26px);

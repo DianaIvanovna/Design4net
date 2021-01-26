@@ -116,11 +116,11 @@
                 <p class="creating-websites__description">Создание сайта визитки — это выгодное решение для предпринимателей. Это небольшой, но аккуратный и красивый сайт, выполненный в соответствии с современными стандартами. </p>
               </div>
               <div class="creating-websites__siteExample">
-                <img src="<%=require('./images/creating-websites/LandingPage.png').default%>" alt="пример сайта">
+                <img class="creating-websites__img_leading" src="<%=require('./images/creating-websites/LandingPage.png').default%>" alt="пример сайта">
                 <h3 class="creating-websites__name">Лэндинг</h3>
               </div>
               <div class="creating-websites__siteExample">
-                <img src="<%=require('./images/creating-websites/corporateWebsite.png').default%>" alt="пример сайта">
+                <img class="creating-websites__img_corporateWebsite"src="<%=require('./images/creating-websites/corporateWebsite.png').default%>" alt="пример сайта">
                 <h3 class="creating-websites__name">Корпоративный сайт</h3>
               </div>
               <div class="creating-websites__siteExample">
@@ -291,30 +291,12 @@
           <div class="main-square">
             <div class="main-square__contant">
 
-              <div class="main-square__item">
-                <div class="main-square__square">
-                </div>
-              </div>
-              <div class="main-square__item">
-                <div class="main-square__square">
-                </div>
-              </div>
-              <div class="main-square__item">
-                <div class="main-square__square">
-                </div>
-              </div>
-              <div class="main-square__item">
-                <div class="main-square__square">
-                </div>
-              </div>
-              <div class="main-square__item">
-                <div class="main-square__square">
-                </div>
-              </div>
-              <div class="main-square__item">
-                <div class="main-square__square">
-                </div>
-              </div>
+              <div class="main-square__square"></div>
+              <div class="main-square__square"></div>
+              <div class="main-square__square"></div>
+              <div class="main-square__square"></div>
+              <div class="main-square__square"></div>
+              <div class="main-square__square"></div>
 
               <img src="<%=require('./images/website-promotion/stairs.png').default%>" alt="иконка продвижение сайта" class="">
               <div class="main-square__line"></div>
@@ -418,21 +400,30 @@
             <div class="technical-support__container">
 
               <div class="technical-support__item">
-                <img src="<%=require('./images/technical-support/gear.png').default%>" alt="иконка шестеренки" class="technical-support__img">
+                <div class="technical-support__img">
+                  <img src="<%=require('./images/technical-support/technical-support-circle.png').default%>" alt="окружность" class="technical-support__img-circle">
+                  <img src="<%=require('./images/technical-support/gear.png').default%>" alt="иконка шестеренки">
+                </div>
                 <h4 class="technical-support__item-name">Технические доработки</h4>
                 <div class="technical-support__line"></div>
                 <p class="technical-support__title">Proin gravida dolor</p>
                 <div class="technical-support__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</div>
               </div>
               <div class="technical-support__item">
-                <img src="<%=require('./images/technical-support/gear.png').default%>" alt="Контент поддержка" class="technical-support__img">
+                <div class="technical-support__img">
+                  <img src="<%=require('./images/technical-support/technical-support-circle.png').default%>" alt="окружность" class="technical-support__img-circle">
+                  <img src="<%=require('./images/technical-support/support.png').default%>" alt="Контент поддержка" >
+                </div>
                 <h4 class="technical-support__item-name">Контент поддержка</h4>
                 <div class="technical-support__line"></div>
                 <p class="technical-support__title">Proin gravida dolor</p>
                 <div class="technical-support__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</div>
               </div>
               <div class="technical-support__item">
-                <img src="<%=require('./images/technical-support/support.png').default%>" alt="иконка модернизация сайта"  class="technical-support__img">
+                <div class="technical-support__img">
+                  <img src="<%=require('./images/technical-support/technical-support-circle.png').default%>" alt="окружность" class="technical-support__img-circle">
+                  <img src="<%=require('./images/technical-support/modernizationWebsite.png').default%>" alt="иконка модернизация сайта"  >
+                </div>
                 <h4 class="technical-support__item-name">Модернизация сайта</h4>
                 <div class="technical-support__line"></div>
                 <p class="technical-support__title">Proin gravida dolor</p>

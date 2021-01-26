@@ -5,4 +5,7 @@
   @media screen and (max-width: 600px){
     @include fontValue(normal, 200, 28px, 32px);
   }
+
+  opacity: 0;
+  transition: all 4s ease 0s;
 }

@@ -22,3 +22,20 @@
     width: calc(100%);
   }
 }
+
+.pageTechnicalSupport__item_anim-active{
+  .pageTechnicalSupport__img{
+    opacity: 1;
+      transform: scale(1);
+      transition: all 2s ease 0s;
+  }
+  .pageTechnicalSupport__title{
+    opacity: 1;
+    &::after{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+}

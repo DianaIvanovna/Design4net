@@ -1,3 +1,30 @@
+@keyframes rotationСircle-1 {
+  from { transform: rotate(0deg) translateX(115px); }
+  to   { transform: rotate(360deg) translateX(115px); }
+}
+@keyframes rotationСircle-2 {
+  from { transform: rotate(60deg) translateX(115px); }
+  to   { transform: rotate(420deg) translateX(115px); }
+}
+
+@keyframes rotationСircle-3 {
+  from { transform: rotate(120deg) translateX(115px); }
+  to   { transform: rotate(480deg) translateX(115px); }
+}
+@keyframes rotationСircle-4 {
+  from { transform: rotate(180deg) translateX(115px); }
+  to   { transform: rotate(540deg) translateX(115px); }
+}
+@keyframes rotationСircle-5 {
+  from { transform: rotate(240deg) translateX(115px); }
+  to   { transform: rotate(600deg) translateX(115px); }
+}
+@keyframes rotationСircle-6 {
+  from { transform: rotate(300deg) translateX(115px); }
+  to   { transform: rotate(660deg) translateX(115px); }
+}
+
+
 .website-promotion__item{
   width: 95%;
   min-width: 1000px;
@@ -9,6 +36,19 @@
   .website-promotion__square{
     .website-promotion__item-content{
       transform: rotate(-90deg); // везде - 90 градусов, так надо, чтобы маленькие шарики норм стояли
+      &::before{
+        content: "";
+        position: absolute;
+        top: calc(50% - 7.5px);
+        left: calc(50% - 7.5px);
+        width: 15px;
+        height: 15px;
+        background-color:  #FFFFFF;
+        z-index: 4;
+
+        border-radius: 50%;
+        animation: rotationСircle-1 8s linear infinite;
+      }
     }
   }
 
@@ -16,8 +56,10 @@
     transform: rotate(60deg);
     .website-promotion__square{
       .website-promotion__item-content{
-
         transform: rotate(-150deg);
+        &::before{
+          animation: rotationСircle-2 8s linear infinite;
+        }
       }
     }
   }
@@ -27,6 +69,9 @@
     .website-promotion__square{
       .website-promotion__item-content{
         transform: rotate(-210deg);
+        &::before{
+          animation: rotationСircle-3 8s linear infinite;
+        }
       }
     }
   }
@@ -35,6 +80,9 @@
     .website-promotion__square{
       .website-promotion__item-content{
         transform: rotate(-270deg);
+        &::before{
+          animation: rotationСircle-4 8s linear infinite;
+        }
       }
     }
   }
@@ -43,6 +91,9 @@
     .website-promotion__square{
       .website-promotion__item-content{
         transform: rotate(-330deg);
+        &::before{
+          animation: rotationСircle-5 8s linear infinite;
+        }
       }
     }
   }
@@ -51,6 +102,9 @@
     .website-promotion__square{
       .website-promotion__item-content{
         transform: rotate(-30deg);
+        &::before{
+          animation: rotationСircle-6 8s linear infinite;
+        }
       }
     }
   }

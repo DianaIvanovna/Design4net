@@ -12,4 +12,10 @@
   @include fontValue(normal,bold,18px,21px);
   color: $text-for-headers;
   z-index: 2;
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: none;
+    filter: drop-shadow(0px 5px 15px rgba(255, 0, 0, 0.33));
+  }
 }

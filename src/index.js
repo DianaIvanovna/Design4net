@@ -20,6 +20,10 @@ import AnimationHeader from './js/components/AnimationHeader';
     {
       item: ".title-container",
       classActive: "title-container_anim-active"
+    },
+    {
+      item: ".technical-support",
+      classActive: "technical-support_anim-active"
     }
 
   ];

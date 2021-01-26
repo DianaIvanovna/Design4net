@@ -15,21 +15,7 @@
     width: 210px;
     height: 210px;
     background-color:  #FFFFFF;
-
     border-radius: 50%;
   }
-  &::before{
-    content: "";
-    position: absolute;
-    top: -5%;
-    left: 50%;
-    width: 15px;
-    height: 15px;
-    background-color:  #FFFFFF;
-    z-index: 4;
-
-    border-radius: 50%;
-  }
-
 
 }
