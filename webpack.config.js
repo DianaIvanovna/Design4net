@@ -16,6 +16,7 @@ module.exports = {
     technicalSupport: "./src/pages/technicalSupport/technicalSupport.js",
     commercialOffer: "./src/pages/commercialOffer/commercialOffer.js",
     websiteDevelopment: "./src/pages/websiteDevelopment/websiteDevelopment.js",
+    mobileye: "./src/pages/mobileye/mobileye.js",
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -121,6 +122,11 @@ module.exports = {
       inject: false,
       template: './src/pages/websiteDevelopment/websiteDevelopment.html',
       filename: 'websiteDevelopment.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/pages/mobileye/mobileye.html',
+      filename: 'mobileye.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

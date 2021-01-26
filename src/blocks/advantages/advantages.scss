@@ -13,14 +13,17 @@ $color-6: #FCFF76;
   &:hover{
     border: 3px solid #FFFFFF;
     background: $color;
+    .advantages__number{
+      opacity: 0.1;
+    }
     .advantages__line{
       background: #FFFFFF;
     }
     .advantages__text{
-      color: darken($color, 50%);;
+      color: #000000;
     }
     .advantages__name{
-      color: darken($color, 50%);;
+      color: #000000;
     }
   }
 }
@@ -30,6 +33,7 @@ $color-6: #FCFF76;
 @import "./__line/advantages__line.scss";
 @import "./__name/advantages__name.scss";
 @import "./__text/advantages__text.scss";
+@import "./__number/advantages__number.scss";
 
 
 .advantages{

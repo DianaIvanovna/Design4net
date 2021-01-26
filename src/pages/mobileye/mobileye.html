@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Техническая поддержка">
+  <meta name="description" content="">
   <meta name="author" content="Диана Гарбуз">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.commercialOffer.css %>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.mobileye.css %>">
   <title>Design4net</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
           <li><a href="#">Поисковое продвижение сайтов (SEO)</a></li>
         </ul>
       </div>
-      <a href="" class="header__link header__link_active">Техническая поддержка </a>
+      <a href="" class="header__link">Техническая поддержка </a>
       <a href="" class="header__link">Дизайн и полиграфия</a>
       <a href="" class="header__link">Портфолио</a>
       <a href="" class="header__link">Получить коммерческое предложение</a>
@@ -40,81 +40,49 @@
 
   <div class="page_base-2">
     <div class="content">
-      <section class="commercialOffer">
+
+      <section class="portfolio">
         <div class="browser-page">
-          <div class="elipse elipse__commercialOffer-1"></div>
-          <div class="elipse elipse__commercialOffer-2"></div>
-          <div class="elipse elipse__commercialOffer-3"></div>
-
           <div class="browser-page__title-container">
-            <h2 class="browser-page__title ">Запрос коммерческого предложения</h2>
+            <div class="browser-page__points">
+              <div class="browser-page__point"></div>
+              <div class="browser-page__point"></div>
+              <div class="browser-page__point"></div>
+            </div>
+            <h2 class="browser-page__title">Mobileye</h2>
           </div>
-
-
           <div class="browser-page__content">
-            <img class=" browser-page__background-img-1" src="<%=require('../../images/commercialOffer/commercialOffer-1.png').default%>" alt="">
-            <img class=" browser-page__background-img-2" src="<%=require('../../images/commercialOffer/commercialOffer-2.png').default%>" alt="">
 
-            <form name="commercialOffer" class="commercialOffer__form" id="commercialOffer">
-              <div class="commercialOffer__input-container">
-                <input type="text" name="name" class="commercialOffer__input commercialOffer__input_required" placeholder="Ваше имя" required minlength="2" maxlength="30">
-                <p class="commercialOffer__input-hint">* обязательное поле</p>
+            <img class="portfolio__img" src="<%=require('../../images/mobileye/mobileye-img.png').default%>" alt="">
 
-                <input type="text" name="phone" class="commercialOffer__input commercialOffer__input_required" placeholder="Номер телефона" required minlength="2" maxlength="30">
-                <p class="commercialOffer__input-hint">* обязательное поле</p>
+            <h2 class="portfolio__title">Хотите похожий?</h2>
 
-                <input type="text" name="email" class="commercialOffer__input" placeholder="E-mail">
+            <h3 class="portfolio__form-title">Заполните форму</h3>
+            <form name="portfolioMobileye" class="portfolio__form">
+              <div >
+                <input type="text" name="name" class="portfolio__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
 
-                <input type="text" name="site" class="commercialOffer__input" placeholder="Ваш сайт">
+                <input type="text" name="phone" class="portfolio__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
 
-                <textarea name="comment" form="commercialOffer" cols="4" class="commercialOffer__input commercialOffer__input_big" placeholder="Дополнительные сведения"></textarea>
+                <input type="text" name="email" class="portfolio__input" placeholder="E-mail">
               </div>
+              <div >
+                <textarea name="comment" form="portfolioMobileye" cols="4" class="portfolio__input portfolio__input_textarea" placeholder="Комментарий"></textarea>
 
-              <div class="commercialOffer__checkbox-container">
-
-                <h3 class="commercialOffer__title">Виды услуг</h3>
-
-                <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="Landing" name="Landing" value="yes">
-                  <label for="Landing">Разработка лендинга</label>
-                </div>
-
-                <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="corporateWebsite" name="corporateWebsite" value="yes">
-                  <label for="corporateWebsite">Разработка корпоративного сайта</label>
-                </div>
-
-                <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="onlineStore" name="onlineStore" value="yes">
-                  <label for="onlineStore">Разработка интернет магазина</label>
-                </div>
-                <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="contextualAdvertising" name="contextualAdvertising" value="yes">
-                  <label for="contextualAdvertising">Контекстная реклама</label>
-                </div>
-                <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="promotionSocialNetworks" name="promotionSocialNetworks" value="yes">
-                  <label for="promotionSocialNetworks">Продвижение в социальных сетях</label>
-                </div>
-                <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="promotionSearch" name="promotionSearch" value="yes">
-                  <label for="promotionSearch">Поисковое продвижение сайтов</label>
-                </div>
-                <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="technicalSupport" name="technicalSupport" value="yes">
-                  <label for="technicalSupport">Техническая поддержка</label>
-                </div>
-                <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="designPrinting" name="designPrinting" value="yes">
-                  <label for="designPrinting">Дизайн и полиграфия</label>
-                </div>
+                <button type="submit" form="portfolioMobileye" class="portfolio__button">Перейти на сайт</button>
               </div>
             </form>
-            <button type="submit" form="commercialOffer" class="commercialOffer__button">Отправить заявку</button>
+
           </div>
         </div>
+
+
       </section>
+
+
     </div>
+
+
     <footer class="footer">
       <div class="footer__content">
         <nav class="footer__container">
@@ -191,7 +159,7 @@
 
     </footer>
   </div>
-
-  <script src="<%= htmlWebpackPlugin.files.chunks.commercialOffer.entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.mobileye.entry %>"></script>
 </body>
 </html>
+
