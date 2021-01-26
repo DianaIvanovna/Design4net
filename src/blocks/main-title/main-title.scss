@@ -17,6 +17,35 @@
   @media screen and (max-width: 600px){
     margin: 82px auto 0px;
   }
+
+  // для анимации
+  .main-title__title{
+    opacity: 0;
+    transition: all 2s ease 0s;
+  }
+  .main-title__line{
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 2s ease 0s;
+  }
+  .main-title__line_vertical{
+    transform: rotate(-90deg) translateY(-80%);
+    opacity: 0;
+    transition: all 2s ease 0s;
+  }
 }
 
+.main-title_anim-active{
+  .main-title__title{
+    opacity: 1;
+  }
+  .main-title__line{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .main-title__line_vertical{
+    transform: rotate(-90deg) translateY(0px);
+    opacity: 1;
+  }
+}
 

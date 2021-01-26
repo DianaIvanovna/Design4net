@@ -14,4 +14,44 @@
   margin-bottom: 30px;
   justify-content: center;
 
+
+  // для анимации
+  .title-container__title, .title-container__subtitle{
+    opacity: 0;
+    transition: all 2s ease 0s;
+  }
+  .title-container__line{
+    opacity: 0;
+    &:first-of-type{
+      transform: translateX(100%);
+    }
+    transform: translateX(-100%);
+    transition: all 2s ease 0s;
+  }
+  .title-container__line.title-container__line_anum-left{
+    transform: translateX(100%);
+  }
+  .title-container__line.title-container__line_anum-right{
+    transform: translateX(-100%);
+  }
+  .title-container__line.title-container__line_anum-top{
+    transform: translateY(100%);
+  }
+}
+
+.title-container_anim-active{
+
+  .title-container__title, .title-container__subtitle{
+    opacity: 1;
+  }
+
+  .title-container__line{
+    opacity: 1;
+    &:first-of-type{
+      transform: translate(0px, 0px);
+    }
+    transform: translate(0px,0px);
+  }
+
+
 }

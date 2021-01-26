@@ -13,6 +13,7 @@
     text-align: center;
     text-transform: lowercase;
     color: $text-for-headers;
+
   }
   @media screen and (max-width: 1024px){
     @include fontValue(normal, 900, 42px, 48px);
@@ -27,5 +28,5 @@
       @include fontValue(normal, 200, 24px, 28px);
     }
   }
-}
 
+}
