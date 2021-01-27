@@ -11,7 +11,6 @@ import AnimationHeader from '../../js/components/AnimationHeader';
   const header = new Header();
   const ourClient = new OurClient("small", ourClientContainer);
   const goUpButton = new GoUpButton();
-
   const animationObject = [
     {
       item: ".title-container",

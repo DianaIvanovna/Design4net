@@ -9,6 +9,14 @@
       display: block;
     }
   }
+
+  @media screen and (max-width: 768px){
+    &:hover{
+      .header__dropdown{
+        display: none;
+      }
+    }
+  }
 }
 
 .header__dropdown-container_active{

@@ -12,11 +12,14 @@
 
   & li{
     z-index: 5;
-
     a{
+      display: block; /* Ссылка как блочный элемент */
+      height: 100%;
       @include fontValue(normal, normal, 12px, 14px);
       color: $text-for-headers;
       text-decoration: none;
+      box-sizing: border-box;
+      padding: 6px 17px;
     }
     &:hover{
       background: #39604B;
@@ -31,7 +34,6 @@
     box-sizing: border-box;
     width: 250%;
     text-align: start;
-    padding:  6px 17px;
   }
   @media screen and (max-width:768px){
     position: relative;
