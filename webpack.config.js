@@ -17,6 +17,7 @@ module.exports = {
     commercialOffer: "./src/pages/commercialOffer/commercialOffer.js",
     websiteDevelopment: "./src/pages/websiteDevelopment/websiteDevelopment.js",
     mobileye: "./src/pages/mobileye/mobileye.js",
+    runovo: "./src/pages/runovo/runovo.js",
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -127,6 +128,11 @@ module.exports = {
       inject: false,
       template: './src/pages/mobileye/mobileye.html',
       filename: 'mobileye.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/pages/runovo/runovo.html',
+      filename: 'runovo.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

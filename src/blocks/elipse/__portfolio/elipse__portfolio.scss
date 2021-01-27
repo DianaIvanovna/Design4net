@@ -8,7 +8,7 @@
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
 }
 .elipse__portfolio-2{
-    width: 88px;
+  width: 88px;
   height: 88px;
   right: -30px;
   top: 30px;
@@ -37,7 +37,7 @@
   height: 190px;
   border:  $elipse-color solid 10px;
   left: -50px;
-  bottom: 66px;
+  top: 800px;
   border-radius: 50%;
 
   &::after{
@@ -58,10 +58,88 @@
 .elipse__portfolio-4{
   width: 633px;
   height: 633px;
-  bottom: -250px;
+  top: 700px;
   right: -550px;
 
   border: 30px solid $elipse-color;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
 
+}
+
+.elipse__portfolio-5{
+  width: 332px;
+  height: 332px;
+  border: 15px solid $elipse-color;
+
+  left: -300px;
+  bottom: 600px;
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:29.5px;
+    left:29.5px;
+
+    width: 243px;
+    height: 243px;
+    background: $elipse-color;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (max-width:768px){
+    bottom: 400px;
+
+  }
+}
+
+.elipse__portfolio-6{
+  width: 332px;
+  height: 332px;
+  border: 15px solid $elipse-color;
+
+  right: -130px;
+  bottom: -70px;
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:29.5px;
+    left:29.5px;
+
+    width: 243px;
+    height: 243px;
+    border: 10px solid $elipse-color;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.elipse__portfolio-7{
+  width: 633px;
+  height: 633px;
+  border: 30px solid $elipse-color;
+
+  left: -270px;
+  bottom: -320px;
+  &::after{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top:186px;
+    left:186px;
+
+    width: 201px;
+    height: 201px;
+    background: $elipse-color;
+
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  @media screen and (max-width:600px){
+    display: none;
+
+  }
 }
