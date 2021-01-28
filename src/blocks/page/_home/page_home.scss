@@ -1,20 +1,3 @@
-@keyframes movingStars {
-  0% {
-    transform: matrix(-1, 0, 0, 1, 0, 0) scale(1, 1);
-    // transform: matrix(-1, 0, 0, 1, 0, 0) ;
-    // left: 0%;
-  }
-  50% {
-    // transform: translate(120px, 50%) rotate(50deg);
-    // background-position: 50% 0;
-  }
-  100% {
-    transform: matrix(-1, 0, 0, 1, 0, 0) scale(1, 1);
-    // transform: translate(0px, 0%);
-    // background-position: 50% 0;
-  }
-}
-
 .page_home{
   display:block;
   position: relative;
@@ -24,7 +7,6 @@
   background-size: cover;
   background-repeat: repeat-y;
 
-
   background-blend-mode: screen;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
@@ -32,22 +14,29 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
-  &::before{
-    content: url("./images/background/home-grid-1.png");
-    display: block;
-    position: absolute;
-    top: 42px;
-    left: 0px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    z-index: -1;
-    animation: movingStars 25s ease-in-out infinite;
-  }
-  &::after{
-    content: url("./images/background/home-page-img-2.png");
-    position: absolute;
-    bottom: -97px;
-    left: 10%;
-    z-index: -1;
-  }
+  // &::before{
+  //   content: url("./images/background/home-grid-1.png");
+  //   display: block;
+  //   position: absolute;
+  //   top: 42px;
+  //   left: 0px;
+  //   transform: matrix(-1, 0, 0, 1, 0, 0);
+  //   z-index: -1;
+  // }
+  // &::after{
+  //   content: url("./images/background/home-page-img-2.png");
+  //   position: absolute;
+  //   bottom: -97px;
+  //   left: 10%;
+  //   z-index: -1;
+  // }
 
+}
+
+.page__particles{
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 42px;
+  left: 0px;
 }
