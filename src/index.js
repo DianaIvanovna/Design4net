@@ -24,10 +24,13 @@ import AnimationHeader from './js/components/AnimationHeader';
       classActive: "title-container_anim-active"
     },
     {
-      item: ".technical-support",
-      classActive: "technical-support_anim-active"
+      item: ".technical-support__item",
+      classActive: "technical-support__item_anim-active"
+    },
+    {
+      item: ".stages-work__icons-stage",
+      classActive: "stages-work__icons-stage_anim-active"
     }
-
   ];
 
   const animationHeader = new AnimationHeader(animationObject);

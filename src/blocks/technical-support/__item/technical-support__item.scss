@@ -8,3 +8,18 @@
     margin-right: 0px;
   }
 }
+.technical-support__item_anim-active{
+  .technical-support__line{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .technical-support__item-name{
+    opacity: 1;
+  }
+  .technical-support__img-circle{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 2s ease 0s;
+  }
+
+}

@@ -18,22 +18,3 @@
   position: relative;
 }
 
-.technical-support_anim-active{
-  .technical-support__img{
-    .technical-support__img-circle{
-      opacity: 1;
-      transform: scale(1);
-      transition: all 2s ease 0s;
-    }
-  }
-  .technical-support__line{
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  .technical-support__item-name{
-    opacity: 1;
-  }
-
-}
-
