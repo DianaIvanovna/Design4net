@@ -4,4 +4,8 @@
   align-items: flex-end;
   justify-content: space-evenly;
   padding-bottom: 50px;
+
+  @media screen and (max-width: 768px){
+    align-items: flex-start;
+  }
 }

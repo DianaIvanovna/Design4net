@@ -1,5 +1,6 @@
 import "./style.css";
 import "./main.scss";
+
 import "particles.js";
 
 import Header from './js/components/Header';
@@ -34,7 +35,11 @@ import AnimationHeader from './js/components/AnimationHeader';
 })();
 
 (function () {
-  particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('new');
+  particlesJS.load('particles-js_top', "particles.json", function() {
+    console.log('callback - particles.js config loaded');
+  });
+  particlesJS.load('particles-js_bottom', "particles.json", function() {
     console.log('callback - particles.js config loaded');
   });
 })();
