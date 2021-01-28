@@ -11,12 +11,12 @@
       "value": "#ccc"
     },
     "opacity": {
-      "value": 0.8,
+      "value": 1,
       "random": false
 
     },
     "size": {
-      "value": 3,
+      "value": 5,
       "random": true,
       "anim": {
         "enable": false,
@@ -29,8 +29,8 @@
       "enable": true,
       "distance": 100,
       "color": "#ccc",
-      "opacity": 0.5,
-      "width": 2
+      "opacity": 0.7,
+      "width": 3
     },
     "move": {
       "enable": true,

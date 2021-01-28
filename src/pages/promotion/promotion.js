@@ -18,11 +18,9 @@ import AnimationHeader from '../../js/components/AnimationHeader';
     }
 
   ];
-
   const animationHeader = new AnimationHeader(animationObject);
 
 })();
-
 
 
 

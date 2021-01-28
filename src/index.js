@@ -38,7 +38,7 @@ import AnimationHeader from './js/components/AnimationHeader';
 })();
 
 (function () {
-  console.log('new');
+  // ДЛЯ РАБОТЫ ПОЛИГОНА
   particlesJS.load('particles-js_top', "particles.json", function() {
     console.log('callback - particles.js config loaded');
   });

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && webpack --mode production && cp particles.json dist/",
+    "build": "rimraf dist && webpack --mode production && cp particles.json dist/ && cp particlesDevelopment.json dist/",
     "dev": "webpack-dev-server --mode development --open --watch",
     "eslint": "eslint -c ./.eslintrc --ext .js ./ --ignore-path .gitignore",
     "eslint:fix": "eslint -c ./.eslintrc --ext .js ./ --ignore-path .gitignore --fix",

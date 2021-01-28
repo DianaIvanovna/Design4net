@@ -122,7 +122,7 @@ export default class OurClient {
     }
   }
   _rightShiftSmall(){
-    if (!(-this._width * (this._clients.length + 1 - this._count) > this._position - this._width)){
+    if (!(-this._width * (this._clients.length + 1 - this._count) >= this._position - this._width)){
       this._position = this._position - this._width - this._marginClient;
       this._clientsContainer.style.transform = `translateX(${this._position}px)`;
     }

@@ -1,0 +1,11 @@
+.developmentStud__particles{
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  @media screen and (max-width:768px){
+    width: 100%;
+  }
+}

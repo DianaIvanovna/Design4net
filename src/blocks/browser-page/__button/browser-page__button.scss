@@ -11,12 +11,22 @@
 
   @include fontValue(normal, bold, 18px, 21px);
   color: #FFFFFF;
+  a{
+    text-decoration: none;
+    @include fontValue(normal, bold, 18px, 21px);
+    color: #FFFFFF;
+  }
 
   border-radius: 15px;
   margin-top: 40px;
   @media screen and (max-width:600px){
     @include fontValue(normal, bold, 16px, 18px);
     padding: 15px 20px;
+
+    a{
+      text-decoration: none;
+      @include fontValue(normal, bold, 16px, 18px);
+    }
   }
 
   &:hover{
