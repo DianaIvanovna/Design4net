@@ -1,0 +1,16 @@
+@import "./_desktop/portfolio__device_desktop.scss";
+@import "./_mobile/portfolio__device_mobile.scss";
+@import "./_tablet/portfolio__device_tablet.scss";
+
+.portfolio__device{
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}

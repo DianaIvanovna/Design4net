@@ -1,0 +1,32 @@
+
+@import "./_desktop/portfolio__site_desktop.scss";
+@import "./_mobile/portfolio__site_mobile.scss";
+@import "./_tablet/portfolio__site_tablet.scss";
+
+@keyframes scrollSite {
+  0% {
+    background-position: 50% 0;
+  }
+  10% {
+    background-position: 50% 0;
+  }
+  85% {
+    background-position: 50% 100%;
+  }
+  90% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+.portfolio__site{
+  left: 50%;
+  position: absolute;
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+  z-index: 2;
+  animation: scrollSite 25s ease-in-out infinite;
+}

@@ -1,0 +1,11 @@
+.portfolio__device-container_tablet{
+  width: 60%;
+  padding-top: 44%;
+  position: absolute;
+  bottom: -10%;
+  right: -15%;
+  z-index: 4;
+  @media screen and (max-width:900px){
+    right: -5%;
+  }
+}

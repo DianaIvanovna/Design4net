@@ -3,57 +3,18 @@
 @import "./__form/portfolio__form.scss";
 @import "./__input/portfolio__input.scss";
 @import "./__title/portfolio__title.scss";
+@import "./__device-container/portfolio__device-container.scss";
+@import "./__device/portfolio__device.scss";
+@import "./__devices/portfolio__devices.scss";
+@import "./__site/portfolio__site.scss";
+@import "./__link/portfolio__link.scss";
+@import "./__name/portfolio__name.scss";
+@import "./__screen/portfolio__screen.scss";
+@import "./__text/portfolio__text.scss";
 
 .portfolio{
   margin-top: 70px;
   width: 100%;
   position: relative;
   margin-bottom: 55px;
-}
-.portfolio__img{
-  width: 100%;
-}
-
-.portfolio__text{
-  @include fontValue(normal,normal,16px,126.69%);
-  letter-spacing: 0.02em;
-  color: $text-color;
-  margin: 0px;
-  margin-bottom: 15px;
-  @media screen and (max-width:600px){
-    @include fontValue(normal,normal,14px,126.69%);
-  }
-}
-.portfolio__text_bold{
-  @include fontValue(normal,bold,16px,126.69%);
-  @media screen and (max-width:600px){
-    @include fontValue(normal,bold,14px,126.69%);
-  }
-}
-
-.portfolio__name{
-  @include fontValue(normal,bold,24px,98%);
-  text-align: center;
-  letter-spacing: 0.005em;
-  margin: 0px;
-  margin-bottom: 5px;
-  color: $text-color;
-  @media screen and (max-width:600px){
-    @include fontValue(normal,bold,18px,98%);
-  }
-}
-
-.portfolio__link{
-  text-decoration: none;
-  @include fontValue(normal,normal,12px,98%);
-  text-align: center;
-  letter-spacing: 0.005em;
-  text-transform: lowercase;
-  margin-bottom: 10px;
-
-  color: #838383;
-}
-.portfolio__screen{
-  width: 100%;
-  margin-bottom: 20px;
 }
