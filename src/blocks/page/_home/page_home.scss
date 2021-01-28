@@ -1,6 +1,21 @@
+@keyframes movingStars {
+  0% {
+    transform: matrix(-1, 0, 0, 1, 0, 0) scale(1, 1);
+    // transform: matrix(-1, 0, 0, 1, 0, 0) ;
+    // left: 0%;
+  }
+  50% {
+    // transform: translate(120px, 50%) rotate(50deg);
+    // background-position: 50% 0;
+  }
+  100% {
+    transform: matrix(-1, 0, 0, 1, 0, 0) scale(1, 1);
+    // transform: translate(0px, 0%);
+    // background-position: 50% 0;
+  }
+}
+
 .page_home{
-
-
   display:block;
   position: relative;
   width: 100%;
@@ -25,6 +40,7 @@
     left: 0px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     z-index: -1;
+    animation: movingStars 25s ease-in-out infinite;
   }
   &::after{
     content: url("./images/background/home-page-img-2.png");
