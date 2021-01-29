@@ -28,7 +28,7 @@ export default class OurClient {
       this._configurationBig(); // начальные настройки
 
       this._widthBigClient = (this._carousel.offsetWidth  - this._marginClient*this._count) / (this._count) * this._scaleBigPhoto;   // расчет размера большой картинки
-      this._width = (this._carousel.offsetWidth - this._widthBigClient - this._marginClient*this._count) / (this._count -1); // ширина обычных картинок
+      this._width = (this._carousel.offsetWidth - this._widthBigClient - this._marginClient*(this._count-1)) / (this._count -1); // ширина обычных картинок
 
       this._clients.forEach((client)=>{
         client.style.width = `${this._width}px`;
@@ -40,7 +40,7 @@ export default class OurClient {
 
     }else if (this._typeOurClient == "small"){
       this._configurationSmall();
-      this._width = (this._carousel.offsetWidth - this._marginClient*this._count) / (this._count); // ширина обычных картинок
+      this._width = (this._carousel.offsetWidth - this._marginClient*(this._count-1)) / (this._count); // ширина обычных картинок
       this._clients.forEach((client)=>{
         client.style.width = `${this._width}px`;
       });
@@ -106,7 +106,8 @@ export default class OurClient {
     }
   }
   _rightShiftBig(){
-    if (!(-this._width * (this._clients.length + 1 - this._count) >= this._position - this._width)){
+    if (!((-this._width * (this._clients.length - this._count) - this._marginClient*(this._clients.length - this._count - 1)) > this._position - this._width))
+    {
       this._clients[this._numberBigClient].style.width = `${this._width}px`; //
       this._position = this._position - this._width - this._marginClient;
       this._numberBigClient++;
@@ -122,7 +123,7 @@ export default class OurClient {
     }
   }
   _rightShiftSmall(){
-    if (!(-this._width * (this._clients.length + 1 - this._count) >= this._position - this._width)){
+    if (!((-this._width * (this._clients.length - this._count) - this._marginClient*(this._clients.length - this._count - 1))  > this._position - this._width)){
       this._position = this._position - this._width - this._marginClient;
       this._clientsContainer.style.transform = `translateX(${this._position}px)`;
     }

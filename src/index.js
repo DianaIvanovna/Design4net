@@ -14,6 +14,8 @@ import AnimationHeader from './js/components/AnimationHeader';
   const ourClient = new OurClient("big", ourClientContainer);
   const goUpButton = new GoUpButton();
 
+  const formCreatingWebsites = document.querySelector('.form-consultation_creatingWebsites');
+
   const animationObject = [
     {
       item: ".main-title", // объекты с каким классом имеют анимацию при скролле
@@ -40,9 +42,7 @@ import AnimationHeader from './js/components/AnimationHeader';
 (function () {
   // ДЛЯ РАБОТЫ ПОЛИГОНА
   particlesJS.load('particles-js_top', "particles.json", function() {
-    console.log('callback - particles.js config loaded');
   });
   particlesJS.load('particles-js_bottom', "particles.json", function() {
-    console.log('callback - particles.js config loaded');
   });
 })();
