@@ -7,6 +7,7 @@ import Header from './js/components/Header';
 import OurClient from './js/components/OurClient';
 import GoUpButton from './js/components/GoUpButton';
 import AnimationHeader from './js/components/AnimationHeader';
+import Form from './js/components/Form';
 
 (function () {
   const ourClientContainer = document.querySelector('.our-client');
@@ -14,7 +15,10 @@ import AnimationHeader from './js/components/AnimationHeader';
   const ourClient = new OurClient("big", ourClientContainer);
   const goUpButton = new GoUpButton();
 
-  const formCreatingWebsites = document.querySelector('.form-consultation_creatingWebsites');
+  const formContainer=document.querySelector('.creating-websites');
+  const form= new Form(formContainer);
+  const formContainer2=document.querySelector('.technical-support');
+  const form2= new Form(formContainer2);
 
   const animationObject = [
     {

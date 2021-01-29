@@ -4,12 +4,16 @@ import Header from '../../js/components/Header';
 import OurClient from '../../js/components/OurClient';
 import GoUpButton from '../../js/components/GoUpButton';
 import AnimationHeader from '../../js/components/AnimationHeader';
+import Form from '../../js/components/Form';
 
 (function () {
   const ourClientContainer = document.querySelector('.our-client');
   const header = new Header();
   const ourClient = new OurClient("small", ourClientContainer);
   const goUpButton = new GoUpButton();
+
+  const formContainer=document.querySelector('.promotion__context-advertising');
+  const form= new Form(formContainer);
 
   const animationObject = [
     {

@@ -5,6 +5,7 @@ import imgSite from "../../images/runovo/runovo-pictures.jpg";
 import imgSiteTablet from "../../images/runovo/runovo-pictures-tablet.jpg" ;
 import imgSiteMobile from "../../images/runovo/runovo-pictures-mobile.jpg" ;
 import Header from '../../js/components/Header';
+import Form from '../../js/components/Form';
 
 (function () {
   const header = new Header();
@@ -17,5 +18,6 @@ import Header from '../../js/components/Header';
   tablet.style.backgroundImage = `url("${imgSiteTablet}")`;
   mobile.style.backgroundImage = `url("${imgSiteMobile}")`;
 
-
+  const formContainer=document.querySelector('.portfolio');
+  const form= new Form(formContainer);
 })();

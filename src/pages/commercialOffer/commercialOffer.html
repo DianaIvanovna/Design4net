@@ -52,22 +52,21 @@
 
 
           <div class="browser-page__content">
-            <!-- <img class=" browser-page__background-img-1" src="<%=require('../../images/commercialOffer/commercialOffer-1.png').default%>" alt="">
-            <img class=" browser-page__background-img-2" src="<%=require('../../images/commercialOffer/commercialOffer-2.png').default%>" alt=""> -->
 
             <div class="commercialOffer__particles" id="particles-js"></div>
 
-            <form name="commercialOffer" class="commercialOffer__form" id="commercialOffer">
+            <form name="commercialOffer" class="form commercialOffer__form" id="commercialOffer">
               <div class="commercialOffer__input-container">
-                <input type="text" name="name" class="commercialOffer__input commercialOffer__input_required" placeholder="Ваше имя" required minlength="2" maxlength="30">
+
+                <input type="text" name="name" class="input commercialOffer__input commercialOffer__input_required" placeholder="Ваше имя" required>
                 <p class="commercialOffer__input-hint">* обязательное поле</p>
 
-                <input type="text" name="phone" class="commercialOffer__input commercialOffer__input_required" placeholder="Номер телефона" required minlength="2" maxlength="30">
+                <input type="text" name="phone" class="input commercialOffer__input commercialOffer__input_required" placeholder="Номер телефона" required>
                 <p class="commercialOffer__input-hint">* обязательное поле</p>
 
-                <input type="text" name="email" class="commercialOffer__input" placeholder="E-mail">
+                <input type="text" name="email" pattern="^[A-Za-z]([A-za-z\w-][.]?)+[A-Za-z0-9]@[a-z]*\.[a-z]{2,6}\.?[a-z]{0,6}" class="commercialOffer__input input input__email" placeholder="E-mail">
 
-                <input type="text" name="site" class="commercialOffer__input" placeholder="Ваш сайт">
+                <input type="text" name="site" class="input commercialOffer__input" placeholder="Ваш сайт">
 
                 <textarea name="comment" form="commercialOffer" cols="4" class="commercialOffer__input commercialOffer__input_big" placeholder="Дополнительные сведения"></textarea>
               </div>
@@ -112,7 +111,7 @@
                 </div>
               </div>
             </form>
-            <button type="submit" form="commercialOffer" class="commercialOffer__button">Отправить заявку</button>
+            <button type="submit" form="commercialOffer" class="button commercialOffer__button">Отправить заявку</button>
           </div>
         </div>
       </section>

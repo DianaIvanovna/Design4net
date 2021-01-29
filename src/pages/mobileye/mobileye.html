@@ -79,18 +79,18 @@
             <h2 class="portfolio__title">Хотите похожий?</h2>
 
             <h3 class="portfolio__form-title">Заполните форму</h3>
-            <form name="portfolioMobileye" class="portfolio__form">
+            <form name="portfolioMobileye" class="form portfolio__form">
               <div >
-                <input type="text" name="name" class="portfolio__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
+                <input type="text" name="name" class="input portfolio__input" placeholder="Ваше имя" required>
 
-                <input type="text" name="phone" class="portfolio__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
+                <input type="text" name="phone" class="input portfolio__input" placeholder="Номер телефона" required>
 
-                <input type="text" name="email" class="portfolio__input" placeholder="E-mail">
+                <input type="text" name="email" class="input portfolio__input" placeholder="E-mail" pattern="^[A-Za-z]([A-za-z\w-][.]?)+[A-Za-z0-9]@[a-z]*\.[a-z]{2,6}\.?[a-z]{0,6}">
               </div>
               <div >
-                <textarea name="comment" form="portfolioMobileye" cols="4" class="portfolio__input portfolio__input_textarea" placeholder="Комментарий"></textarea>
+                <textarea name="comment" form="portfolioMobileye" cols="4" class="input portfolio__input portfolio__input_textarea" placeholder="Комментарий"></textarea>
 
-                <button type="submit" form="portfolioMobileye" class="portfolio__button">Перейти на сайт</button>
+                <button type="submit" form="portfolioMobileye" class="button portfolio__button">Перейти на сайт</button>
               </div>
             </form>
 

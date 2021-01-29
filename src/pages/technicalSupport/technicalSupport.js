@@ -5,12 +5,19 @@ import Header from '../../js/components/Header';
 import OurClient from '../../js/components/OurClient';
 import GoUpButton from '../../js/components/GoUpButton';
 import AnimationHeader from '../../js/components/AnimationHeader';
+import Form from '../../js/components/Form';
 
 (function () {
   const ourClientContainer = document.querySelector('.our-client');
   const header = new Header();
   const ourClient = new OurClient("small", ourClientContainer);
   const goUpButton = new GoUpButton();
+
+  const formContainer=document.querySelector('.pageTechnicalSupport');
+  const formContainer2=document.querySelector('.technical-support');
+  const form= new Form(formContainer);
+  const form2= new Form(formContainer2);
+
   const animationObject = [
     {
       item: ".title-container",
