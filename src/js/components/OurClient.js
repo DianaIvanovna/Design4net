@@ -12,6 +12,7 @@ export default class OurClient {
     /* конфигурация */
     this._count = 0;  // видимое количество изображений
     this._numberBigClient = 0;// какое изображение по счету будет большим
+    this._numberBigClientConst = 0;
     this._marginClient = 0;
     this._position = 0; // положение ленты прокрутки
     this._scaleBigPhoto = 0;
@@ -28,12 +29,21 @@ export default class OurClient {
       this._configurationBig(); // начальные настройки
 
       this._widthBigClient = (this._carousel.offsetWidth  - this._marginClient*this._count) / (this._count) * this._scaleBigPhoto;   // расчет размера большой картинки
+
       this._width = (this._carousel.offsetWidth - this._widthBigClient - this._marginClient*(this._count-1)) / (this._count -1); // ширина обычных картинок
+
+      if (this._clients.length <= this._count){
+        this._width = (this._carousel.offsetWidth - this._marginClient*(this._count-1)) / (this._count); // ширина обычных картинок
+        this._widthBigClient = this._width;
+      }
 
       this._clients.forEach((client)=>{
         client.style.width = `${this._width}px`;
       });
       this._clients[this._numberBigClient].style.width = `${this._widthBigClient}px`; // картинка посередине большая
+      this._numberBigClientConst = this._numberBigClient;
+
+      this._clientsContainer.style.height = `${this._widthBigClient + 50}px`;
 
       this._buttonLeft.addEventListener('click', this._leftShiftBig.bind(this));
       this._buttonRight.addEventListener('click', this._rightShiftBig.bind(this));
@@ -41,9 +51,11 @@ export default class OurClient {
     }else if (this._typeOurClient == "small"){
       this._configurationSmall();
       this._width = (this._carousel.offsetWidth - this._marginClient*(this._count-1)) / (this._count); // ширина обычных картинок
+      let maxHeight = 0;
       this._clients.forEach((client)=>{
         client.style.width = `${this._width}px`;
       });
+      this._numberBigClientConst = this._numberBigClient;
       this._buttonLeft.addEventListener('click', this._leftShiftSmall.bind(this));
       this._buttonRight.addEventListener('click', this._rightShiftSmall.bind(this));
     }
@@ -103,6 +115,13 @@ export default class OurClient {
       this._numberBigClient--;
       this._clients[this._numberBigClient].style.width = `${this._widthBigClient}px`; // картинка посередине большая
       this._clientsContainer.style.transform = `translateX(${this._position}px)`;
+
+    } else {
+      this._clients[this._numberBigClient].style.width = `${this._width}px`; // старой большой картинке присваиваем маленький размер
+      this._position = this._position - this._width*(this._clients.length - this._count) - this._marginClient*(this._clients.length - this._count);
+      this._numberBigClient = this._clients.length - this._numberBigClientConst - 1;
+      this._clients[this._numberBigClient].style.width = `${this._widthBigClient}px`; // картинка посередине большая
+      this._clientsContainer.style.transform = `translateX(${this._position}px)`;
     }
   }
   _rightShiftBig(){
@@ -113,6 +132,13 @@ export default class OurClient {
       this._numberBigClient++;
       this._clientsContainer.style.transform = `translateX(${this._position}px)`;
       this._clients[this._numberBigClient].style.width = `${this._widthBigClient}px`; // картинка посередине большая
+    }else {
+      this._clients[this._numberBigClient].style.width = `${this._width}px`; // старой большой картинке присваиваем маленький размер
+
+      this._position = 0;
+      this._numberBigClient = this._numberBigClientConst;
+      this._clients[this._numberBigClient].style.width = `${this._widthBigClient}px`; // картинка посередине большая
+      this._clientsContainer.style.transform = `translateX(${this._position}px)`;
     }
   }
 
@@ -120,11 +146,18 @@ export default class OurClient {
     if ((this._position + this._width + this._marginClient <= 0)){
       this._position = this._position + this._width + this._marginClient;
       this._clientsContainer.style.transform = `translateX(${this._position}px)`;
+    } else {
+      this._position = this._position - this._width*(this._clients.length - this._count) - this._marginClient*(this._clients.length - this._count);
+      this._clientsContainer.style.transform = `translateX(${this._position}px)`;
     }
   }
   _rightShiftSmall(){
     if (!((-this._width * (this._clients.length - this._count) - this._marginClient*(this._clients.length - this._count - 1))  > this._position - this._width)){
       this._position = this._position - this._width - this._marginClient;
+      this._clientsContainer.style.transform = `translateX(${this._position}px)`;
+    }else {
+      this._position = 0;
+      this._numberBigClient = this._numberBigClientConst;
       this._clientsContainer.style.transform = `translateX(${this._position}px)`;
     }
   }
