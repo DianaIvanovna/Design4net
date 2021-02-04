@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="Диана Гарбуз">
-  <link rel="stylesheet" href="style.ebf816ec42e68f97daf6.css">
+  <link rel="stylesheet" href="style.08aa581ec964311cba7a.css">
   <title>Design4net</title>
 </head>
 <body>
@@ -13,8 +13,9 @@
   <div class="background__mobile"></div>
   <header class="header">
     <nav class="header__links">
+      <a href="./" class="header__link "><img src="./images/home.svg" alt="иконка главная страница"></a>
       <div class="header__dropdown-container ">
-        <a href="websiteDevelopment.html" target="_blank" class="header__link header__link_dropdown header__dropdown-container_active">Разработка сайтов </a>
+        <a href="websiteDevelopment.html"  class="header__link header__link_dropdown header__dropdown-container_active">Разработка сайтов </a>
         <ul class="header__dropdown">
           <li><a href="websiteDevelopment.html#linkLanding" >Лендинг</a></li>
           <li><a href="websiteDevelopment.html#linkCorporateWebsite" >Корпоративный сайт</a></li>
@@ -22,17 +23,17 @@
         </ul>
       </div>
       <div class="header__dropdown-container ">
-        <a href="promotion.html" target="_blank" class="header__link header__link_dropdown">Продвижение</a>
+        <a href="promotion.html"  class="header__link header__link_dropdown">Продвижение</a>
         <ul class="header__dropdown">
-          <li><a href="promotion.html#linkContextAdvertising" target="_blank">Контекстная реклама</a></li>
-          <li><a href="promotion.html#linkSmm" target="_blank">Продвижение в социальных сетях (SMM)</a></li>
-          <li><a href="promotion.html#linkSearchPromotion" target="_blank">Поисковое продвижение сайтов (SEO)</a></li>
+          <li><a href="promotion.html#linkContextAdvertising" >Контекстная реклама</a></li>
+          <li><a href="promotion.html#linkSmm" >Продвижение в социальных сетях (SMM)</a></li>
+          <li><a href="promotion.html#linkSearchPromotion" >Поисковое продвижение сайтов (SEO)</a></li>
         </ul>
       </div>
-      <a href="technicalSupport.html" target="_blank" class="header__link " >Техническая поддержка </a>
-      <a href="./#linkDesignAndPrinting" target="_blank" class="header__link">Дизайн и полиграфия</a>
-      <a href="./#linkPortfolio" target="_blank" class="header__link">Портфолио</a>
-      <a href="commercialOffer.html" target="_blank" class="header__link">Получить коммерческое предложение</a>
+      <a href="technicalSupport.html"  class="header__link " >Техническая поддержка </a>
+      <!-- <a href="./#linkDesignAndPrinting"  class="header__link">Дизайн и полиграфия</a> -->
+      <a href="./#linkPortfolio"  class="header__link">Портфолио</a>
+      <a href="commercialOffer.html"  class="header__link">Получить коммерческое предложение</a>
     </nav>
     <svg width="21" class="header__menu" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#DAFE00" d="M0 0h21v1H0zM0 5h21v1H0zM9.484 10H21v1H9.484z"/></svg>
   </header>
@@ -43,14 +44,24 @@
   <div class="page_base-2">
     <div class="content">
       <section class="websiteDevelopment">
-        <div class="websiteDevelopment__block block-BusinessCard" >
+        <div class="websiteDevelopment__block block-BusinessCard" style="border: 1px solid red">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+
+          </div>
+
+          <!-- <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия"> -->
           <a name="linkBusinessCard" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-1"></div>
           <div class="elipse elipse__websiteDevelopment-2"></div>
           <div class="elipse elipse__websiteDevelopment-3"></div>
           <div class="elipse elipse__websiteDevelopment-4"></div>
 
-          <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия">
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -95,7 +106,7 @@
               </div>
 
 
-              <button class="browser-stage__button-price">стоимость от 30 000 р.</button>
+              <button class="browser-stage__button-price browser-stage__button-price_block-BusinessCard">стоимость от 30 000 р.</button>
 
 
               <!-- НАШИ КЛИЕНТЫ  -->
@@ -110,16 +121,19 @@
                       <li class="our-client__client">
                         <img src="./images/client-6.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
+                        <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
 
                       <li class="our-client__client">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">MCEM.RU</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
 
                       <li class="our-client__client">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
 
                     </ul>
@@ -131,16 +145,10 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
-
-                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
-                <span class="error error__name"></span>
-
-                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
-                <span class="error error__phone"></span>
-
-                <button class="form-consultation__button">заказать консультацию</button>
-
+              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+                <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
+                <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
+                <button class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>
@@ -151,7 +159,16 @@
           <a name="linkLanding" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-5"></div>
           <div class="elipse elipse__websiteDevelopment-6"></div>
-          <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -191,16 +208,16 @@
                 </div>
                 <div class="browser-page__icon">
                   <img src="./images/icon-hosting-gift.svg" alt="иконка Хостинг">
-                  <p class="browser-page__icon-name">Хостинг на 1 год в подарок</p>
+                  <p class="browser-page__icon-name">Хостинг и доменное имя на один год в подарок</p>
                 </div>
               </div>
 
-              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+              <button class="browser-stage__button-price browser-stage__button-price_block-landing">стоимость от 40 000 р.</button>
 
 
               <!-- НАШИ КЛИЕНТЫ  -->
               <section class="our-client our-client_businessCardWebsite-big">
-                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <p class="our-client__title">Примеры наших лэндингов</p>
                 <div class="our-client__container">
                   <button class="our-client__button our-client__button_left">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
@@ -210,44 +227,54 @@
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
+                        <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
                       <li class="our-client__client">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
+                        <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
+                        <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
                       <li class="our-client__client">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
+                        <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
 
                     </ul>
@@ -259,16 +286,13 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
 
-                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
-                <span class="error error__name"></span>
+                <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
 
-                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
-                <span class="error error__phone"></span>
+                <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
 
-                <button class="form-consultation__button">заказать консультацию</button>
-
+                <button class="form-consultation__button button">заказать консультацию</button>
               </form>
 
             </div>
@@ -279,7 +303,16 @@
           <a name="linkCorporateWebsite" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-7"></div>
           <div class="elipse elipse__websiteDevelopment-8"></div>
-          <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -296,27 +329,47 @@
               <div class="websiteDevelopment__title-line"></div>
 
               <h3 class="browser-page__icon-title">Что входит:</h3>
-              <div class="browser-page__icon-container">
-                <div class="browser-page__icon">
+              <div class="browser-page__icon-container ">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="./images/icon-unique-design-3.svg" alt="иконка дизайн сайта">
                   <p class="browser-page__icon-name">Уникальный дизайн 3х страниц</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
+                  <img src="./images/icon-adaptive.svg" alt="иконка адаптивной верстки">
+                  <p class="browser-page__icon-name">Мобильная и адаптивная версия</p>
+                </div>
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
+                  <img src="./images/icon-filling-information.svg" alt="иконка текст для сайта">
+                  <p class="browser-page__icon-name">Заполнение до 15 страниц информацией</p>
+                </div>
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
+                  <img src="./images/icon-SEO-optimization.svg" alt="иконка СЕО">
+                  <p class="browser-page__icon-name">Начальная СЕО оптимизация</p>
+                </div>
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="./images/icon-cms.svg" alt="иконка cms">
                   <p class="browser-page__icon-name">Удобная система управления (CMS)</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="./images/icon-multi-language.svg" alt="иконка Подключение мультиязычности">
                   <p class="browser-page__icon-name">Подключение мультиязычности</p>
                 </div>
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
+                  <img src="./images/icon-connecting-metrics.svg" alt="иконка Подключениеосновных метрик">
+                  <p class="browser-page__icon-name">Подключение основных метрик</p>
+                </div>
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
+                  <img src="./images/icon-hosting-gift.svg" alt="иконка Хостинг">
+                  <p class="browser-page__icon-name">Хостинг и доменное имя на один год в подарок</p>
+                </div>
               </div>
 
-              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+              <button class="browser-stage__button-price browser-stage__button-price_block-corporateWebsite">стоимость от 65 000 р.</button>
 
 
               <!-- НАШИ КЛИЕНТЫ  -->
               <section class="our-client our-client_businessCardWebsite-big">
-                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <p class="our-client__title">Примеры наших корпоративных сайтов</p>
                 <div class="our-client__container">
                   <button class="our-client__button our-client__button_left">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
@@ -326,44 +379,54 @@
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
+                        <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
                       <li class="our-client__client">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
+                        <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
+                        <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
                       <li class="our-client__client">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
+                        <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
 
                     </ul>
@@ -375,16 +438,11 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
 
-                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
-                <span class="error error__name"></span>
-
-                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
-                <span class="error error__phone"></span>
-
-                <button class="form-consultation__button">заказать консультацию</button>
-
+                <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
+                <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
+                <button class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>
@@ -395,8 +453,16 @@
           <a name="linkCatalog" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-9"></div>
           <div class="elipse elipse__websiteDevelopment-10"></div>
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle "></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
 
-          <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия">
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -408,24 +474,56 @@
             </div>
             <div class="browser-page__content">
               <p class="browser-page__content-text browser-page__content-text_not-line">
-                <span class="browser-page__content-title">Корпоративный сайт</span> — это расширенная версия тарифа «Сайт визитка». Все страницы сайта индивидуализируются под конкретные направления, благодаря чему сайт становится более проработанным, где особого внимания удостоен каждый элемент. Возможность интеграции личного кабинета для сотрудников и клиентов. Идеально подходит для всех типов предпринимателей и объединений, которые хотят быть на голову выше своих конкурентов. Разработка корпоративного сайта от 20 рабочих дней
+                <span class="browser-page__content-title">Сайт каталог</span> — это современная замена журналам и рекламной продукции на бумажных носителях. Данный тариф позволяет максимально подробно рассказать посетителям о своей продукции не выходя из дома. Данное решение отлично подойдет для предпринимателей, у которых в ассортименте представлено более 20 позиций товаров с разделением на категории. Разработка сайта каталога от 30 рабочих дней
               </p>
               <div class="websiteDevelopment__title-line"></div>
 
               <h3 class="browser-page__icon-title">Что входит:</h3>
               <div class="browser-page__icon-container">
                 <div class="browser-page__icon">
+                  <img src="./images/icon-design-layout.svg" alt="иконка дизайн макета">
+                  <p class="browser-page__icon-name">Разработка 3-х уникальных дизайн макетов</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-adaptive.svg" alt="иконка адаптивной верстки">
+                  <p class="browser-page__icon-name">Мобильная и адаптивная версия</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-filling-information.svg" alt="иконка текст для сайта">
+                  <p class="browser-page__icon-name">Заполнение до 15 страниц информацией</p>
+                </div>
+                <div class="browser-page__icon">
                   <img src="./images/icon-filling-product-lines.svg" alt="иконка список товаров">
                   <p class="browser-page__icon-name">Заполнение до 100 товарных позиций</p>
                 </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-SEO-optimization.svg" alt="иконка СЕО">
+                  <p class="browser-page__icon-name">Расширенная СЕО оптимизация</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-cms.svg" alt="иконка cms">
+                  <p class="browser-page__icon-name">Удобная система управления (CMS)</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-multi-language.svg" alt="иконка Подключение мультиязычности">
+                  <p class="browser-page__icon-name">Подключение мультиязычности</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-connecting-metrics.svg" alt="иконка Подключениеосновных метрик">
+                  <p class="browser-page__icon-name">Подключение основных метрик</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-hosting-gift.svg" alt="иконка Хостинг">
+                  <p class="browser-page__icon-name">Хостинг и доменное имя на один год в подарок</p>
+                </div>
               </div>
 
-              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+              <button class="browser-stage__button-price browser-stage__button-price_block-catalog">стоимость от 75 000 р.</button>
 
 
               <!-- НАШИ КЛИЕНТЫ  -->
               <section class="our-client our-client_businessCardWebsite-small">
-                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <p class="our-client__title">Примеры наших сайтов каталогов</p>
                 <div class="our-client__container">
                   <button class="our-client__button our-client__button_left">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
@@ -435,19 +533,23 @@
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
+                        <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
                       <li class="our-client__client">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
+                        <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
                     </ul>
                   </div>
@@ -458,15 +560,12 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
 
-                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
-                <span class="error error__name"></span>
+                <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
+                <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
 
-                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
-                <span class="error error__phone"></span>
-
-                <button class="form-consultation__button">заказать консультацию</button>
+                <button class="button form-consultation__button">заказать консультацию</button>
 
               </form>
 
@@ -479,7 +578,16 @@
           <div class="elipse elipse__websiteDevelopment-11"></div>
           <div class="elipse elipse__websiteDevelopment-12"></div>
           <div class="elipse elipse__websiteDevelopment-13"></div>
-          <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle "></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -491,12 +599,36 @@
             </div>
             <div class="browser-page__content">
               <p class="browser-page__content-text browser-page__content-text_not-line">
-                <span class="browser-page__content-title">Корпоративный сайт</span> — это расширенная версия тарифа «Сайт визитка». Все страницы сайта индивидуализируются под конкретные направления, благодаря чему сайт становится более проработанным, где особого внимания удостоен каждый элемент. Возможность интеграции личного кабинета для сотрудников и клиентов. Идеально подходит для всех типов предпринимателей и объединений, которые хотят быть на голову выше своих конкурентов. Разработка корпоративного сайта от 20 рабочих дней
+                Создание Интернет магазина отлично подойдет для тех, кто занимается оптовыми и розничными продажами. Главным отличием магазина от каталога – это наличие кнопки «купить», так же в данном решении реализована «корзина» с возможностью приобретения продукции через интернет, с опцией «оплата картой» и выбором различных условий доставки. Разработка интернет-магазина от 30 рабочих дней
               </p>
               <div class="websiteDevelopment__title-line"></div>
 
               <h3 class="browser-page__icon-title">Что входит:</h3>
               <div class="browser-page__icon-container">
+                <div class="browser-page__icon">
+                  <img src="./images/icon-design-layout.svg" alt="иконка дизайн макета">
+                  <p class="browser-page__icon-name">Разработка 2-х уникальных дизайн макетов</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-adaptive.svg" alt="иконка адаптивной верстки">
+                  <p class="browser-page__icon-name">Мобильная и адаптивная версия</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-filling-information.svg" alt="иконка текст для сайта">
+                  <p class="browser-page__icon-name">Заполнение до 15 страниц информацией</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-filling-product-lines.svg" alt="иконка список товаров">
+                  <p class="browser-page__icon-name">Заполнение до 100 товарных позиций</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-SEO-optimization.svg" alt="иконка СЕО">
+                  <p class="browser-page__icon-name">Расширенная СЕО оптимизация</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-cms.svg" alt="иконка cms">
+                  <p class="browser-page__icon-name">Удобная система управления (CMS)</p>
+                </div>
                 <div class="browser-page__icon">
                   <img src="./images/icon-product-filters.svg" alt="иконка фильтр">
                   <p class="browser-page__icon-name">Удобные фильтры подбора товаров</p>
@@ -509,14 +641,22 @@
                   <img src="./images/icon-internet-pay.svg" alt="иконка оплата через интернет">
                   <p class="browser-page__icon-name">Подключение оплаты через интернет</p>
                 </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-connecting-metrics.svg" alt="иконка Подключениеосновных метрик">
+                  <p class="browser-page__icon-name">Подключение основных метрик</p>
+                </div>
+                <div class="browser-page__icon">
+                  <img src="./images/icon-hosting-gift.svg" alt="иконка Хостинг">
+                  <p class="browser-page__icon-name">Хостинг и доменное имя на один год в подарок</p>
+                </div>
               </div>
 
-              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+              <button class="browser-stage__button-price browser-stage__button-price_block-onlineStore">стоимость от 85 000 р.</button>
 
 
               <!-- НАШИ КЛИЕНТЫ  -->
               <section class="our-client our-client_businessCardWebsite-small">
-                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <p class="our-client__title">Примеры наших интернет магазинов</p>
                 <div class="our-client__container">
                   <button class="our-client__button our-client__button_left">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
@@ -526,14 +666,17 @@
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                     </ul>
                   </div>
@@ -544,15 +687,11 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
 
-                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
-                <span class="error error__name"></span>
-
-                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
-                <span class="error error__phone"></span>
-
-                <button class="form-consultation__button">заказать консультацию</button>
+                <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
+                <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
+                <button class="form-consultation__button button">заказать консультацию</button>
 
               </form>
 
@@ -563,7 +702,16 @@
         <div class="websiteDevelopment__block block-onlineService">
           <a name="linkOnlineService" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-14"></div>
-          <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle "></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="./images/websiteDevelopment-line.png" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -575,36 +723,58 @@
             </div>
             <div class="browser-page__content">
               <p class="browser-page__content-text browser-page__content-text_not-line">
-                <span class="browser-page__content-title">Корпоративный сайт</span> — это расширенная версия тарифа «Сайт визитка». Все страницы сайта индивидуализируются под конкретные направления, благодаря чему сайт становится более проработанным, где особого внимания удостоен каждый элемент. Возможность интеграции личного кабинета для сотрудников и клиентов. Идеально подходит для всех типов предпринимателей и объединений, которые хотят быть на голову выше своих конкурентов. Разработка корпоративного сайта от 20 рабочих дней
+                Мы осуществляем полный цикл работ по разработке веб-сервисов различного масштаба и функциональности, начиная с прототипирования и разработки технического задания, заканчивая вводом в эксплуатацию, оптимизацией узких мест и поддержкой. Наш опыт в сфере разработки веб-сервисов включает в себя создание интернет-проектов как на заказ, так и реализация и развитие собственных интернет-проектов, благодаря чему мы понимаем перспективы и варианты развития и помогаем нашим клиентам с концепцией монетизации и другими вопросами возникающими в процессе работы проекта
               </p>
               <div class="websiteDevelopment__title-line"></div>
 
-              <h3 class="browser-page__icon-title">Что входит:</h3>
-              <div class="browser-page__icon-container">
-                <div class="browser-page__icon">
+              <h3 class="browser-page__icon-title">Основные фазы работы над веб-сервисом:</h3>
+              <div class="browser-page__icon-container browser-page__icon-container_onlineService">
+                <div class="browser-page__icon ">
+                  <p class="browser-page__icon-time">3-4 недели</p>
                   <img src="./images/icon-project-and-design.svg" alt="иконка Проэктирование и дизайн">
-                  <p class="browser-page__icon-name">Проэктирование и дизайн</p>
+                  <p class="browser-page__icon-name browser-page__icon-name_onlineService">Проэктирование и дизайн</p>
+                  <p class="browser-page__icon-text">Анализ и проектирование проекта. В рамках данной фазы осуществляются следующие работы:</p>
+                  <p class=" browser-page__icon-text browser-page__icon-text_second">Информационная архитектура<br><br>
+                    Прототипирование<br><br>
+                    Технический проект<br><br>
+                    Интерфейс и дизайн-концепция</p>
                 </div>
                 <div class="browser-page__icon">
+                  <p class="browser-page__icon-time">от 2-х до 4-х месяцев</p>
                   <img src="./images/icon-development.svg" alt="иконка Разработка">
-                  <p class="browser-page__icon-name">Разработка</p>
+                  <p class="browser-page__icon-name browser-page__icon-name_onlineService">Разработка</p>
+                  <p class="browser-page__icon-text">На фазе разработки осуществляется непосредственная разработка программного кода проекта</p>
+                  <p class=" browser-page__icon-text browser-page__icon-text_second">Программирование<br><br>
+                    Верстка макетов<br><br>
+                    Настройка тестового стенда<br><br>
+                    Публикация промежуточных результатов</p>
                 </div>
                 <div class="browser-page__icon">
+                  <p class="browser-page__icon-time">4-5 недель</p>
                   <img src="./images/icon-stabilization.svg" alt="иконка Стабилизация">
-                  <p class="browser-page__icon-name">Стабилизация</p>
+                  <p class="browser-page__icon-name browser-page__icon-name_onlineService">Стабилизация</p>
+                  <p class="browser-page__icon-text">На фазе стабилизации осуществляется тестирование проекта, составление списков финальных доработок</p>
+                  <p class=" browser-page__icon-text browser-page__icon-text_second">Тестирование<br><br>
+                    Доработки и подготовка к запуску<br><br>
+                    Публикация бета-версии проекта</p>
                 </div>
                 <div class="browser-page__icon">
+                  <p class="browser-page__icon-time">1-2 недели</p>
                   <img src="./images/icon-commissioning.svg" alt="иконка ракета">
-                  <p class="browser-page__icon-name">Ввод в эксплуатацию</p>
+                  <p class="browser-page__icon-name browser-page__icon-name_onlineService">Ввод в эксплуатацию</p>
+                  <p class="browser-page__icon-text">Данная фаза означает окончание основных работ и ввод проекта в эксплуатацию</p>
+                  <p class=" browser-page__icon-text browser-page__icon-text_second">Настройка хостинг-платформы<br><br>
+                    Загрузка и настройка проекта<br><br>
+                    Настройка инструментов аналитики</p>
                 </div>
               </div>
 
-              <button class="browser-stage__button-price">стоимость от 40 000 р.</button>
+              <button class="browser-stage__button-price browser-stage__button-price_block-onlineService">Запросить стоимость</button>
 
 
               <!-- НАШИ КЛИЕНТЫ  -->
               <section class="our-client our-client_businessCardWebsite-small">
-                <p class="our-client__title">Примеры наших сайтов визиток</p>
+                <p class="our-client__title">Примеры наших онлайн сервисов</p>
                 <div class="our-client__container">
                   <button class="our-client__button our-client__button_left">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
@@ -614,18 +784,22 @@
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                       <li class="our-client__client">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
+                        <a href="#"  class="our-client__link"></a>
                       </li>
                     </ul>
                   </div>
@@ -636,16 +810,10 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form-consultation form-consultation_websiteDevelopment">
-
-                <input type="text" name="name" class="form-consultation__input" placeholder="Ваше имя" required minlength="2" maxlength="30">
-                <span class="error error__name"></span>
-
-                <input type="text" name="phone" class="form-consultation__input" placeholder="Номер телефона" required minlength="2" maxlength="30">
-                <span class="error error__phone"></span>
-
-                <button class="form-consultation__button">заказать консультацию</button>
-
+              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+                <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
+                <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
+                <button class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>
@@ -661,60 +829,60 @@
 
 
           <div class="footer__link-container footer__link-container_dropdown">
-            <a href="websiteDevelopment.html" target="_blank" class="footer__link footer__link_dropdown">Разработка сайтов</a>
+            <a href="websiteDevelopment.html"  class="footer__link footer__link_dropdown">Разработка сайтов</a>
             <ul class="footer__dropdown">
-              <li class="footer__link_secondary"><a href="websiteDevelopment.html#linkLanding" target="_blank">Лендинг</a></li>
-              <li class="footer__link_secondary"><a href="websiteDevelopment.html#linkCorporateWebsite" target="_blank">Корпоративный сайт</a></li>
-              <li class="footer__link_secondary"><a href="websiteDevelopment.html#linkOnlineStore" target="_blank">Интернет магазин</a></li>
+              <li class="footer__link_secondary"><a href="websiteDevelopment.html#linkLanding" >Лендинг</a></li>
+              <li class="footer__link_secondary"><a href="websiteDevelopment.html#linkCorporateWebsite" >Корпоративный сайт</a></li>
+              <li class="footer__link_secondary"><a href="websiteDevelopment.html#linkOnlineStore" >Интернет магазин</a></li>
             </ul>
           </div>
 
           <div class="footer__link-container footer__link-container_dropdown">
-            <a href="promotion.html" target="_blank" class="footer__link footer__link_dropdown">Продвижение</a>
+            <a href="promotion.html"  class="footer__link footer__link_dropdown">Продвижение</a>
             <ul class="footer__dropdown">
-              <li class="footer__link_secondary"><a href="promotion.html#linkContextAdvertising" target="_blank">Контекстная реклама</a></li>
-              <li class="footer__link_secondary"><a href="promotion.html#linkSmm" target="_blank">Продвижение в социальных сетях (SMM)</a></li>
-              <li class="footer__link_secondary"><a href="promotion.html#linkSearchPromotion" target="_blank">Поисковое продвижение сайтов (SEO)</a></li>
+              <li class="footer__link_secondary"><a href="promotion.html#linkContextAdvertising" >Контекстная реклама</a></li>
+              <li class="footer__link_secondary"><a href="promotion.html#linkSmm" >Продвижение в социальных сетях (SMM)</a></li>
+              <li class="footer__link_secondary"><a href="promotion.html#linkSearchPromotion" >Поисковое продвижение сайтов (SEO)</a></li>
             </ul>
           </div>
           <div class="footer__link-container">
-            <a href="technicalSupport.html" target="_blank"  class="footer__link">Техническая поддержка </a>
-            <a href="./#linkDesignAndPrinting" target="_blank" class="footer__link">Дизайн и полиграфия</a>
-            <a href="./#linkPortfolio" target="_blank" class="footer__link">Портфолио</a>
-            <a href="commercialOffer.html" target="_blank" class="footer__link">Получить коммерческое предложение</a>
+            <a href="technicalSupport.html"   class="footer__link">Техническая поддержка </a>
+            <a href="./#linkDesignAndPrinting"  class="footer__link">Дизайн и полиграфия</a>
+            <a href="./#linkPortfolio"  class="footer__link">Портфолио</a>
+            <a href="commercialOffer.html"  class="footer__link">Получить коммерческое предложение</a>
           </div>
 
           <div class="footer__link-container footer__link-container_logo">
             <div class="footer__logo">
               <span>логотип</span>
             </div>
-            <div>
+            <!-- <div>
               <p class="footer__subtitle">Присоединяйтесь в соц. сетях:</p>
               <ul class="footer__social-network">
                 <li>
-                  <a href="#" target="_blank">
+                  <a href="#" >
                     <img class="footer__icon" src="./images/facebook.svg" alt="facebook">
                   </a>
                 </li>
 
                 <li >
-                  <a href="#"  target="_blank">
+                  <a href="#"  >
                     <img class="footer__icon" src="./images/vk.svg" alt="vk" >
                   </a>
                 </li>
                 <li>
-                  <a href="#"  target="_blank">
+                  <a href="#"  >
                     <img class="footer__icon" src="./images/instagram.svg" alt="instagram">
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank">
+                  <a href="#" >
                     <img class="footer__icon" src="./images/twitter.svg" alt="facebook">
                   </a>
                 </li>
 
               </ul>
-            </div>
+            </div> -->
           </div>
 
         </nav>
@@ -737,7 +905,7 @@
   </div>
   <!-- СТРЕЛКА ПОДНЯТИЯ ВВЕРХ -->
 
-<script src="websiteDevelopment.69d85ccc449c7d911fdf.js"></script>
+<script src="websiteDevelopment.16d8840126a8573be4db.js"></script>
 </body>
 </html>
 
