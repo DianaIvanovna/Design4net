@@ -56,8 +56,14 @@
 
             <div class="commercialOffer__particles" id="particles-js"></div>
 
-            <form name="commercialOffer" class="form commercialOffer__form" id="commercialOffer">
+            <form name="commercialOffer" action="send.php" method="post" class="form commercialOffer__form" id="commercialOffer">
               <div class="commercialOffer__input-container">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/commercialOffer">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation commercialOffer">
+                <!-- END Hidden Required Fields -->
+
 
                 <input type="text" name="name" class="input commercialOffer__input commercialOffer__input_required" placeholder="Ваше имя" required>
                 <p class="commercialOffer__input-hint">* обязательное поле</p>
@@ -77,33 +83,33 @@
                 <h3 class="commercialOffer__title">Виды услуг</h3>
 
                 <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="Landing" name="Landing" value="yes">
+                  <input type="checkbox" class="commercialOffer__checkbox" id="Landing" name="Landing" value="Landing">
                   <label for="Landing">Разработка лендинга</label>
                 </div>
 
                 <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="corporateWebsite" name="corporateWebsite" value="yes">
+                  <input type="checkbox" class="commercialOffer__checkbox" id="corporateWebsite" name="corporateWebsite" value="corporateWebsite">
                   <label for="corporateWebsite">Разработка корпоративного сайта</label>
                 </div>
 
                 <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="onlineStore" name="onlineStore" value="yes">
+                  <input type="checkbox" class="commercialOffer__checkbox" id="onlineStore" name="onlineStore" value="onlineStore">
                   <label for="onlineStore">Разработка интернет магазина</label>
                 </div>
                 <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="contextualAdvertising" name="contextualAdvertising" value="yes">
+                  <input type="checkbox" class="commercialOffer__checkbox" id="contextualAdvertising" name="contextualAdvertising" value="contextualAdvertising">
                   <label for="contextualAdvertising">Контекстная реклама</label>
                 </div>
                 <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="promotionSocialNetworks" name="promotionSocialNetworks" value="yes">
+                  <input type="checkbox" class="commercialOffer__checkbox" id="promotionSocialNetworks" name="promotionSocialNetworks" value="promotionSocialNetworks">
                   <label for="promotionSocialNetworks">Продвижение в социальных сетях</label>
                 </div>
                 <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="promotionSearch" name="promotionSearch" value="yes">
+                  <input type="checkbox" class="commercialOffer__checkbox" id="promotionSearch" name="promotionSearch" value="promotionSearch">
                   <label for="promotionSearch">Поисковое продвижение сайтов</label>
                 </div>
                 <div>
-                  <input type="checkbox" class="commercialOffer__checkbox" id="technicalSupport" name="technicalSupport" value="yes">
+                  <input type="checkbox" class="commercialOffer__checkbox" id="technicalSupport" name="technicalSupport" value="technicalSupport">
                   <label for="technicalSupport">Техническая поддержка</label>
                 </div>
                 <!-- <div>

@@ -9,6 +9,13 @@
   background: none;
   margin-left: 32px;
   margin-top: 20px;
+  &:hover{
+    cursor: pointer;
+    a{
+      color: #D7FD01;
+    }
+    border-color: white;
+  }
   a{
     text-decoration: none;
     box-sizing: border-box;
@@ -21,8 +28,6 @@
       @include fontValue(normal, bold, 14px, 16px);
       padding: 15px 35px;
     }
-    &:hover{
-      cursor: pointer;
-    }
+
   }
 }

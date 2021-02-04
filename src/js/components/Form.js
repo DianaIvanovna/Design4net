@@ -23,9 +23,23 @@ export default class Form{
   _formSubmission(event) { // отправка формы
     event.preventDefault();
     this._validateForm();
-    console.log("отправка формы");
+    if (this._validateForm()){
+      fetch("./mail.php", {
+        method: "POST",
+        body: new FormData(this._form),
+      })
+      .then(data=>{
+        this._clearingFields();
+      })
+      .catch(function(error) { console.log(error); });
+    }
   }
 
+  _clearingFields(){
+    this._form.elements.forEach((input)=>{
+      input.value = '';
+    })
+  }
 
 
   _validateInputElement(element) { // проверяет валидность отдельных инпутов
@@ -45,6 +59,7 @@ export default class Form{
       }
     });
     this._setSubmitButton(flagValid);
+    return flagValid;
   }
 
   _setSubmitButton(flag) { // делает кнопку активной/неактивной

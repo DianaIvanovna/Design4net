@@ -79,9 +79,16 @@
 
             <h2 class="portfolio__title">Хотите похожий?</h2>
 
+
             <h3 class="portfolio__form-title">Заполните форму</h3>
-            <form name="portfolioMobileye" class="form portfolio__form">
+            <form name="portfolioMobileye" action="send.php" method="post" class="form portfolio__form">
               <div >
+                <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Design4net/mobileye">
+              <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+              <input type="hidden" name="form_subject" value="buying a website mobileye">
+              <!-- END Hidden Required Fields -->
+
                 <input type="text" name="name" class="input portfolio__input" placeholder="Ваше имя" required>
 
                 <input type="text" name="phone" class="input portfolio__input" placeholder="Номер телефона" required>

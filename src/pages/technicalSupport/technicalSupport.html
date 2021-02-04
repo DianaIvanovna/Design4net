@@ -276,11 +276,18 @@
                 </button>
               </div>
             </div>
+
+
             <!-- КОНЕЦ НАШИ КЛИЕНТЫ КОНТЕКСНАЯ РЕКЛАМА -->
-            <form name="promotionСonsultationTechnicalSupport" class="form form-consultation form-consultation_small ">
+            <form name="promotionСonsultationTechnicalSupport" action="send.php" method="post" class="form form-consultation form-consultation_small ">
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Design4net/technicalSupport">
+              <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+              <input type="hidden" name="form_subject" value="form consultation pageTechnicalSupport up">
+              <!-- END Hidden Required Fields -->
               <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
               <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-              <button class="button form-consultation__button">получить консультацию</button>
+              <button type="submit" class="button form-consultation__button">получить консультацию</button>
             </form>
 
           </div>
@@ -422,10 +429,17 @@
           </button>
         </div>
 
-        <form name="creatingWebsitesСonsultation" class="form form-consultation form-consultation_dark">
+
+
+        <form name="creatingWebsitesСonsultation" action="send.php" method="post" class="form form-consultation form-consultation_dark">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Design4net/TechnicalSupport">
+          <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+          <input type="hidden" name="form_subject" value="form consultation pageTechnicalSupport down">
+          <!-- END Hidden Required Fields -->
           <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
           <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-          <button class="button form-consultation__button">заказать консультацию</button>
+          <button type="submit" class="button form-consultation__button">заказать консультацию</button>
         </form>
 
       </section>

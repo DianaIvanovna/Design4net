@@ -1,0 +1,9 @@
+.browser-page__icon.browser-page__icon_corporateWebsite{
+  width: calc(100% / 4);
+  @media screen and (max-width:900px){
+    width: calc(100% / 4);
+  }
+  @media screen and (max-width:500px){
+    width: calc(100% / 2);
+  }
+}

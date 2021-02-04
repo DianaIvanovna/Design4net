@@ -51,7 +51,11 @@
             <div class="elipse elipse__promotion-1"></div>
             <div class="elipse elipse__promotion-2"></div>
             <div class="promotion__description">
-              <img  class="promotion__line" src="<%=require('../../images/promotion-page/line.png').default%>" alt="">
+              <div class="promotion__line">
+                <div class="promotion__line-circle promotion__line-circle_active"></div>
+                <div class="promotion__line-circle"></div>
+                <div class="promotion__line-circle "></div>
+              </div>
               <div class="title-container title-container_left ">
                 <h2 class="title-container__title">Контекстная</h2>
                 <div class="title-container__line-and-text">
@@ -192,12 +196,19 @@
               </div>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ КОНТЕКСНАЯ РЕКЛАМА -->
 
-              <form name="promotionСonsultation" class="form form-consultation form-consultation_small">
 
+
+
+              <form name="promotionСonsultation" action="send.php" method="post" class="form form-consultation form-consultation_small">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/promotion">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation context advertising">
+                <!-- END Hidden Required Fields -->
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
 
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="form-consultation__button button">заказать консультацию</button>
+                <button type="submit" class="form-consultation__button button">заказать консультацию</button>
 
               </form>
             </div>
@@ -211,7 +222,11 @@
           <a name="linkSmm" class="page__anchor"></a>
           <!-- SMM  HEADER -->
           <div class="promotion__header">
-            <img  class="promotion__line" src="<%=require('../../images/promotion-page/line.png').default%>" alt="">
+            <div class="promotion__line">
+              <div class="promotion__line-circle"></div>
+              <div class="promotion__line-circle promotion__line-circle_active"></div>
+              <div class="promotion__line-circle "></div>
+            </div>
             <div class="promotion__description">
               <div class="title-container title-container_vertical ">
                 <div class="title-container__line title-container__line_anum-top"></div>
@@ -330,7 +345,11 @@
 
           <!-- ПОИСКОВОЕ ПРОДВИЖЕНИЕ  HEADER -->
           <div class="promotion__header">
-            <img  class="promotion__line" src="<%=require('../../images/promotion-page/line.png').default%>" alt="">
+            <div class="promotion__line">
+              <div class="promotion__line-circle"></div>
+              <div class="promotion__line-circle "></div>
+              <div class="promotion__line-circle promotion__line-circle_active"></div>
+            </div>
             <div class="promotion__description">
 
               <div class="title-container title-container_right title-container_search-promotion">

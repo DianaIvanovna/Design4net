@@ -44,14 +44,24 @@
   <div class="page_base-2">
     <div class="content">
       <section class="websiteDevelopment">
-        <div class="websiteDevelopment__block block-BusinessCard" >
+        <div class="websiteDevelopment__block block-BusinessCard">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+
+          </div>
+
+          <!-- <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия"> -->
           <a name="linkBusinessCard" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-1"></div>
           <div class="elipse elipse__websiteDevelopment-2"></div>
           <div class="elipse elipse__websiteDevelopment-3"></div>
           <div class="elipse elipse__websiteDevelopment-4"></div>
 
-          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -135,10 +145,18 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block BusinessCard">
+                <!-- END Hidden Required Fields -->
+
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="button form-consultation__button">заказать консультацию</button>
+                <button type="submit" class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>
@@ -149,7 +167,16 @@
           <a name="linkLanding" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-5"></div>
           <div class="elipse elipse__websiteDevelopment-6"></div>
-          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -267,13 +294,21 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+
+
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block landing">
+                <!-- END Hidden Required Fields -->
 
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
 
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
 
-                <button class="form-consultation__button button">заказать консультацию</button>
+                <button type="submit" class="form-consultation__button button">заказать консультацию</button>
               </form>
 
             </div>
@@ -284,7 +319,16 @@
           <a name="linkCorporateWebsite" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-7"></div>
           <div class="elipse elipse__websiteDevelopment-8"></div>
-          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -301,36 +345,36 @@
               <div class="websiteDevelopment__title-line"></div>
 
               <h3 class="browser-page__icon-title">Что входит:</h3>
-              <div class="browser-page__icon-container">
-                <div class="browser-page__icon">
+              <div class="browser-page__icon-container ">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="<%=require('../../images/websiteDevelopment/icon-unique-design-3.svg').default%>" alt="иконка дизайн сайта">
                   <p class="browser-page__icon-name">Уникальный дизайн 3х страниц</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="<%=require('../../images/websiteDevelopment/icon-adaptive.svg').default%>" alt="иконка адаптивной верстки">
                   <p class="browser-page__icon-name">Мобильная и адаптивная версия</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="<%=require('../../images/websiteDevelopment/icon-filling-information.svg').default%>" alt="иконка текст для сайта">
                   <p class="browser-page__icon-name">Заполнение до 15 страниц информацией</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="<%=require('../../images/websiteDevelopment/icon-SEO-optimization.svg').default%>" alt="иконка СЕО">
                   <p class="browser-page__icon-name">Начальная СЕО оптимизация</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="<%=require('../../images/websiteDevelopment/icon-cms.svg').default%>" alt="иконка cms">
                   <p class="browser-page__icon-name">Удобная система управления (CMS)</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="<%=require('../../images/websiteDevelopment/icon-multi-language.svg').default%>" alt="иконка Подключение мультиязычности">
                   <p class="browser-page__icon-name">Подключение мультиязычности</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="<%=require('../../images/websiteDevelopment/icon-connecting-metrics.svg').default%>" alt="иконка Подключениеосновных метрик">
                   <p class="browser-page__icon-name">Подключение основных метрик</p>
                 </div>
-                <div class="browser-page__icon">
+                <div class="browser-page__icon browser-page__icon_corporateWebsite">
                   <img src="<%=require('../../images/websiteDevelopment/icon-hosting-gift.svg').default%>" alt="иконка Хостинг">
                   <p class="browser-page__icon-name">Хостинг и доменное имя на один год в подарок</p>
                 </div>
@@ -409,12 +453,20 @@
                 </div>
 
               </section>
+
+
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block corporateWebsite">
+                <!-- END Hidden Required Fields -->
 
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="button form-consultation__button">заказать консультацию</button>
+                <button type="submit" class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>
@@ -425,8 +477,16 @@
           <a name="linkCatalog" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-9"></div>
           <div class="elipse elipse__websiteDevelopment-10"></div>
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle "></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
 
-          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -523,13 +583,20 @@
                 </div>
 
               </section>
+
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block catalog">
+                <!-- END Hidden Required Fields -->
 
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
 
-                <button class="button form-consultation__button">заказать консультацию</button>
+                <button type="submit" class="button form-consultation__button">заказать консультацию</button>
 
               </form>
 
@@ -542,7 +609,16 @@
           <div class="elipse elipse__websiteDevelopment-11"></div>
           <div class="elipse elipse__websiteDevelopment-12"></div>
           <div class="elipse elipse__websiteDevelopment-13"></div>
-          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle "></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -641,12 +717,19 @@
                 </div>
 
               </section>
+
+
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block onlineStore">
+                <!-- END Hidden Required Fields -->
 
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="form-consultation__button button">заказать консультацию</button>
+                <button type="submit" class="form-consultation__button button">заказать консультацию</button>
 
               </form>
 
@@ -657,7 +740,16 @@
         <div class="websiteDevelopment__block block-onlineService">
           <a name="linkOnlineService" class="page__anchor"></a>
           <div class="elipse elipse__websiteDevelopment-14"></div>
-          <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия">
+          <div class="websiteDevelopment__line">
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle "></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle"></div>
+            <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
+
+          </div>
+          <!-- <img class="websiteDevelopment__line" src="<%=require('../../images/websiteDevelopment/websiteDevelopment-line.png').default%>" alt="линия"> -->
           <div class="browser-page browser-page_small ">
             <div class="browser-page__title-container">
               <div class="browser-page__points">
@@ -756,10 +848,17 @@
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block onlineService">
+                <!-- END Hidden Required Fields -->
+
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="button form-consultation__button">заказать консультацию</button>
+                <button type="submit" class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>

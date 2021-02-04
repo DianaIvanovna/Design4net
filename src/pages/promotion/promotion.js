@@ -34,7 +34,6 @@ import Form from '../../js/components/Form';
 
       switch (event.target.classList[1]) {
         case 'button-commercialOffer_contextualAdvertising': {
-          console.log('!')
           window.sessionStorage.setItem('checkboxActive', 'contextualAdvertising');
           } break;
         case 'button-commercialOffer_promotionSearch': {

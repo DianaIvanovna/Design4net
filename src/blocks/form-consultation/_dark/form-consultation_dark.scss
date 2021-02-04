@@ -7,5 +7,14 @@
     background: none;
     border: 2px solid #62E800;
     box-sizing: border-box;
+    &:hover{
+      cursor: pointer;
+      color: #D7FD01;
+      a{
+        color: #D7FD01;
+      }
+      border-color: white;
+      filter: none;
+    }
   }
 }

@@ -5,6 +5,15 @@
   width: 80%;
   max-width: 563px;
   height: 55px;
+  &:hover{
+    cursor: pointer;
+    color: #D7FD01;
+    a{
+      color: #D7FD01;
+    }
+    border-color: white;
+    filter: none;
+  }
   a{
     @include fontValue(normal,bold,24px,28px);
     @media screen and ( max-width: 1024px){
