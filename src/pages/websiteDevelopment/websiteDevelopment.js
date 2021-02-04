@@ -40,7 +40,29 @@ import Form from '../../js/components/Form';
   const form5= new Form(formContainer5);
   const form6= new Form(formContainer6);
 
+  // для перехода на коммерческое предложение с отмеченной услогой
+  const buttons = document.querySelectorAll('.browser-stage__button-price');
+  buttons.forEach((button)=>{
+    button.addEventListener('click', (event)=>{
+
+      switch (event.target.classList[1]) {
+        case 'browser-stage__button-price_block-landing': {
+          window.sessionStorage.setItem('checkboxActive', 'Landing');
+         }break;
+        case 'browser-stage__button-price_block-corporateWebsite': {
+          window.sessionStorage.setItem('checkboxActive', 'corporateWebsite');
+         }break;
+        case 'browser-stage__button-price_block-onlineStore': {
+          window.sessionStorage.setItem('checkboxActive', 'onlineStore');
+         }break;
+        default: break;
+      }
+      document.location.href = "./commercialOffer.html";
+    })
+  })
+
 })();
+
 
 
 

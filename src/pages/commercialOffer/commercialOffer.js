@@ -10,6 +10,11 @@ import Form from '../../js/components/Form';
   const header = new Header();
   const formContainer = document.querySelector('.browser-page__content');
   const form = new Form(formContainer);
+
+  console.log(window.sessionStorage.getItem('checkboxActive'));
+  if (window.sessionStorage.getItem('checkboxActive')!=null){
+    document.querySelector(`input[type='checkbox'][id='${window.sessionStorage.getItem('checkboxActive')}']`).checked = true;
+  }
 })();
 
 (function () {

@@ -26,7 +26,29 @@ import Form from '../../js/components/Form';
 
 })();
 
+(function(){
+  // для перехода на коммерческое предложение с отмеченной услогой
+  const buttons = document.querySelectorAll('.button-commercialOffer ');
+  buttons.forEach((button)=>{
+    button.addEventListener('click', (event)=>{
 
+      switch (event.target.classList[1]) {
+        case 'button-commercialOffer_contextualAdvertising': {
+          console.log('!')
+          window.sessionStorage.setItem('checkboxActive', 'contextualAdvertising');
+          } break;
+        case 'button-commercialOffer_promotionSearch': {
+          window.sessionStorage.setItem('checkboxActive', 'promotionSearch');
+          }break;
+        case 'button-commercialOffer_promotionSocialNetworks': {
+          window.sessionStorage.setItem('checkboxActive', 'promotionSocialNetworks');
+          }break;
+        default: break;
+      }
+      document.location.href = "./commercialOffer.html";
+    })
+  })
+})();
 
 
 (function () {

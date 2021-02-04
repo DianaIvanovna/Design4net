@@ -32,6 +32,18 @@ import Form from '../../js/components/Form';
   const animationHeader = new AnimationHeader(animationObject);
 })();
 
+(function(){
+  // для перехода на коммерческое предложение с отмеченной услогой
+  const buttons = document.querySelectorAll('.button-commercialOffer');
+  buttons.forEach((button)=>{
+    button.addEventListener('click', (event)=>{
+      window.sessionStorage.setItem('checkboxActive', 'technicalSupport');
+      document.location.href = "./commercialOffer.html";
+    })
+  })
+})();
+
+
 (function () { // для выпадающих списков
   const pageTechnicalSupport = document.querySelector(".pageTechnicalSupport");
 
