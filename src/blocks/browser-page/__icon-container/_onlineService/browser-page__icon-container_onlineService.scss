@@ -1,0 +1,33 @@
+.browser-page__icon-container.browser-page__icon-container_onlineService{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  .browser-page__icon{
+    max-width: 200px;
+    width: calc((100% - 15px*3) / 4);
+    align-items: flex-start;
+  }
+  @media screen and (max-width:900px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    .browser-page__icon{
+      max-width: 200px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and (max-width:450px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .browser-page__icon{
+      max-width: 220px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+}

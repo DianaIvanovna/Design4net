@@ -1,0 +1,10 @@
+@import "./_second/browser-page__icon-text_second.scss";
+.browser-page__icon-text{
+  @include fontValue(normal,normal,14px,100%);
+  color: $text-color-second;
+  letter-spacing: 0.005em;
+  color: #a3a3a3;
+  width: 100%;
+  margin-left: 15px;
+  margin: 0px;
+}
