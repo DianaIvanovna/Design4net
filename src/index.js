@@ -20,6 +20,9 @@ import Form from './js/components/Form';
   const formContainer2=document.querySelector('.technical-support');
   const form2= new Form(formContainer2);
 
+  const formContainerPopup=document.querySelector('.popup');
+  const formPopup= new Form(formContainerPopup);
+
   const animationObject = [
     {
       item: ".main-title", // объекты с каким классом имеют анимацию при скролле
@@ -49,4 +52,7 @@ import Form from './js/components/Form';
   });
   particlesJS.load('particles-js_bottom', "particles.json", function() {
   });
+  particlesJS.load('particles-js_popup', "particles.json", function() {
+  });
 })();
+

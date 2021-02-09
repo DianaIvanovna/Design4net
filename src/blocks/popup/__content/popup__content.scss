@@ -1,0 +1,14 @@
+.popup__content{
+  width: 80%;
+  max-width: 519px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (max-width:450px){
+    width: calc(100% - 30px);
+  }
+
+
+
+}

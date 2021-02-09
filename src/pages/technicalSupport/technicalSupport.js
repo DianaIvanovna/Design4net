@@ -6,6 +6,7 @@ import OurClient from '../../js/components/OurClient';
 import GoUpButton from '../../js/components/GoUpButton';
 import AnimationHeader from '../../js/components/AnimationHeader';
 import Form from '../../js/components/Form';
+import Popup from '../../js/components/Popup';
 
 (function () {
   const ourClientContainer = document.querySelector('.our-client');
@@ -41,6 +42,14 @@ import Form from '../../js/components/Form';
       document.location.href = "./commercialOffer.html";
     })
   })
+})();
+
+(function () {
+  const popupButton = document.querySelector('.browser-page__bunner');
+  const popup = document.querySelector('.popup');
+
+  const form= new Form(popup);
+  const popupNewCard = new Popup(popup, popupButton);
 })();
 
 

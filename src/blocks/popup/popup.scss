@@ -1,0 +1,25 @@
+@import "./__close/popup__close.scss";
+@import "./__container/popup__container.scss";
+@import "./__content/popup__content.scss";
+@import "./__header/popup__header.scss";
+@import "./__particles/popup__particles.scss";
+@import "./__title/popup__title.scss";
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  z-index: 100;
+}
+
+.popup_open{
+  display: flex;
+}
