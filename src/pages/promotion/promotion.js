@@ -14,8 +14,14 @@ import Popup from '../../js/components/Popup';
   const ourClient = new OurClient("small", ourClientContainer);
   const goUpButton = new GoUpButton();
 
+
+  const popupButton = document.querySelector('.browser-page__button_bunner');
+  const popup = document.querySelector('.popup');
+  const formSend= new Form(popup, popup);
+  const popupNewCard = new Popup(popup, popupButton);
+
   const formContainer=document.querySelector('.promotion__context-advertising');
-  const form= new Form(formContainer);
+  const form= new Form(formContainer,popup );
 
   const animationObject = [
     {
@@ -26,13 +32,6 @@ import Popup from '../../js/components/Popup';
   ];
   const animationHeader = new AnimationHeader(animationObject);
 
-})();
-(function () {
-  const popupButton = document.querySelector('.browser-page__button_bunner');
-  const popup = document.querySelector('.popup');
-
-  const form= new Form(popup);
-  const popupNewCard = new Popup(popup, popupButton);
 })();
 
 (function(){

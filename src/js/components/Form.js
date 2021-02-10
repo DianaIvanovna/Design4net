@@ -1,11 +1,13 @@
 export default class Form{
-  constructor(container) {
+  constructor(container, popup) {
     this._container = container;
     this._form = this._container.querySelector(".form");
     this._button = this._container.querySelector('.button');
+    this._popup = popup;
     this._setHandlers = this._setHandlers.bind(this);
     this._setHandlers();
   }
+
 
   _setHandlers() {
     // Добавляет необходимые для валидации обработчики всем полям формы.
@@ -24,12 +26,17 @@ export default class Form{
     event.preventDefault();
     this._validateForm();
     if (this._validateForm()){
+
       fetch("./mail.php", {
         method: "POST",
         body: new FormData(this._form),
       })
       .then(data=>{
+        if (data.ok){
         this._clearingFields();
+        this._popup.classList.add('popup_open');
+        this._popup.classList.add('popup_sent');
+        }
       })
       .catch(function(error) { console.log(error); });
     }

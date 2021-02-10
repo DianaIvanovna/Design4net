@@ -4,6 +4,7 @@
 @import "./__header/popup__header.scss";
 @import "./__particles/popup__particles.scss";
 @import "./__title/popup__title.scss";
+@import "./__text/popup__text.scss";
 
 .popup {
   position: fixed;
@@ -18,8 +19,35 @@
   display: none;
 
   z-index: 100;
+  .popup__title_form_send{
+    display: none;
+  }
+  .popup__text{
+    display: none;
+  }
+  .popup__title_form{
+    display: block;
+  }
+  .form{
+    display: flex;
+  }
 }
 
 .popup_open{
   display: flex;
+}
+
+.popup_sent{
+  .popup__title_form{
+    display: none;
+  }
+  .form{
+    display: none;
+  }
+  .popup__title_form_send{
+    display: block;
+  }
+  .popup__text{
+    display: block;
+  }
 }

@@ -8,6 +8,7 @@ import OurClient from './js/components/OurClient';
 import GoUpButton from './js/components/GoUpButton';
 import AnimationHeader from './js/components/AnimationHeader';
 import Form from './js/components/Form';
+import Popup from './js/components/Popup';
 
 (function () {
   const ourClientContainer = document.querySelector('.our-client');
@@ -15,13 +16,16 @@ import Form from './js/components/Form';
   const ourClient = new OurClient("big", ourClientContainer);
   const goUpButton = new GoUpButton();
 
-  const formContainer=document.querySelector('.creating-websites');
-  const form= new Form(formContainer);
-  const formContainer2=document.querySelector('.technical-support');
-  const form2= new Form(formContainer2);
+  const popup = document.querySelector('.popup');
+  const popupNewCard = new Popup(popup);
 
-  const formContainerPopup=document.querySelector('.popup');
-  const formPopup= new Form(formContainerPopup);
+  const formContainer=document.querySelector('.creating-websites');
+  const form= new Form(formContainer, popup);
+  const formContainer2=document.querySelector('.technical-support');
+  const form2= new Form(formContainer2, popup);
+
+
+
 
   const animationObject = [
     {

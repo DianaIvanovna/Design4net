@@ -14,10 +14,15 @@ import Popup from '../../js/components/Popup';
   const ourClient = new OurClient("small", ourClientContainer);
   const goUpButton = new GoUpButton();
 
+  const popupButton = document.querySelector('.browser-page__bunner');
+  const popup = document.querySelector('.popup');
+  const form= new Form(popup,popup);
+  const popupNewCard = new Popup(popup, popupButton);
+
   const formContainer=document.querySelector('.pageTechnicalSupport');
   const formContainer2=document.querySelector('.technical-support');
-  const form= new Form(formContainer);
-  const form2= new Form(formContainer2);
+  const form1= new Form(formContainer,popup);
+  const form2= new Form(formContainer2,popup);
 
   const animationObject = [
     {
@@ -44,13 +49,6 @@ import Popup from '../../js/components/Popup';
   })
 })();
 
-(function () {
-  const popupButton = document.querySelector('.browser-page__bunner');
-  const popup = document.querySelector('.popup');
-
-  const form= new Form(popup);
-  const popupNewCard = new Popup(popup, popupButton);
-})();
 
 
 (function () { // для выпадающих списков

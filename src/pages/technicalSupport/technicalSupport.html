@@ -607,42 +607,45 @@
   </div>
 
 
-   <!-- ПОПАП МЫ ВАМ ПЕРЕЗВОНИМ -->
+ <!-- ПОПАП МЫ ВАМ ПЕРЕЗВОНИМ -->
 
-   <section class="popup">
-    <img src="<%=require('../../images/icon/close.svg').default%>" alt="иконка закрытия" class="popup__close">
-    <div class="popup__container">
-      <!-- полигон звезды  -->
-      <div class="popup__particles" id="particles-js_popup"></div>
-      <div class="popup__header">
-        <div class="popup__points">
-          <div class="popup__point"></div>
-          <div class="popup__point"></div>
-          <div class="popup__point"></div>
-        </div>
+ <section class="popup">
+  <img src="<%=require('../../images/icon/close.svg').default%>" alt="иконка закрытия" class="popup__close">
+  <div class="popup__container">
+    <!-- полигон звезды  -->
+    <div class="popup__particles" id="particles-js_popup"></div>
+    <div class="popup__header">
+      <div class="popup__points">
+        <div class="popup__point"></div>
+        <div class="popup__point"></div>
+        <div class="popup__point"></div>
       </div>
-      <div class="popup__content">
-        <h3 class="popup__title">Мы перезвоним вам</h3>
-        <form name="creatingWebsitesСonsultation" action="send.php" method="post" class="form form-consultation form-consultation_popup">
-
-          <!-- Hidden Required Fields -->
-          <input type="hidden" name="project_name" value="Design4net">
-          <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
-          <input type="hidden" name="form_subject" value="popup callMe">
-          <!-- END Hidden Required Fields -->
-
-          <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
-          <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-          <input type="text" name="site" class="input form-consultation__input" placeholder="Сайт">
-          <button type="submit" class="button form-consultation__button">Отправить</button>
-        </form>
-      </div>
-
-
     </div>
-  </section>
+    <div class="popup__content">
+      <h3 class="popup__title popup__title_form">Мы перезвоним вам</h3>
+      <h3 class="popup__title popup__title_form_send">Заявка отправлена</h3>
+      <p class="popup__text">В скором времени с вами свяжется наш менеджер.</p>
 
-  <!-- ПОПАП МЫ ВАМ ПЕРЕЗВОНИМ -->
+      <form name="creatingWebsitesСonsultation" action="send.php" method="post" class="form form-consultation form-consultation_popup">
+
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Design4net">
+        <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+        <input type="hidden" name="form_subject" value="popup callMe">
+        <!-- END Hidden Required Fields -->
+
+        <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
+        <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
+        <input type="text" name="site" class="input form-consultation__input" placeholder="Сайт">
+        <button type="submit" class="button form-consultation__button">Отправить</button>
+      </form>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ПОПАП МЫ ВАМ ПЕРЕЗВОНИМ -->
 
   <!-- СТРЕЛКА ПОДНЯТИЯ ВВЕРХ -->
   <div class="goUp">

@@ -1,0 +1,17 @@
+.popup__text{
+  @include fontValue(normal, normal, 24px, 126%);
+  letter-spacing: 0.025em;
+  color: $text-color;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media screen and (max-width:1024px){
+    @include fontValue(normal, normal, 18px, 110%);
+  }
+
+  @media screen and (max-width:450px){
+    margin-top:20px;
+    @include fontValue(normal, normal, 18px, 110%);
+  }
+
+}

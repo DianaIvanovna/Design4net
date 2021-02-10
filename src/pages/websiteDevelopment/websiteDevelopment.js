@@ -4,11 +4,14 @@ import OurClient from '../../js/components/OurClient';
 import GoUpButton from '../../js/components/GoUpButton';
 import Header from '../../js/components/Header';
 import Form from '../../js/components/Form';
+import Popup from '../../js/components/Popup';
 
 
 (function () {
   const header = new Header();
   const goUpButton = new GoUpButton();
+
+
 
   // БЛОК НАШИ КЛИЕНТЫ
   const ourClientContainerBusinessCard = document.querySelector('.block-BusinessCard');
@@ -25,6 +28,10 @@ import Form from '../../js/components/Form';
   const ourClientOnlineStore = new OurClient("big", ourClientContainerOnlineStore);
   const ourClientOnlineService= new OurClient("big", ourClientContainerOnlineService);
 
+  //попап
+  const popup = document.querySelector('.popup');
+  const popupNewCard = new Popup(popup);
+
   // ФОРМЫ
   const formContainer1=document.querySelector('.block-BusinessCard');
   const formContainer2=document.querySelector('.block-landing');
@@ -33,12 +40,12 @@ import Form from '../../js/components/Form';
   const formContainer5=document.querySelector('.block-onlineStore');
   const formContainer6=document.querySelector('.block-onlineService');
 
-  const form1= new Form(formContainer1);
-  const form2= new Form(formContainer2);
-  const form3= new Form(formContainer3);
-  const form4= new Form(formContainer4);
-  const form5= new Form(formContainer5);
-  const form6= new Form(formContainer6);
+  const form1= new Form(formContainer1, popup);
+  const form2= new Form(formContainer2, popup);
+  const form3= new Form(formContainer3, popup);
+  const form4= new Form(formContainer4, popup);
+  const form5= new Form(formContainer5, popup);
+  const form6= new Form(formContainer6, popup);
 
   // для перехода на коммерческое предложение с отмеченной услогой
   const buttons = document.querySelectorAll('.browser-stage__button-price');
@@ -62,8 +69,6 @@ import Form from '../../js/components/Form';
   })
 
 })();
-
-
 
 
 
