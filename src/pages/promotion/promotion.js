@@ -2,7 +2,7 @@ import "./promotion.css";
 import "./promotion.scss";
 
 import Header from '../../js/components/Header';
-import OurClient from '../../js/components/OurClient';
+import  '../../js/components/OurClient';
 import GoUpButton from '../../js/components/GoUpButton';
 import AnimationHeader from '../../js/components/AnimationHeader';
 import Form from '../../js/components/Form';
@@ -11,7 +11,6 @@ import Popup from '../../js/components/Popup';
 (function () {
   const ourClientContainer = document.querySelector('.our-client');
   const header = new Header();
-  const ourClient = new OurClient("small", ourClientContainer);
   const goUpButton = new GoUpButton();
 
 

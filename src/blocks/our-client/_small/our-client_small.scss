@@ -25,15 +25,15 @@
   }
   @media screen and(max-width:600px){
     .our-client__button_left{
-      left: 10px;
+      left: 12px !important;
       img{
-        width: 15px;
+        width: 15px!important;
       }
     }
     .our-client__button_right{
-      right: 10px;
+      right: 8px!important;
       img{
-        width: 15px;
+        width: 15px!important;
       }
     }
   }

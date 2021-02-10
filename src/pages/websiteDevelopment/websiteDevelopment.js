@@ -1,6 +1,6 @@
 import "./websiteDevelopment.css";
 import "./websiteDevelopment.scss";
-import OurClient from '../../js/components/OurClient';
+import '../../js/components/OurClient';
 import GoUpButton from '../../js/components/GoUpButton';
 import Header from '../../js/components/Header';
 import Form from '../../js/components/Form';
@@ -14,19 +14,19 @@ import Popup from '../../js/components/Popup';
 
 
   // БЛОК НАШИ КЛИЕНТЫ
-  const ourClientContainerBusinessCard = document.querySelector('.block-BusinessCard');
-  const ourClientContainerLanding = document.querySelector('.block-landing');
-  const ourClientContainerCorporateWebsite = document.querySelector('.block-corporateWebsite');
-  const ourClientContainerCatalog= document.querySelector('.block-catalog');
-  const ourClientContainerOnlineStore= document.querySelector('.block-onlineStore');
-  const ourClientContainerOnlineService= document.querySelector('.block-onlineService');
+  // const ourClientContainerBusinessCard = document.querySelector('.block-BusinessCard');
+  // const ourClientContainerLanding = document.querySelector('.block-landing');
+  // const ourClientContainerCorporateWebsite = document.querySelector('.block-corporateWebsite');
+  // const ourClientContainerCatalog= document.querySelector('.block-catalog');
+  // const ourClientContainerOnlineStore= document.querySelector('.block-onlineStore');
+  // const ourClientContainerOnlineService= document.querySelector('.block-onlineService');
 
-  const ourClientBusinessCard = new OurClient("big", ourClientContainerBusinessCard);
-  const ourClientLanding = new OurClient("big", ourClientContainerLanding);
-  const ourClientCorporateWebsite = new OurClient("big", ourClientContainerCorporateWebsite);
-  const ourClientCatalog= new OurClient("big", ourClientContainerCatalog);
-  const ourClientOnlineStore = new OurClient("big", ourClientContainerOnlineStore);
-  const ourClientOnlineService= new OurClient("big", ourClientContainerOnlineService);
+  // const ourClientBusinessCard = new OurClient("big", ourClientContainerBusinessCard);
+  // const ourClientLanding = new OurClient("big", ourClientContainerLanding);
+  // const ourClientCorporateWebsite = new OurClient("big", ourClientContainerCorporateWebsite);
+  // const ourClientCatalog= new OurClient("big", ourClientContainerCatalog);
+  // const ourClientOnlineStore = new OurClient("big", ourClientContainerOnlineStore);
+  // const ourClientOnlineService= new OurClient("big", ourClientContainerOnlineService);
 
   //попап
   const popup = document.querySelector('.popup');

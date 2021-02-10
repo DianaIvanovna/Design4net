@@ -4,16 +4,14 @@ import "./main.scss";
 import "particles.js";
 
 import Header from './js/components/Header';
-import OurClient from './js/components/OurClient';
+import './js/components/OurClient';
 import GoUpButton from './js/components/GoUpButton';
 import AnimationHeader from './js/components/AnimationHeader';
 import Form from './js/components/Form';
 import Popup from './js/components/Popup';
 
 (function () {
-  const ourClientContainer = document.querySelector('.our-client');
   const header = new Header();
-  const ourClient = new OurClient("big", ourClientContainer);
   const goUpButton = new GoUpButton();
 
   const popup = document.querySelector('.popup');

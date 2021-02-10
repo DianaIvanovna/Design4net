@@ -1,20 +1,37 @@
 @import "./_hidden/our-client__button_hidden.scss";
+
+.swiper-button-next{
+  all:unset !important;
+  &::after{
+    display: none;
+  }
+}
+.swiper-button-prev{
+  all:unset !important;
+  &::after{
+    display: none;
+  }
+}
+
 .our-client__button{
   background: none;
   border: none;
-  width: 20px;
-  height: 37px;
+  width: 20px !important;
+  height: 37px !important;
   margin: 0px;
   padding: 0px;
-  position: absolute;
-  top: calc(50% - 18px);
+  position: absolute !important;
+  top: calc(50% - 18px) !important;
+  &:hover{
+    cursor: pointer;
+  }
 
 }
 .our-client__button_left{
-  left: 15px;
+  left: 15px !important;
 }
 .our-client__button_right{
-  right: 15px;
+  right: 15px !important;
 }
 @media screen and (max-width:1024px){
   // .our-client__button{
@@ -24,9 +41,15 @@
 
   // }
   .our-client__button_left{
-    left: 5px;
+    left: 5px !important;
   }
   .our-client__button_right{
-    right: 5px;
+    right: 5px !important;
   }
 }
+
+.our-client__button_hidden{
+  display: none !important;
+
+}
+
