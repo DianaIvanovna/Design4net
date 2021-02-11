@@ -6,11 +6,10 @@
 
   padding:  15px 25px;
   box-sizing: border-box;
-
+  margin-top: 20px;
   @include fontValue(normal, bold, 18px, 21px);
   color: $text-for-headers;
   letter-spacing: 0.025em;
-  margin-top: 20px;
   &:hover{
     cursor: pointer;
     box-shadow: none;
