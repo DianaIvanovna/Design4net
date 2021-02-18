@@ -5,10 +5,11 @@
   flex-direction: column;
   align-items: center;
   margin: 55px 15px 0px;
-  box-sizing: border-box;
+
   border-radius: 15px ;
 
-
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
   background: $text-for-headers;
 
   &:hover{
