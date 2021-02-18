@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="Диана Гарбуз">
-  <link rel="stylesheet" href="style.08aa581ec964311cba7a.css">
+  <link rel="stylesheet" href="style.16e5c8d73f9a48d7bc37.css">
+  <!-- фавиконки для всех устройств  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d9a34">
+  <meta name="msapplication-TileColor" content="#6d6967">
+  <meta name="theme-color" content="#ffffff">
+  <!-- фавиконки для всех устройств  -->
   <title>Design4net</title>
 </head>
 <body>
@@ -31,8 +40,8 @@
         </ul>
       </div>
       <a href="technicalSupport.html"  class="header__link " >Техническая поддержка </a>
-      <!-- <a href="./#linkDesignAndPrinting"  class="header__link">Дизайн и полиграфия</a> -->
-      <a href="./#linkPortfolio"  class="header__link">Портфолио</a>
+      <a href="./#linkDesignAndPrinting"  class="header__link">Дизайн и полиграфия</a>
+      <!-- <a href="./#linkPortfolio"  class="header__link">Портфолио</a> -->
       <a href="commercialOffer.html"  class="header__link">Получить коммерческое предложение</a>
     </nav>
     <svg width="21" class="header__menu" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#DAFE00" d="M0 0h21v1H0zM0 5h21v1H0zM9.484 10H21v1H9.484z"/></svg>
@@ -44,7 +53,7 @@
   <div class="page_base-2">
     <div class="content">
       <section class="websiteDevelopment">
-        <div class="websiteDevelopment__block block-BusinessCard" style="border: 1px solid red">
+        <div class="websiteDevelopment__block block-BusinessCard">
           <div class="websiteDevelopment__line">
             <div class="websiteDevelopment__line-circle websiteDevelopment__line-circle_active"></div>
             <div class="websiteDevelopment__line-circle"></div>
@@ -113,24 +122,24 @@
               <section class="our-client our-client_businessCardWebsite-small">
                 <p class="our-client__title">Примеры наших сайтов визиток</p>
                 <div class="our-client__container">
-                  <button class="our-client__button our-client__button_left">
+                  <button class="our-client__button our-client__button_left swiper-button-prev swiper-button-prev-1">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
                   </button>
-                  <div class="our-client__carousel">
-                    <ul class="our-client__clients">
-                      <li class="our-client__client">
+                  <div class="our-client__carousel swiper-container swiper-container-1">
+                    <ul class="our-client__clients swiper-wrapper">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-6.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
                         <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
 
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">MCEM.RU</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
 
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
                         <a href="#"  class="our-client__link"></a>
@@ -138,17 +147,25 @@
 
                     </ul>
                   </div>
-                  <button class="our-client__button our-client__button_right">
+                  <button class="our-client__button our-client__button_right swiper-button-next swiper-button-next-1">
                     <img src="./images/arrow-triangle-right.svg" alt="стрелка вправо">
                   </button>
                 </div>
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block BusinessCard">
+                <!-- END Hidden Required Fields -->
+
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="button form-consultation__button">заказать консультацию</button>
+                <button type="submit" class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>
@@ -219,59 +236,59 @@
               <section class="our-client our-client_businessCardWebsite-big">
                 <p class="our-client__title">Примеры наших лэндингов</p>
                 <div class="our-client__container">
-                  <button class="our-client__button our-client__button_left">
+                  <button class="our-client__button our-client__button_left swiper-button-prev swiper-button-prev-2">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
                   </button>
-                  <div class="our-client__carousel">
-                    <ul class="our-client__clients">
-                      <li class="our-client__client">
+                  <div class="our-client__carousel swiper-container swiper-container-2">
+                    <ul class="our-client__clients swiper-wrapper">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
                         <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
                         <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
                         <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
                         <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
                         <a href="#"  class="our-client__link"></a>
@@ -279,20 +296,28 @@
 
                     </ul>
                   </div>
-                  <button class="our-client__button our-client__button_right">
+                  <button class="our-client__button our-client__button_right swiper-button-next swiper-button-next-2">
                     <img src="./images/arrow-triangle-right.svg" alt="стрелка вправо">
                   </button>
                 </div>
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+
+
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block landing">
+                <!-- END Hidden Required Fields -->
 
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
 
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
 
-                <button class="form-consultation__button button">заказать консультацию</button>
+                <button type="submit" class="form-consultation__button button">заказать консультацию</button>
               </form>
 
             </div>
@@ -371,59 +396,59 @@
               <section class="our-client our-client_businessCardWebsite-big">
                 <p class="our-client__title">Примеры наших корпоративных сайтов</p>
                 <div class="our-client__container">
-                  <button class="our-client__button our-client__button_left">
+                  <button class="our-client__button our-client__button_left swiper-button-prev swiper-button-prev-3">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
                   </button>
-                  <div class="our-client__carousel">
-                    <ul class="our-client__clients">
-                      <li class="our-client__client">
+                  <div class="our-client__carousel swiper-container swiper-container-3">
+                    <ul class="our-client__clients swiper-wrapper">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
                         <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
                         <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
                         <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
                         <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-5.png" alt="фото клиента">
                         <p class="our-client__client-name">DECOlat</p>
                         <a href="#"  class="our-client__link"></a>
@@ -431,18 +456,26 @@
 
                     </ul>
                   </div>
-                  <button class="our-client__button our-client__button_right">
+                  <button class="our-client__button our-client__button_right swiper-button-next swiper-button-next-3">
                     <img src="./images/arrow-triangle-right.svg" alt="стрелка вправо">
                   </button>
                 </div>
 
               </section>
+
+
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block corporateWebsite">
+                <!-- END Hidden Required Fields -->
 
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="button form-consultation__button">заказать консультацию</button>
+                <button type="submit" class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>
@@ -525,47 +558,54 @@
               <section class="our-client our-client_businessCardWebsite-small">
                 <p class="our-client__title">Примеры наших сайтов каталогов</p>
                 <div class="our-client__container">
-                  <button class="our-client__button our-client__button_left">
+                  <button class="our-client__button our-client__button_left swiper-button-prev swiper-button-prev-4">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
                   </button>
-                  <div class="our-client__carousel">
-                    <ul class="our-client__clients">
-                      <li class="our-client__client">
+                  <div class="our-client__carousel swiper-container swiper-container-4">
+                    <ul class="our-client__clients swiper-wrapper">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-2.png" alt="фото клиента">
                         <p class="our-client__client-name">Festival. dignity-fond.ru</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-3.png" alt="фото клиента">
                         <p class="our-client__client-name">Mobileye</p>
                         <a href="./mobileye.html"  class="our-client__link"></a>
                       </li>
 
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-4.png" alt="фото клиента">
                         <p class="our-client__client-name">МЦМ “Runovo”</p>
                         <a href="./runovo.html"  class="our-client__link"></a>
                       </li>
                     </ul>
                   </div>
-                  <button class="our-client__button our-client__button_right">
+                  <button class="our-client__button our-client__button_right swiper-button-next swiper-button-next-4">
                     <img src="./images/arrow-triangle-right.svg" alt="стрелка вправо">
                   </button>
                 </div>
 
               </section>
+
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block catalog">
+                <!-- END Hidden Required Fields -->
 
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
 
-                <button class="button form-consultation__button">заказать консультацию</button>
+                <button type="submit" class="button form-consultation__button">заказать консультацию</button>
 
               </form>
 
@@ -658,40 +698,47 @@
               <section class="our-client our-client_businessCardWebsite-small">
                 <p class="our-client__title">Примеры наших интернет магазинов</p>
                 <div class="our-client__container">
-                  <button class="our-client__button our-client__button_left">
+                  <button class="our-client__button our-client__button_left swiper-button-prev swiper-button-prev-5">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
                   </button>
-                  <div class="our-client__carousel">
-                    <ul class="our-client__clients">
-                      <li class="our-client__client">
+                  <div class="our-client__carousel swiper-container swiper-container-5">
+                    <ul class="our-client__clients swiper-wrapper">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
                     </ul>
                   </div>
-                  <button class="our-client__button our-client__button_right">
+                  <button class="our-client__button our-client__button_right swiper-button-next swiper-button-next-5">
                     <img src="./images/arrow-triangle-right.svg" alt="стрелка вправо">
                   </button>
                 </div>
 
               </section>
+
+
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block onlineStore">
+                <!-- END Hidden Required Fields -->
 
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="form-consultation__button button">заказать консультацию</button>
+                <button type="submit" class="form-consultation__button button">заказать консультацию</button>
 
               </form>
 
@@ -776,44 +823,51 @@
               <section class="our-client our-client_businessCardWebsite-small">
                 <p class="our-client__title">Примеры наших онлайн сервисов</p>
                 <div class="our-client__container">
-                  <button class="our-client__button our-client__button_left">
+                  <button class="our-client__button our-client__button_left swiper-button-prev swiper-button-prev-6">
                     <img src="./images/arrow-triangle-left.svg" alt="стрелка влево">
                   </button>
-                  <div class="our-client__carousel">
-                    <ul class="our-client__clients">
-                      <li class="our-client__client">
+                  <div class="our-client__carousel swiper-container swiper-container-6">
+                    <ul class="our-client__clients swiper-wrapper">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
-                      <li class="our-client__client">
+                      <li class="our-client__client swiper-slide">
                         <img src="./images/client-1.png" alt="фото клиента">
                         <p class="our-client__client-name">ADEAudit</p>
                         <a href="#"  class="our-client__link"></a>
                       </li>
                     </ul>
                   </div>
-                  <button class="our-client__button our-client__button_right">
+                  <button class="our-client__button our-client__button_right swiper-button-next swiper-button-next-6">
                     <img src="./images/arrow-triangle-right.svg" alt="стрелка вправо">
                   </button>
                 </div>
 
               </section>
               <!-- КОНЕЦ НАШИ КЛИЕНТЫ  -->
-              <form name="BusinessCardWebsite" class="form form-consultation form-consultation_websiteDevelopment">
+
+              <form name="BusinessCardWebsite" action="send.php" method="post" class="form form-consultation form-consultation_websiteDevelopment">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Design4net/websiteDevelopment">
+                <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+                <input type="hidden" name="form_subject" value="form consultation block onlineService">
+                <!-- END Hidden Required Fields -->
+
                 <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
                 <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-                <button class="button form-consultation__button">заказать консультацию</button>
+                <button type="submit" class="button form-consultation__button">заказать консультацию</button>
               </form>
 
             </div>
@@ -848,7 +902,7 @@
           <div class="footer__link-container">
             <a href="technicalSupport.html"   class="footer__link">Техническая поддержка </a>
             <a href="./#linkDesignAndPrinting"  class="footer__link">Дизайн и полиграфия</a>
-            <a href="./#linkPortfolio"  class="footer__link">Портфолио</a>
+            <!-- <a href="./#linkPortfolio"  class="footer__link">Портфолио</a> -->
             <a href="commercialOffer.html"  class="footer__link">Получить коммерческое предложение</a>
           </div>
 
@@ -899,13 +953,37 @@
 
     </footer>
   </div>
+
+  <!-- ПОПАП МЫ ВАМ ПЕРЕЗВОНИМ -->
+
+  <section class="popup">
+    <img src="./images/close.svg" alt="иконка закрытия" class="popup__close">
+    <div class="popup__container">
+      <!-- полигон звезды  -->
+    <div class="popup__particles" id="particles-js_popup"></div>
+      <div class="popup__header">
+        <div class="popup__points">
+          <div class="popup__point"></div>
+          <div class="popup__point"></div>
+          <div class="popup__point"></div>
+        </div>
+      </div>
+      <div class="popup__content">
+        <h3 class="popup__title">Заявка отправлена</h3>
+        <p class="popup__text">В скором времени с вами свяжется наш менеджер.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОПАП МЫ ВАМ ПЕРЕЗВОНИМ -->
+
   <!-- СТРЕЛКА ПОДНЯТИЯ ВВЕРХ -->
   <div class="goUp">
     <img src="./images/goUp.svg" alt="стрелка поднятия вверх">
   </div>
   <!-- СТРЕЛКА ПОДНЯТИЯ ВВЕРХ -->
 
-<script src="websiteDevelopment.16d8840126a8573be4db.js"></script>
+<script src="websiteDevelopment.ea024f3f9bcd7132e9b6.js"></script>
 </body>
 </html>
 

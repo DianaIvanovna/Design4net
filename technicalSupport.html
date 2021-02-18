@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Техническая поддержка">
   <meta name="author" content="Диана Гарбуз">
-  <link rel="stylesheet" href="style.62e5caab5233d17df885.css">
+  <link rel="stylesheet" href="style.846f9eed54df4ecfb91c.css">
+  <!-- фавиконки для всех устройств  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d9a34">
+  <meta name="msapplication-TileColor" content="#6d6967">
+  <meta name="theme-color" content="#ffffff">
+  <!-- фавиконки для всех устройств  -->
   <title>Design4net</title>
 </head>
 <body>
@@ -32,8 +41,8 @@
         </ul>
       </div>
       <a href="technicalSupport.html"  class="header__link header__link_active" >Техническая поддержка </a>
-      <!-- <a href="./#linkDesignAndPrinting"  class="header__link">Дизайн и полиграфия</a> -->
-      <a href="./#linkPortfolio"  class="header__link">Портфолио</a>
+      <a href="./#linkDesignAndPrinting"  class="header__link">Дизайн и полиграфия</a>
+      <!-- <a href="./#linkPortfolio"  class="header__link">Портфолио</a> -->
       <a href="commercialOffer.html"  class="header__link">Получить коммерческое предложение</a>
     </nav>
     <svg width="21" class="header__menu" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#DAFE00" d="M0 0h21v1H0zM0 5h21v1H0zM9.484 10H21v1H9.484z"/></svg>
@@ -216,71 +225,78 @@
             <div class="browser-page__line"></div>
             <button class="browser-stage__button-price button-commercialOffer">стоимость от 10 000 р.</button>
             <div class="browser-page__bunner">
-              <button class="browser-page__button_bunner-2 button-commercialOffer">Успей заказать на выгодных условиях</button>
+              <button class="browser-page__button_bunner-2">Успей заказать на выгодных условиях</button>
             </div>
             <!-- НАШИ КЛИЕНТЫ КОНТЕКСНАЯ РЕКЛАМА -->
             <div class="our-client our-client_small">
               <h3 class="our-client__title_small">Наши клиенты</h3>
               <div class="our-client__container ">
-                <button class="our-client__button our-client__button_left">
+                <button class="our-client__button our-client__button_left swiper-button-prev swiper-button-prev-1">
                   <img src="./images/arrow-triangle-left.svg" alt="">
                 </button>
-                <div class="our-client__carousel">
-                  <ul class="our-client__clients">
-                    <li class="our-client__client">
+                <div class="our-client__carousel swiper-container swiper-container-1">
+                  <ul class="our-client__clients swiper-wrapper">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-1.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-2.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-3.png" alt="">
                       <a href="./runovo.html"  class="our-client__link"></a>
                     </li>
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-4.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-5.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
 
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-1.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-2.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-3.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-4.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
-                    <li class="our-client__client">
+                    <li class="our-client__client swiper-slide">
                       <img src="./images/our-client-5.png" alt="">
                       <a href="#"  class="our-client__link"></a>
                     </li>
 
                   </ul>
                 </div>
-                <button class="our-client__button our-client__button_right">
+                <button class="our-client__button our-client__button_right swiper-button-next swiper-button-next-1">
                   <img src="./images/arrow-triangle-right.svg" alt="">
                 </button>
               </div>
             </div>
+
+
             <!-- КОНЕЦ НАШИ КЛИЕНТЫ КОНТЕКСНАЯ РЕКЛАМА -->
-            <form name="promotionСonsultationTechnicalSupport" class="form form-consultation form-consultation_small ">
+            <form name="promotionСonsultationTechnicalSupport" action="send.php" method="post" class="form form-consultation form-consultation_small ">
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Design4net/technicalSupport">
+              <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+              <input type="hidden" name="form_subject" value="form consultation pageTechnicalSupport up">
+              <!-- END Hidden Required Fields -->
               <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
               <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-              <button class="button form-consultation__button">получить консультацию</button>
+              <button type="submit" class="button form-consultation__button">получить консультацию</button>
             </form>
 
           </div>
@@ -422,10 +438,17 @@
           </button>
         </div>
 
-        <form name="creatingWebsitesСonsultation" class="form form-consultation form-consultation_dark">
+
+
+        <form name="creatingWebsitesСonsultation" action="send.php" method="post" class="form form-consultation form-consultation_dark">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Design4net/TechnicalSupport">
+          <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+          <input type="hidden" name="form_subject" value="form consultation pageTechnicalSupport down">
+          <!-- END Hidden Required Fields -->
           <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
           <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
-          <button class="button form-consultation__button">заказать консультацию</button>
+          <button type="submit" class="button form-consultation__button">заказать консультацию</button>
         </form>
 
       </section>
@@ -540,7 +563,7 @@
           <div class="footer__link-container">
             <a href="technicalSupport.html"   class="footer__link">Техническая поддержка </a>
             <a href="./#linkDesignAndPrinting"  class="footer__link">Дизайн и полиграфия</a>
-            <a href="./#linkPortfolio"  class="footer__link">Портфолио</a>
+            <!-- <a href="./#linkPortfolio"  class="footer__link">Портфолио</a> -->
             <a href="commercialOffer.html"  class="footer__link">Получить коммерческое предложение</a>
           </div>
 
@@ -592,12 +615,53 @@
     </footer>
   </div>
 
+
+ <!-- ПОПАП МЫ ВАМ ПЕРЕЗВОНИМ -->
+
+ <section class="popup">
+  <img src="./images/close.svg" alt="иконка закрытия" class="popup__close">
+  <div class="popup__container">
+    <!-- полигон звезды  -->
+    <div class="popup__particles" id="particles-js_popup"></div>
+    <div class="popup__header">
+      <div class="popup__points">
+        <div class="popup__point"></div>
+        <div class="popup__point"></div>
+        <div class="popup__point"></div>
+      </div>
+    </div>
+    <div class="popup__content">
+      <h3 class="popup__title popup__title_form">Мы перезвоним вам</h3>
+      <h3 class="popup__title popup__title_form_send">Заявка отправлена</h3>
+      <p class="popup__text">В скором времени с вами свяжется наш менеджер.</p>
+
+      <form name="creatingWebsitesСonsultation" action="send.php" method="post" class="form form-consultation form-consultation_popup">
+
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Design4net">
+        <input type="hidden" name="admin_email" value="test@cw51374.tmweb.ru">
+        <input type="hidden" name="form_subject" value="popup callMe">
+        <!-- END Hidden Required Fields -->
+
+        <input type="text" name="name" class="input form-consultation__input" placeholder="Ваше имя" required>
+        <input type="text" name="phone" class="input form-consultation__input" placeholder="Номер телефона" required>
+        <input type="text" name="site" class="input form-consultation__input" placeholder="Сайт">
+        <button type="submit" class="button form-consultation__button">Отправить</button>
+      </form>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ПОПАП МЫ ВАМ ПЕРЕЗВОНИМ -->
+
   <!-- СТРЕЛКА ПОДНЯТИЯ ВВЕРХ -->
   <div class="goUp">
     <img src="./images/goUp.svg" alt="стрелка поднятия вверх">
   </div>
   <!-- СТРЕЛКА ПОДНЯТИЯ ВВЕРХ -->
 
-  <script src="technicalSupport.f4a2632fef9751dc5295.js"></script>
+  <script src="technicalSupport.6bb0771638a72ecb419a.js"></script>
 </body>
 </html>
