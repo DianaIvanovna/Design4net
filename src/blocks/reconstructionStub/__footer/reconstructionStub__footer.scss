@@ -10,6 +10,15 @@
   bottom: 28px;
   text-align: center;
 
+  a {
+    @include fontValue(normal, bold, 24px, 28px);
+    color: $text-for-headers;
+    text-decoration: none;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
 
 
   @media screen and (max-width: 1024px){

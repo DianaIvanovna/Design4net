@@ -11,14 +11,6 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
   entry: {
     main: './src/index.js',
-    reconstructionStub: './src/pages/reconstructionStub/reconstructionStub.js',
-    developmentStud: './src/pages/developmentStud/developmentStud.js',
-    promotion: "./src/pages/promotion/promotion.js",
-    technicalSupport: "./src/pages/technicalSupport/technicalSupport.js",
-    commercialOffer: "./src/pages/commercialOffer/commercialOffer.js",
-    websiteDevelopment: "./src/pages/websiteDevelopment/websiteDevelopment.js",
-    mobileye: "./src/pages/mobileye/mobileye.js",
-    runovo: "./src/pages/runovo/runovo.js",
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -94,46 +86,6 @@ module.exports = {
       inject: false,
       template: './src/index.html',
       filename: 'index.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: './src/pages/reconstructionStub/reconstructionStub.html',
-      filename: 'reconstructionStub.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: './src/pages/developmentStud/developmentStud.html',
-      filename: 'developmentStud.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: './src/pages/promotion/promotion.html',
-      filename: 'promotion.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: './src/pages/technicalSupport/technicalSupport.html',
-      filename: 'technicalSupport.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: './src/pages/commercialOffer/commercialOffer.html',
-      filename: 'commercialOffer.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: './src/pages/websiteDevelopment/websiteDevelopment.html',
-      filename: 'websiteDevelopment.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: './src/pages/mobileye/mobileye.html',
-      filename: 'mobileye.html',
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      template: './src/pages/runovo/runovo.html',
-      filename: 'runovo.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
