@@ -6,6 +6,13 @@
   position: absolute;
   bottom: 5.5%;
   left: calc(50% - 125px);
+  a{
+    text-decoration: none;
+    color: #FFFFFF;
+    &:hover{
+      cursor: pointer;
+    }
+  }
 
   @media screen and (min-width: 800px) {
     @include fontValue(normal, bold, 18px, 21px);
@@ -22,19 +29,4 @@
     bottom: 6%;
     left: 25%;
   }
-
-  // @media screen and (max-width: 1024px){
-  //   width: 200px;
-  //   left: calc(50% - 100px);
-  //   @include fontValue(normal, bold, 14px, 16px);
-  // }
-  // @media screen and (max-width: 600px){
-  //   width: 150px;
-  //   left: calc(50% - 75px);
-  //   @include fontValue(normal, normal, 12px, 14px);
-  // }
-  // @media screen and (max-width: 450px){
-  //   bottom: 6%;
-  //   @include fontValue(normal, normal, 11px, 14px);
-  // }
 }

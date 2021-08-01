@@ -1,6 +1,0 @@
-.portfolio__text_bold{
-  @include fontValue(normal,bold,16px,126.69%);
-  @media screen and (max-width:600px){
-    @include fontValue(normal,bold,14px,126.69%);
-  }
-}
