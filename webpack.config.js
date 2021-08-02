@@ -17,6 +17,7 @@ module.exports = {
     technicalSupport: "./src/pages/technicalSupport/technicalSupport.js",
     commercialOffer: "./src/pages/commercialOffer/commercialOffer.js",
     websiteDevelopment: "./src/pages/websiteDevelopment/websiteDevelopment.js",
+    portfolio: "./src/pages/portfolio/portfolio.js",
     mobileye: "./src/pages/portfolio/mobileye/mobileye.js",
     runovo: "./src/pages/portfolio/runovo/runovo.js",
   },
@@ -125,6 +126,11 @@ module.exports = {
       inject: false,
       template: './src/pages/websiteDevelopment/websiteDevelopment.html',
       filename: 'websiteDevelopment.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/pages/portfolio/portfolio.html',
+      filename: 'portfolio.html',
     }),
     new HtmlWebpackPlugin({
       inject: false,
