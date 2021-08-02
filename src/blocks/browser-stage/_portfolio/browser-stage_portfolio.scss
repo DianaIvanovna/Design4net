@@ -1,0 +1,57 @@
+@import "../__img/browser-stage__img.scss";
+@import "../__info/browser-stage__info.scss";
+@import "../__item/browser-stage__item.scss";
+@import "../__list/browser-stage__list.scss";
+@import "../__name/browser-stage__name.scss";
+@import "../__number/browser-stage__number.scss";
+@import "../__title-container/browser-stage__title-container.scss";
+@import "../__title/browser-stage__title.scss";
+@import "../__button-price/browser-stage__button-price.scss";
+@import "../__content/browser-stage__content.scss";
+@import "../__stage/browser-stage__stage.scss";
+@import "../__arrow/browser-stage__arrow.scss";
+@import "../__ps/browser-stage__ps.scss";
+@import "../__icon/browser-stage__icon.scss";
+
+
+@import "../__container/_big/browser-stage__container_big.scss";
+@import "../__container/_technicalSupport/browser-stage__container_technicalSupport.scss";
+@import "../__container/_stages/browser-stage__container_stages.scss";
+.browser-stage__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  box-sizing: border-box;
+  @media screen and (max-width:1024px){
+    padding: 20px;
+  }
+  @media screen and (max-width:600px){
+    padding: 10px;
+  }
+}
+
+
+.browser-stage__container.browser-stage__container_column_active{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-image: url("../../../images/promotion-page/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (max-width:600px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .browser-stage__list.browser-stage__list_column{
+    width: 100%;
+
+  }
+}

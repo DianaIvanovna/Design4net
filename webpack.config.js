@@ -17,12 +17,13 @@ module.exports = {
     technicalSupport: "./src/pages/technicalSupport/technicalSupport.js",
     commercialOffer: "./src/pages/commercialOffer/commercialOffer.js",
     websiteDevelopment: "./src/pages/websiteDevelopment/websiteDevelopment.js",
-    mobileye: "./src/pages/mobileye/mobileye.js",
-    runovo: "./src/pages/runovo/runovo.js",
+    mobileye: "./src/pages/portfolio/mobileye/mobileye.js",
+    runovo: "./src/pages/portfolio/runovo/runovo.js",
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js',
+    "publicPath": "/",
   },
   module: {
     rules: [
@@ -127,13 +128,13 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: './src/pages/mobileye/mobileye.html',
-      filename: 'mobileye.html',
+      template: './src/pages/portfolio/mobileye/mobileye.html',
+      filename: 'portfolio/mobileye.html',
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: './src/pages/runovo/runovo.html',
-      filename: 'runovo.html',
+      template: './src/pages/portfolio/runovo/runovo.html',
+      filename: 'portfolio/runovo.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

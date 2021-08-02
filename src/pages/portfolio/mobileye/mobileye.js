@@ -1,9 +1,9 @@
 import "./mobileye.css";
 import "./mobileye.scss";
-import imgSite from "../../images/mobileye/mobileye-pictures.jpg";
-import Header from '../../js/components/Header';
-import Form from '../../js/components/Form';
-import Popup from '../../js/components/Popup';
+import imgSite from "../../../images/mobileye/mobileye-pictures.jpg";
+import Header from '../../../js/components/Header';
+import Form from '../../../js/components/Form';
+import Popup from '../../../js/components/Popup';
 
 (function () {
   const header = new Header();

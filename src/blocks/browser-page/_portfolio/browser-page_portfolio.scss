@@ -1,0 +1,70 @@
+@import "../__content/browser-page__content.scss";
+@import "../__point/browser-page__point.scss";
+@import "../__points/browser-page__points.scss";
+@import "../__title-container/browser-page__title-container.scss";
+@import "../__title/browser-page__title.scss";
+@import "../__button/browser-page__button.scss";
+@import "../__line/browser-page__line.scss";
+
+@import "../__content-title/browser-page__content-title.scss";
+@import "../__content-text/browser-page__content-text.scss";
+@import "../__button-container/browser-page__button-container.scss";
+@import "../__background-img/browser-page__background-img.scss";
+
+@import "../__icon-container/browser-page__icon-container.scss";
+@import "../__icon-title/browser-page__icon-title.scss";
+@import "../__icon-name/browser-page__icon-name.scss";
+@import "../__icon/browser-page__icon.scss";
+@import "../_small/browser-page_small.scss";
+@import "../__icon-text/browser-page__icon-text.scss";
+@import "../__icon-time/browser-page__icon-time.scss";
+
+
+.browser-page{
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 90px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 45px;
+  }
+}
+
+
+.browser-page__container-support_portfolio{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  background-image: url("../../../images/pageTechnicalSupport/background-photo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 30px 50px;
+
+
+  @media screen and (max-width:1024px){
+    padding: 20px 40px 30px;
+  }
+  @media screen and (max-width:600px){
+    padding: 20px 20px 30px;
+  }
+
+}
+
+.browser-page__bunner{
+  width: 100%;
+  margin-top: 27px;
+  height: 77px;
+  background-image: url("../../../images/promotion-page/background-banner.png");
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
