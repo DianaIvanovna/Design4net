@@ -20,6 +20,7 @@ module.exports = {
     portfolio: "./src/pages/portfolio/portfolio.js",
     mobileye: "./src/pages/portfolio/mobileye/mobileye.js",
     runovo: "./src/pages/portfolio/runovo/runovo.js",
+    // newSite: "./src/pages/portfolio/newSite/newSite.js",
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -142,6 +143,11 @@ module.exports = {
       template: './src/pages/portfolio/runovo/runovo.html',
       filename: 'portfolio/runovo.html',
     }),
+    // new HtmlWebpackPlugin({
+    //   inject: false,
+    //   template: './src/pages/portfolio/newSite/newSite.html',
+    //   filename: 'portfolio/newSite.html',
+    // }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),
