@@ -17,4 +17,8 @@
       width: calc(100% - 80px);
     }
   }
+  a{
+    text-decoration: none;
+    color: $text-for-headers;
+  }
 }
